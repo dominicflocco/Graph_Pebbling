@@ -1,0 +1,1884 @@
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:30:48 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:32:18 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:32:37 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:32:42 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.06 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:33:51 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.07 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:34:54 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.21 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:35:30 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.53 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:35:54 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.40 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:41:02 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.24 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 16:02:26 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.55 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:06:53 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.14 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:08:36 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.15 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:09:06 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.16 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:09:32 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.06 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:11:56 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.09 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:13:06 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.17 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:14:51 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.01s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.62 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:20:18 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.13 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:25:00 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.16 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:27:24 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.19 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:27:43 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.57 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:28:16 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.17 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:29:04 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    1s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.32 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:29:57 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 0.90 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:34:27 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xf76b91ce
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.6000000
+Presolve removed 20 rows and 35 columns
+Presolve time: 0.00s
+Presolved: 222 rows, 175 columns, 695 nonzeros
+Variable types: 0 continuous, 175 integer (140 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   11   10.60000    7.00000  34.0%     -    0s
+H    0     0                      10.0000000    7.00000  30.0%     -    0s
+H    0     0                       9.8000000    7.00000  28.6%     -    0s
+H    0     0                       9.6000000    7.00000  27.1%     -    0s
+H    0     0                       9.2000000    7.00000  23.9%     -    0s
+     0     0    7.00000    0   20    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   18    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   16    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   17    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   12    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Cover: 39
+  Implied bound: 52
+  Clique: 12
+  MIR: 13
+  StrongCG: 4
+  Flow cover: 11
+  Zero half: 2
+  RLT: 7
+  Relax-and-lift: 10
+
+Explored 542 nodes (8385 simplex iterations) in 1.08 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 7.8 8 8.2 ... 10.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:35:05 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 960 nonzeros
+Model fingerprint: 0xa9db698c
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 9.6000000
+Presolve removed 95 rows and 95 columns
+Presolve time: 0.00s
+Presolved: 147 rows, 115 columns, 405 nonzeros
+Variable types: 0 continuous, 115 integer (80 binary)
+
+Root relaxation: objective 7.000000e+00, 34 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0   12    9.60000    7.00000  27.1%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   13    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    8    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    6    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Cover: 38
+  Implied bound: 31
+  Clique: 4
+  MIR: 12
+  StrongCG: 2
+  Flow cover: 7
+  Zero half: 1
+  Mod-K: 1
+  RLT: 1
+  Relax-and-lift: 11
+
+Explored 157 nodes (1879 simplex iterations) in 0.70 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 5: 7.8 8 8.2 ... 9.6
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 20:51:31 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 850 nonzeros
+Model fingerprint: 0xfff073fb
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Presolve removed 0 rows and 10 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.11 seconds
+Thread count was 1 (of 32 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 20:53:41 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 237 rows, 210 columns and 820 nonzeros
+Model fingerprint: 0xb46febde
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Presolve removed 5 rows and 30 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.14 seconds
+Thread count was 1 (of 32 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 20:53:50 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 237 rows, 210 columns and 710 nonzeros
+Model fingerprint: 0x5bea03a9
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 9.2000000
+Presolve removed 65 rows and 75 columns
+Presolve time: 0.01s
+Presolved: 172 rows, 135 columns, 485 nonzeros
+Variable types: 0 continuous, 135 integer (100 binary)
+
+Root relaxation: objective 7.000000e+00, 39 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    4    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   10    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   18    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    8    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    8    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   16    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   26    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   26    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   15    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   15    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0   15    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  Cover: 16
+  Implied bound: 10
+  Clique: 7
+  MIR: 6
+  StrongCG: 1
+  Flow cover: 3
+  RLT: 1
+  Relax-and-lift: 4
+
+Explored 49 nodes (1055 simplex iterations) in 0.54 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 7.8 8.2 8.4 9.2 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 20:56:27 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 237 rows, 210 columns and 710 nonzeros
+Model fingerprint: 0x5bea03a9
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 9.2000000
+Presolve removed 65 rows and 75 columns
+Presolve time: 0.01s
+Presolved: 172 rows, 135 columns, 485 nonzeros
+Variable types: 0 continuous, 135 integer (100 binary)
+
+Root relaxation: objective 7.000000e+00, 39 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    4    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   10    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   18    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    8    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    8    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   16    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   26    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   26    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   15    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   15    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0   15    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  Cover: 16
+  Implied bound: 10
+  Clique: 7
+  MIR: 6
+  StrongCG: 1
+  Flow cover: 3
+  RLT: 1
+  Relax-and-lift: 4
+
+Explored 49 nodes (1055 simplex iterations) in 0.65 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 7.8 8.2 8.4 9.2 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 20:57:18 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 237 rows, 210 columns and 710 nonzeros
+Model fingerprint: 0x5bea03a9
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 9.2000000
+Presolve removed 65 rows and 75 columns
+Presolve time: 0.01s
+Presolved: 172 rows, 135 columns, 485 nonzeros
+Variable types: 0 continuous, 135 integer (100 binary)
+
+Root relaxation: objective 7.000000e+00, 39 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    4    9.20000    7.00000  23.9%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   10    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   18    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    8    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    8    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   16    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   26    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   26    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   15    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0   15    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0   15    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  Cover: 16
+  Implied bound: 10
+  Clique: 7
+  MIR: 6
+  StrongCG: 1
+  Flow cover: 3
+  RLT: 1
+  Relax-and-lift: 4
+
+Explored 49 nodes (1055 simplex iterations) in 0.77 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 7.8 8.2 8.4 9.2 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 21:15:09 2021
+
+Changed value of parameter LogFile to nontree-generator.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 242 rows, 210 columns and 850 nonzeros
+Model fingerprint: 0xfff073fb
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Presolve removed 0 rows and 10 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.07 seconds
+Thread count was 1 (of 32 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format

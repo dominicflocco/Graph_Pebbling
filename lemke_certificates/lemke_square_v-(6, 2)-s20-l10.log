@@ -1,0 +1,58 @@
+
+Gurobi 9.1.2 (linux64) logging started Wed Dec  1 09:16:40 2021
+
+Changed value of parameter LogFile to lemke_square_v-(6, 2)-s20-l10.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Warning: variable name "X[(7, 4),(7, 3)]" has a space
+Warning: constraint name "flow-constr-t0-v(3, 0)" has a space
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 6013 rows, 5440 columns and 20670 nonzeros
+Model fingerprint: 0xd0bc2588
+Variable types: 0 continuous, 5440 integer (4800 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e-01, 1e-01]
+  Bounds range     [1e+00, 5e+02]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 517 rows and 550 columns
+Presolve time: 0.04s
+Presolved: 5496 rows, 4890 columns, 18270 nonzeros
+Variable types: 0 continuous, 4890 integer (4250 binary)
+
+Root relaxation: objective 6.400000e+01, 127 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   64.00000    0   42          -   64.00000      -     -    0s
+     0     0   64.00000    0   61          -   64.00000      -     -    0s
+     0     0   64.00000    0   71          -   64.00000      -     -    0s
+     0     0   64.00000    0   64          -   64.00000      -     -    0s
+     0     0   64.00000    0   62          -   64.00000      -     -    0s
+     0     0   64.00000    0   42          -   64.00000      -     -    0s
+H    0     0                    3715.6000000   64.00000  98.3%     -    0s
+     0     0   64.00000    0   38 3715.60000   64.00000  98.3%     -    0s
+H    0     0                     119.2000000   64.00000  46.3%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 69
+  Implied bound: 60
+  Clique: 11
+  MIR: 28
+  Flow cover: 16
+  Zero half: 1
+  RLT: 5
+  Relax-and-lift: 33
+
+Explored 1 nodes (2615 simplex iterations) in 0.69 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 119.2 3715.6 
+
+Solve interrupted
+Best objective 1.192000000000e+02, best bound 6.400000000000e+01, gap 46.3087%

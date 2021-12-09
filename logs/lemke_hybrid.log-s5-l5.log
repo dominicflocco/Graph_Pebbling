@@ -1,0 +1,7 @@
+
+Gurobi 9.1.2 (linux64) logging started Wed Dec  1 09:56:29 2021
+
+Changed value of parameter LogFile to lemke_hybrid.log-s5-l5.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0

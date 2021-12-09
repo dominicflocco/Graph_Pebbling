@@ -1,0 +1,945 @@
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:42:42 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:43:28 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 15 rows, 8 columns and 81 nonzeros
+Model fingerprint: 0xc817eeac
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 3e+01]
+Found heuristic solution: objective 3.0000000
+Presolve removed 3 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 12 rows, 6 columns, 51 nonzeros
+Variable types: 0 continuous, 6 integer (0 binary)
+
+Root relaxation: objective 9.314516e+00, 6 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    9.31452    0    1    3.00000    9.31452   210%     -    0s
+H    0     0                       9.0000000    9.31452  3.49%     -    0s
+     0     0    9.31452    0    1    9.00000    9.31452  3.49%     -    0s
+
+Explored 1 nodes (6 simplex iterations) in 0.01 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 9 3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:44:34 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 15 rows, 8 columns and 81 nonzeros
+Model fingerprint: 0xc817eeac
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 3e+01]
+Found heuristic solution: objective 3.0000000
+Presolve removed 3 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 12 rows, 6 columns, 51 nonzeros
+Variable types: 0 continuous, 6 integer (0 binary)
+
+Root relaxation: objective 9.314516e+00, 6 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    9.31452    0    1    3.00000    9.31452   210%     -    0s
+H    0     0                       9.0000000    9.31452  3.49%     -    0s
+     0     0    9.31452    0    1    9.00000    9.31452  3.49%     -    0s
+
+Explored 1 nodes (6 simplex iterations) in 0.01 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 9 3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:47:38 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 15 rows, 8 columns and 84 nonzeros
+Model fingerprint: 0x0e544f94
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 4e+01]
+Found heuristic solution: objective 4.0000000
+Presolve removed 3 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 12 rows, 6 columns, 51 nonzeros
+Found heuristic solution: objective 4.0000000
+Variable types: 0 continuous, 6 integer (0 binary)
+
+Root relaxation: objective 9.585215e+00, 7 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    9.58522    0    2    4.00000    9.58522   140%     -    0s
+H    0     0                       9.0000000    9.58522  6.50%     -    0s
+     0     0    9.58522    0    2    9.00000    9.58522  6.50%     -    0s
+
+Explored 1 nodes (7 simplex iterations) in 0.01 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 9 4 4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:47:58 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 15 rows, 8 columns and 84 nonzeros
+Model fingerprint: 0x0e544f94
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 4e+01]
+Found heuristic solution: objective 4.0000000
+Presolve removed 3 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 12 rows, 6 columns, 51 nonzeros
+Found heuristic solution: objective 4.0000000
+Variable types: 0 continuous, 6 integer (0 binary)
+
+Root relaxation: objective 9.585215e+00, 7 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    9.58522    0    2    4.00000    9.58522   140%     -    0s
+H    0     0                       9.0000000    9.58522  6.50%     -    0s
+     0     0    9.58522    0    2    9.00000    9.58522  6.50%     -    0s
+
+Explored 1 nodes (7 simplex iterations) in 0.01 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 9 4 4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:47:58 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 15 rows, 8 columns and 81 nonzeros
+Model fingerprint: 0xc817eeac
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 3e+01]
+Found heuristic solution: objective 3.0000000
+Presolve removed 3 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 12 rows, 6 columns, 51 nonzeros
+Variable types: 0 continuous, 6 integer (0 binary)
+
+Root relaxation: objective 9.314516e+00, 6 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    9.31452    0    1    3.00000    9.31452   210%     -    0s
+H    0     0                       9.0000000    9.31452  3.49%     -    0s
+     0     0    9.31452    0    1    9.00000    9.31452  3.49%     -    0s
+
+Explored 1 nodes (6 simplex iterations) in 0.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 9 3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:47:58 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 3 rows, 8 columns and 12 nonzeros
+Model fingerprint: 0xf8ee7a62
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 9e+00]
+Found heuristic solution: objective 517.0000000
+Presolve removed 0 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 3 rows, 3 columns, 6 nonzeros
+Found heuristic solution: objective 516.0000000
+Variable types: 0 continuous, 3 integer (0 binary)
+
+Root relaxation: objective 5.200000e+02, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0     520.0000000  520.00000  0.00%     -    0s
+
+Explored 0 nodes (1 simplex iterations) in 0.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 520 517 516 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.200000000000e+02, best bound 5.200000000000e+02, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:47:58 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 3 rows, 8 columns and 12 nonzeros
+Model fingerprint: 0x8677f868
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 9e+00]
+Found heuristic solution: objective 517.0000000
+Presolve removed 0 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 3 rows, 3 columns, 6 nonzeros
+Found heuristic solution: objective 516.0000000
+Variable types: 0 continuous, 3 integer (0 binary)
+
+Root relaxation: objective 5.200000e+02, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0     520.0000000  520.00000  0.00%     -    0s
+
+Explored 0 nodes (1 simplex iterations) in 0.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 520 517 516 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.200000000000e+02, best bound 5.200000000000e+02, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:47:58 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 5 rows, 8 columns and 25 nonzeros
+Model fingerprint: 0x11be9e78
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 2e+01]
+Found heuristic solution: objective 11.0000000
+Presolve removed 1 rows and 4 columns
+Presolve time: 0.00s
+Presolved: 4 rows, 4 columns, 12 nonzeros
+Variable types: 0 continuous, 4 integer (0 binary)
+
+Root relaxation: cutoff, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0        11.00000   11.00000  0.00%     -    0s
+
+Explored 0 nodes (1 simplex iterations) in 0.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:47:58 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 5 rows, 8 columns and 25 nonzeros
+Model fingerprint: 0x6cd86a6c
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 2e+01]
+Found heuristic solution: objective 11.0000000
+Presolve removed 1 rows and 4 columns
+Presolve time: 0.00s
+Presolved: 4 rows, 4 columns, 12 nonzeros
+Variable types: 0 continuous, 4 integer (0 binary)
+
+Root relaxation: cutoff, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0        11.00000   11.00000  0.00%     -    0s
+
+Explored 0 nodes (1 simplex iterations) in 0.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:47:58 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 3 rows, 8 columns and 12 nonzeros
+Model fingerprint: 0x9ce804be
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 9e+00]
+Found heuristic solution: objective 517.0000000
+Presolve removed 0 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 3 rows, 3 columns, 6 nonzeros
+Found heuristic solution: objective 516.0000000
+Variable types: 0 continuous, 3 integer (0 binary)
+
+Root relaxation: objective 5.200000e+02, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0     520.0000000  520.00000  0.00%     -    0s
+
+Explored 0 nodes (1 simplex iterations) in 0.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 520 517 516 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.200000000000e+02, best bound 5.200000000000e+02, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:47:58 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 5 rows, 8 columns and 25 nonzeros
+Model fingerprint: 0x082c24ef
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 2e+01]
+Found heuristic solution: objective 11.0000000
+Presolve removed 1 rows and 4 columns
+Presolve time: 0.00s
+Presolved: 4 rows, 4 columns, 12 nonzeros
+Variable types: 0 continuous, 4 integer (0 binary)
+
+Root relaxation: cutoff, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0        11.00000   11.00000  0.00%     -    0s
+
+Explored 0 nodes (1 simplex iterations) in 0.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:49:25 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 3 rows, 8 columns and 12 nonzeros
+Model fingerprint: 0x8677f868
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 9e+00]
+Found heuristic solution: objective 517.0000000
+Presolve removed 0 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 3 rows, 3 columns, 6 nonzeros
+Found heuristic solution: objective 516.0000000
+Variable types: 0 continuous, 3 integer (0 binary)
+
+Root relaxation: objective 5.200000e+02, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0     520.0000000  520.00000  0.00%     -    0s
+
+Explored 0 nodes (1 simplex iterations) in 0.01 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 520 517 516 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.200000000000e+02, best bound 5.200000000000e+02, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:50:17 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 3 rows, 8 columns and 12 nonzeros
+Model fingerprint: 0x8677f868
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 9e+00]
+Found heuristic solution: objective 517.0000000
+Presolve removed 0 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 3 rows, 3 columns, 6 nonzeros
+Found heuristic solution: objective 516.0000000
+Variable types: 0 continuous, 3 integer (0 binary)
+
+Root relaxation: objective 5.200000e+02, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0     520.0000000  520.00000  0.00%     -    0s
+
+Explored 0 nodes (1 simplex iterations) in 0.01 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 520 517 516 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.200000000000e+02, best bound 5.200000000000e+02, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 12:57:02 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 3 rows, 8 columns and 12 nonzeros
+Model fingerprint: 0x8677f868
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 9e+00]
+Found heuristic solution: objective 517.0000000
+Presolve removed 0 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 3 rows, 3 columns, 6 nonzeros
+Found heuristic solution: objective 516.0000000
+Variable types: 0 continuous, 3 integer (0 binary)
+
+Root relaxation: objective 5.200000e+02, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0     520.0000000  520.00000  0.00%     -    0s
+
+Explored 0 nodes (1 simplex iterations) in 0.01 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 520 517 516 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.200000000000e+02, best bound 5.200000000000e+02, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 13:12:09 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 15 rows, 8 columns and 84 nonzeros
+Model fingerprint: 0x0e544f94
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 4e+01]
+Found heuristic solution: objective 4.0000000
+Presolve removed 3 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 12 rows, 6 columns, 51 nonzeros
+Found heuristic solution: objective 4.0000000
+Variable types: 0 continuous, 6 integer (0 binary)
+
+Root relaxation: objective 9.585215e+00, 7 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    9.58522    0    2    4.00000    9.58522   140%     -    0s
+H    0     0                       9.0000000    9.58522  6.50%     -    0s
+     0     0    9.58522    0    2    9.00000    9.58522  6.50%     -    0s
+
+Explored 1 nodes (7 simplex iterations) in 0.01 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 9 4 4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 13:12:09 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 15 rows, 8 columns and 81 nonzeros
+Model fingerprint: 0xc817eeac
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 3e+01]
+Found heuristic solution: objective 3.0000000
+Presolve removed 3 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 12 rows, 6 columns, 51 nonzeros
+Variable types: 0 continuous, 6 integer (0 binary)
+
+Root relaxation: objective 9.314516e+00, 6 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    9.31452    0    1    3.00000    9.31452   210%     -    0s
+H    0     0                       9.0000000    9.31452  3.49%     -    0s
+     0     0    9.31452    0    1    9.00000    9.31452  3.49%     -    0s
+
+Explored 1 nodes (6 simplex iterations) in 0.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 9 3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 13:15:11 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 15 rows, 8 columns and 84 nonzeros
+Model fingerprint: 0x0e544f94
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 4e+01]
+Found heuristic solution: objective 4.0000000
+Presolve removed 3 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 12 rows, 6 columns, 51 nonzeros
+Found heuristic solution: objective 4.0000000
+Variable types: 0 continuous, 6 integer (0 binary)
+
+Root relaxation: objective 9.585215e+00, 7 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    9.58522    0    2    4.00000    9.58522   140%     -    0s
+H    0     0                       9.0000000    9.58522  6.50%     -    0s
+     0     0    9.58522    0    2    9.00000    9.58522  6.50%     -    0s
+
+Explored 1 nodes (7 simplex iterations) in 0.01 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 9 4 4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 13:15:11 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 15 rows, 8 columns and 81 nonzeros
+Model fingerprint: 0xc817eeac
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 3e+01]
+Found heuristic solution: objective 3.0000000
+Presolve removed 3 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 12 rows, 6 columns, 51 nonzeros
+Variable types: 0 continuous, 6 integer (0 binary)
+
+Root relaxation: objective 9.314516e+00, 6 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    9.31452    0    1    3.00000    9.31452   210%     -    0s
+H    0     0                       9.0000000    9.31452  3.49%     -    0s
+     0     0    9.31452    0    1    9.00000    9.31452  3.49%     -    0s
+
+Explored 1 nodes (6 simplex iterations) in 0.01 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 9 3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 13:15:20 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 15 rows, 8 columns and 84 nonzeros
+Model fingerprint: 0x0e544f94
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 4e+01]
+Found heuristic solution: objective 4.0000000
+Presolve removed 3 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 12 rows, 6 columns, 51 nonzeros
+Found heuristic solution: objective 4.0000000
+Variable types: 0 continuous, 6 integer (0 binary)
+
+Root relaxation: objective 9.585215e+00, 7 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    9.58522    0    2    4.00000    9.58522   140%     -    0s
+H    0     0                       9.0000000    9.58522  6.50%     -    0s
+     0     0    9.58522    0    2    9.00000    9.58522  6.50%     -    0s
+
+Explored 1 nodes (7 simplex iterations) in 0.01 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 3: 9 4 4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 13:15:20 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 15 rows, 8 columns and 81 nonzeros
+Model fingerprint: 0xc817eeac
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 3e+01]
+Found heuristic solution: objective 3.0000000
+Presolve removed 3 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 12 rows, 6 columns, 51 nonzeros
+Variable types: 0 continuous, 6 integer (0 binary)
+
+Root relaxation: objective 9.314516e+00, 6 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    9.31452    0    1    3.00000    9.31452   210%     -    0s
+H    0     0                       9.0000000    9.31452  3.49%     -    0s
+     0     0    9.31452    0    1    9.00000    9.31452  3.49%     -    0s
+
+Explored 1 nodes (6 simplex iterations) in 0.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 9 3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 13:18:25 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 3 rows, 8 columns and 14 nonzeros
+Model fingerprint: 0x5c51ac4d
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 2e+01]
+Found heuristic solution: objective 3.0000000
+Presolve removed 2 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 1 rows, 2 columns, 2 nonzeros
+Found heuristic solution: objective 17.0000000
+Variable types: 0 continuous, 2 integer (0 binary)
+
+Root relaxation: cutoff, 0 iterations, 0.00 seconds
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 17 3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.700000000000e+01, best bound 1.700000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 13:19:15 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 3 rows, 8 columns and 14 nonzeros
+Model fingerprint: 0x5c51ac4d
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 2e+01]
+Found heuristic solution: objective 3.0000000
+Presolve removed 2 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 1 rows, 2 columns, 2 nonzeros
+Found heuristic solution: objective 17.0000000
+Variable types: 0 continuous, 2 integer (0 binary)
+
+Root relaxation: cutoff, 0 iterations, 0.00 seconds
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 17 3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.700000000000e+01, best bound 1.700000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 13:19:52 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 3 rows, 8 columns and 14 nonzeros
+Model fingerprint: 0x5c51ac4d
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 2e+01]
+Found heuristic solution: objective 3.0000000
+Presolve removed 2 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 1 rows, 2 columns, 2 nonzeros
+Found heuristic solution: objective 17.0000000
+Variable types: 0 continuous, 2 integer (0 binary)
+
+Root relaxation: cutoff, 0 iterations, 0.00 seconds
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 17 3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.700000000000e+01, best bound 1.700000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 13:21:59 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 3 rows, 8 columns and 14 nonzeros
+Model fingerprint: 0x5c51ac4d
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 2e+01]
+Found heuristic solution: objective 3.0000000
+Presolve removed 2 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 1 rows, 2 columns, 2 nonzeros
+Found heuristic solution: objective 17.0000000
+Variable types: 0 continuous, 2 integer (0 binary)
+
+Root relaxation: cutoff, 0 iterations, 0.00 seconds
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 17 3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.700000000000e+01, best bound 1.700000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Sun Dec  5 13:22:35 2021
+
+Changed value of parameter LogFile to lemke_maxunsolvable.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 3 rows, 8 columns and 14 nonzeros
+Model fingerprint: 0x5c51ac4d
+Variable types: 0 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+02, 3e+02]
+  RHS range        [9e+00, 2e+01]
+Found heuristic solution: objective 3.0000000
+Presolve removed 2 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 1 rows, 2 columns, 2 nonzeros
+Found heuristic solution: objective 17.0000000
+Variable types: 0 continuous, 2 integer (0 binary)
+
+Root relaxation: cutoff, 0 iterations, 0.00 seconds
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 17 3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.700000000000e+01, best bound 1.700000000000e+01, gap 0.0000%

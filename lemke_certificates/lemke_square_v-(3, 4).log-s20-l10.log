@@ -1,0 +1,272 @@
+
+Gurobi 9.1.2 (linux64) logging started Wed Nov 24 10:26:27 2021
+
+Changed value of parameter LogFile to lemke_square_v-(3, 4).log-s20-l10.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 3600.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.4
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Warning: variable name "X[(7, 4),(7, 3)]" has a space
+Warning: constraint name "flow-constr-t0-v(3, 0)" has a space
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 5993 rows, 5440 columns and 20620 nonzeros
+Model fingerprint: 0x327668ce
+Variable types: 0 continuous, 5440 integer (4800 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e-01, 1e-01]
+  Bounds range     [1e+00, 5e+02]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 617 rows and 660 columns
+Presolve time: 0.04s
+Presolved: 5376 rows, 4780 columns, 17830 nonzeros
+Variable types: 0 continuous, 4780 integer (4140 binary)
+
+Root relaxation: objective 6.400000e+01, 126 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   64.00000    0   40          -   64.00000      -     -    0s
+     0     0   64.00000    0   85          -   64.00000      -     -    0s
+     0     0   64.00000    0   83          -   64.00000      -     -    0s
+     0     0   64.00000    0   54          -   64.00000      -     -    0s
+     0     0   64.00000    0   54          -   64.00000      -     -    0s
+     0     0   64.00000    0   46          -   64.00000      -     -    0s
+H    0     0                    4226.0000000   64.00000  98.5%     -    0s
+     0     0   64.00000    0   46 4226.00000   64.00000  98.5%     -    0s
+H    0     0                     183.2000000   64.00000  65.1%     -    0s
+H    0     2                     140.6000000   64.00000  54.5%     -    0s
+     0     2   64.00000    0   38  140.60000   64.00000  54.5%     -    0s
+H   31    64                     109.0000000   64.00000  41.3%  39.1    1s
+H   34    64                     107.5000000   64.00000  40.5%  39.1    1s
+H   36    64                     104.5000000   64.00000  38.8%  39.0    1s
+H   42    64                      97.1000000   64.00000  34.1%  38.7    1s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 101
+  Implied bound: 107
+  Clique: 9
+  MIR: 23
+  Flow cover: 10
+  RLT: 7
+  Relax-and-lift: 40
+
+Explored 63 nodes (4568 simplex iterations) in 1.84 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 7: 97.1 104.5 107.5 ... 4226
+
+Optimal solution found (tolerance 4.00e-01)
+Best objective 9.710000000000e+01, best bound 6.400000000000e+01, gap 34.0886%
+
+Gurobi 9.1.2 (linux64) logging started Wed Nov 24 10:31:28 2021
+
+Changed value of parameter LogFile to lemke_square_v-(3, 4).log-s20-l10.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 3600.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.4
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Warning: variable name "X[(7, 4),(7, 3)]" has a space
+Warning: constraint name "flow-constr-t0-v(3, 0)" has a space
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 5993 rows, 5440 columns and 20620 nonzeros
+Model fingerprint: 0x327668ce
+Variable types: 0 continuous, 5440 integer (4800 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e-01, 1e-01]
+  Bounds range     [1e+00, 5e+02]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 617 rows and 660 columns
+Presolve time: 0.04s
+Presolved: 5376 rows, 4780 columns, 17830 nonzeros
+Variable types: 0 continuous, 4780 integer (4140 binary)
+
+Root relaxation: objective 6.400000e+01, 126 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   64.00000    0   40          -   64.00000      -     -    0s
+     0     0   64.00000    0   85          -   64.00000      -     -    0s
+     0     0   64.00000    0   83          -   64.00000      -     -    0s
+     0     0   64.00000    0   54          -   64.00000      -     -    0s
+     0     0   64.00000    0   54          -   64.00000      -     -    0s
+     0     0   64.00000    0   46          -   64.00000      -     -    0s
+H    0     0                    4226.0000000   64.00000  98.5%     -    0s
+     0     0   64.00000    0   46 4226.00000   64.00000  98.5%     -    0s
+H    0     0                     183.2000000   64.00000  65.1%     -    0s
+H    0     2                     140.6000000   64.00000  54.5%     -    0s
+     0     2   64.00000    0   38  140.60000   64.00000  54.5%     -    0s
+H   31    64                     109.0000000   64.00000  41.3%  39.1    1s
+H   34    64                     107.5000000   64.00000  40.5%  39.1    1s
+H   36    64                     104.5000000   64.00000  38.8%  39.0    1s
+H   42    64                      97.1000000   64.00000  34.1%  38.7    1s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 101
+  Implied bound: 107
+  Clique: 9
+  MIR: 23
+  Flow cover: 10
+  RLT: 7
+  Relax-and-lift: 40
+
+Explored 63 nodes (4568 simplex iterations) in 1.90 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 7: 97.1 104.5 107.5 ... 4226
+
+Optimal solution found (tolerance 4.00e-01)
+Best objective 9.710000000000e+01, best bound 6.400000000000e+01, gap 34.0886%
+
+Gurobi 9.1.2 (linux64) logging started Wed Nov 24 11:38:42 2021
+
+Changed value of parameter LogFile to lemke_square_v-(3, 4).log-s20-l10.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 3600.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.34
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Warning: variable name "X[(7, 4),(7, 3)]" has a space
+Warning: constraint name "flow-constr-t0-v(3, 0)" has a space
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 5993 rows, 5440 columns and 20620 nonzeros
+Model fingerprint: 0x327668ce
+Variable types: 0 continuous, 5440 integer (4800 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e-01, 1e-01]
+  Bounds range     [1e+00, 5e+02]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 617 rows and 660 columns
+Presolve time: 0.04s
+Presolved: 5376 rows, 4780 columns, 17830 nonzeros
+Variable types: 0 continuous, 4780 integer (4140 binary)
+
+Root relaxation: objective 6.400000e+01, 126 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   64.00000    0   40          -   64.00000      -     -    0s
+     0     0   64.00000    0   85          -   64.00000      -     -    0s
+     0     0   64.00000    0   83          -   64.00000      -     -    0s
+     0     0   64.00000    0   54          -   64.00000      -     -    0s
+     0     0   64.00000    0   54          -   64.00000      -     -    0s
+     0     0   64.00000    0   46          -   64.00000      -     -    0s
+H    0     0                    4226.0000000   64.00000  98.5%     -    0s
+     0     0   64.00000    0   46 4226.00000   64.00000  98.5%     -    0s
+H    0     0                     183.2000000   64.00000  65.1%     -    0s
+H    0     2                     140.6000000   64.00000  54.5%     -    1s
+     0     2   64.00000    0   38  140.60000   64.00000  54.5%     -    1s
+H   31    64                     109.0000000   64.00000  41.3%  39.1    1s
+H   34    64                     107.5000000   64.00000  40.5%  39.1    1s
+H   36    64                     104.5000000   64.00000  38.8%  39.0    1s
+H   42    64                      97.1000000   64.00000  34.1%  38.7    1s
+H   95   128                      91.2000000   64.00000  29.8%  33.3    3s
+H   96   128                      84.5000000   64.00000  24.3%  33.1    3s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 101
+  Implied bound: 107
+  Clique: 9
+  MIR: 23
+  Flow cover: 10
+  RLT: 7
+  Relax-and-lift: 40
+
+Explored 127 nodes (5409 simplex iterations) in 3.19 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 84.5 91.2 97.1 ... 4226
+
+Optimal solution found (tolerance 3.40e-01)
+Best objective 8.450000000000e+01, best bound 6.400000000000e+01, gap 24.2604%
+
+Gurobi 9.1.2 (linux64) logging started Wed Nov 24 11:39:51 2021
+
+Changed value of parameter LogFile to lemke_square_v-(3, 4).log-s20-l10.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 3600.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Changed value of parameter MIPGap to 0.3
+   Prev: 0.0001  Min: 0.0  Max: inf  Default: 0.0001
+Warning: variable name "X[(7, 4),(7, 3)]" has a space
+Warning: constraint name "flow-constr-t0-v(3, 0)" has a space
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 5993 rows, 5440 columns and 20620 nonzeros
+Model fingerprint: 0x327668ce
+Variable types: 0 continuous, 5440 integer (4800 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e-01, 1e-01]
+  Bounds range     [1e+00, 5e+02]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 617 rows and 660 columns
+Presolve time: 0.04s
+Presolved: 5376 rows, 4780 columns, 17830 nonzeros
+Variable types: 0 continuous, 4780 integer (4140 binary)
+
+Root relaxation: objective 6.400000e+01, 126 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   64.00000    0   40          -   64.00000      -     -    0s
+     0     0   64.00000    0   85          -   64.00000      -     -    0s
+     0     0   64.00000    0   83          -   64.00000      -     -    0s
+     0     0   64.00000    0   54          -   64.00000      -     -    0s
+     0     0   64.00000    0   54          -   64.00000      -     -    0s
+     0     0   64.00000    0   46          -   64.00000      -     -    0s
+H    0     0                    4226.0000000   64.00000  98.5%     -    0s
+     0     0   64.00000    0   46 4226.00000   64.00000  98.5%     -    0s
+H    0     0                     183.2000000   64.00000  65.1%     -    0s
+H    0     2                     140.6000000   64.00000  54.5%     -    1s
+     0     2   64.00000    0   38  140.60000   64.00000  54.5%     -    1s
+H   31    64                     109.0000000   64.00000  41.3%  39.1    1s
+H   34    64                     107.5000000   64.00000  40.5%  39.1    1s
+H   36    64                     104.5000000   64.00000  38.8%  39.0    1s
+H   42    64                      97.1000000   64.00000  34.1%  38.7    1s
+H   95   128                      91.2000000   64.00000  29.8%  33.3    3s
+H   96   128                      84.5000000   64.00000  24.3%  33.1    3s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 101
+  Implied bound: 107
+  Clique: 9
+  MIR: 23
+  Flow cover: 10
+  RLT: 7
+  Relax-and-lift: 40
+
+Explored 127 nodes (5409 simplex iterations) in 3.29 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: 84.5 91.2 97.1 ... 4226
+
+Optimal solution found (tolerance 3.00e-01)
+Best objective 8.450000000000e+01, best bound 6.400000000000e+01, gap 24.2604%

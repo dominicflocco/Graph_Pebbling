@@ -1,0 +1,1012 @@
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:38:09 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 232 rows, 210 columns and 680 nonzeros
+Model fingerprint: 0x10002a07
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.4000000
+Presolve removed 80 rows and 90 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 120 columns, 410 nonzeros
+Variable types: 0 continuous, 120 integer (85 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    8   10.40000    7.00000  32.7%     -    0s
+H    0     0                       9.0000000    7.00000  22.2%     -    0s
+H    0     0                       8.8000000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   21    8.80000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   19    8.80000    7.00000  20.5%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0    4    8.40000    7.00000  16.7%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 29
+  Implied bound: 40
+  Clique: 6
+  MIR: 16
+  Flow cover: 2
+  Inf proof: 4
+  Zero half: 1
+  RLT: 3
+  Relax-and-lift: 10
+
+Explored 1228 nodes (10920 simplex iterations) in 0.83 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 5: 7.8 8.4 8.8 ... 10.4
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+
+User-callback calls 2651, time in user-callback 0.01 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:38:39 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 232 rows, 210 columns and 680 nonzeros
+Model fingerprint: 0x10002a07
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.4000000
+Presolve removed 80 rows and 90 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 120 columns, 410 nonzeros
+Variable types: 0 continuous, 120 integer (85 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    8   10.40000    7.00000  32.7%     -    0s
+H    0     0                       9.0000000    7.00000  22.2%     -    0s
+H    0     0                       8.8000000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   21    8.80000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   19    8.80000    7.00000  20.5%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0    4    8.40000    7.00000  16.7%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 29
+  Implied bound: 40
+  Clique: 6
+  MIR: 16
+  Flow cover: 2
+  Inf proof: 4
+  Zero half: 1
+  RLT: 3
+  Relax-and-lift: 10
+
+Explored 1228 nodes (10920 simplex iterations) in 0.91 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 5: 7.8 8.4 8.8 ... 10.4
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+
+User-callback calls 2645, time in user-callback 0.01 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:39:06 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 232 rows, 210 columns and 680 nonzeros
+Model fingerprint: 0x10002a07
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.4000000
+Presolve removed 80 rows and 90 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 120 columns, 410 nonzeros
+Variable types: 0 continuous, 120 integer (85 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    8   10.40000    7.00000  32.7%     -    0s
+H    0     0                       9.0000000    7.00000  22.2%     -    0s
+H    0     0                       8.8000000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   21    8.80000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   19    8.80000    7.00000  20.5%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0    4    8.40000    7.00000  16.7%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 29
+  Implied bound: 40
+  Clique: 6
+  MIR: 16
+  Flow cover: 2
+  Inf proof: 4
+  Zero half: 1
+  RLT: 3
+  Relax-and-lift: 10
+
+Explored 1228 nodes (10920 simplex iterations) in 0.92 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 5: 7.8 8.4 8.8 ... 10.4
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+
+User-callback calls 2644, time in user-callback 0.01 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:39:45 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 232 rows, 210 columns and 680 nonzeros
+Model fingerprint: 0x10002a07
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.4000000
+Presolve removed 80 rows and 90 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 120 columns, 410 nonzeros
+Variable types: 0 continuous, 120 integer (85 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    8   10.40000    7.00000  32.7%     -    0s
+H    0     0                       9.0000000    7.00000  22.2%     -    0s
+H    0     0                       8.8000000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   21    8.80000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   19    8.80000    7.00000  20.5%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0    4    8.40000    7.00000  16.7%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 29
+  Implied bound: 40
+  Clique: 6
+  MIR: 16
+  Flow cover: 2
+  Inf proof: 4
+  Zero half: 1
+  RLT: 3
+  Relax-and-lift: 10
+
+Explored 1228 nodes (10920 simplex iterations) in 0.81 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 5: 7.8 8.4 8.8 ... 10.4
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+
+User-callback calls 2645, time in user-callback 0.01 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:40:41 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 232 rows, 210 columns and 680 nonzeros
+Model fingerprint: 0x10002a07
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.4000000
+Presolve removed 80 rows and 90 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 120 columns, 410 nonzeros
+Variable types: 0 continuous, 120 integer (85 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    8   10.40000    7.00000  32.7%     -    0s
+H    0     0                       9.0000000    7.00000  22.2%     -    0s
+H    0     0                       8.8000000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   21    8.80000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   19    8.80000    7.00000  20.5%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0    4    8.40000    7.00000  16.7%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 29
+  Implied bound: 40
+  Clique: 6
+  MIR: 16
+  Flow cover: 2
+  Inf proof: 4
+  Zero half: 1
+  RLT: 3
+  Relax-and-lift: 10
+
+Explored 1228 nodes (10920 simplex iterations) in 0.91 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 5: 7.8 8.4 8.8 ... 10.4
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+
+User-callback calls 2644, time in user-callback 0.01 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:42:04 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 232 rows, 210 columns and 680 nonzeros
+Model fingerprint: 0x10002a07
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.4000000
+Presolve removed 80 rows and 90 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 120 columns, 410 nonzeros
+Variable types: 0 continuous, 120 integer (85 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    8   10.40000    7.00000  32.7%     -    0s
+H    0     0                       9.0000000    7.00000  22.2%     -    0s
+H    0     0                       8.8000000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   21    8.80000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   19    8.80000    7.00000  20.5%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0    4    8.40000    7.00000  16.7%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 29
+  Implied bound: 40
+  Clique: 6
+  MIR: 16
+  Flow cover: 2
+  Inf proof: 4
+  Zero half: 1
+  RLT: 3
+  Relax-and-lift: 10
+
+Explored 1228 nodes (10920 simplex iterations) in 0.69 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 5: 7.8 8.4 8.8 ... 10.4
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+
+User-callback calls 2650, time in user-callback 0.01 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:44:28 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 232 rows, 210 columns and 680 nonzeros
+Model fingerprint: 0x10002a07
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.4000000
+Presolve removed 80 rows and 90 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 120 columns, 410 nonzeros
+Variable types: 0 continuous, 120 integer (85 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    8   10.40000    7.00000  32.7%     -    0s
+H    0     0                       9.0000000    7.00000  22.2%     -    0s
+H    0     0                       8.8000000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   21    8.80000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   19    8.80000    7.00000  20.5%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0    4    8.40000    7.00000  16.7%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 29
+  Implied bound: 40
+  Clique: 6
+  MIR: 16
+  Flow cover: 2
+  Inf proof: 4
+  Zero half: 1
+  RLT: 3
+  Relax-and-lift: 10
+
+Explored 1228 nodes (10920 simplex iterations) in 0.89 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 5: 7.8 8.4 8.8 ... 10.4
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+
+User-callback calls 2647, time in user-callback 0.01 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:45:04 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 232 rows, 210 columns and 680 nonzeros
+Model fingerprint: 0x10002a07
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.4000000
+Presolve removed 80 rows and 90 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 120 columns, 410 nonzeros
+Variable types: 0 continuous, 120 integer (85 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    8   10.40000    7.00000  32.7%     -    0s
+H    0     0                       9.0000000    7.00000  22.2%     -    0s
+H    0     0                       8.8000000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   21    8.80000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   19    8.80000    7.00000  20.5%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0    4    8.40000    7.00000  16.7%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 29
+  Implied bound: 40
+  Clique: 6
+  MIR: 16
+  Flow cover: 2
+  Inf proof: 4
+  Zero half: 1
+  RLT: 3
+  Relax-and-lift: 10
+
+Explored 1228 nodes (10920 simplex iterations) in 0.85 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 5: 7.8 8.4 8.8 ... 10.4
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+
+User-callback calls 2640, time in user-callback 0.01 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:46:47 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 232 rows, 210 columns and 680 nonzeros
+Model fingerprint: 0x10002a07
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.4000000
+Presolve removed 80 rows and 90 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 120 columns, 410 nonzeros
+Variable types: 0 continuous, 120 integer (85 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    8   10.40000    7.00000  32.7%     -    0s
+H    0     0                       9.0000000    7.00000  22.2%     -    0s
+H    0     0                       8.8000000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   21    8.80000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   19    8.80000    7.00000  20.5%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0    4    8.40000    7.00000  16.7%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 29
+  Implied bound: 40
+  Clique: 6
+  MIR: 16
+  Flow cover: 2
+  Inf proof: 4
+  Zero half: 1
+  RLT: 3
+  Relax-and-lift: 10
+
+Explored 1228 nodes (10920 simplex iterations) in 0.98 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 5: 7.8 8.4 8.8 ... 10.4
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+
+User-callback calls 2644, time in user-callback 0.01 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:51:09 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 232 rows, 210 columns and 680 nonzeros
+Model fingerprint: 0x10002a07
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 10.4000000
+Presolve removed 80 rows and 90 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 120 columns, 410 nonzeros
+Variable types: 0 continuous, 120 integer (85 binary)
+
+Root relaxation: objective 7.000000e+00, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    8   10.40000    7.00000  32.7%     -    0s
+H    0     0                       9.0000000    7.00000  22.2%     -    0s
+H    0     0                       8.8000000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   21    8.80000    7.00000  20.5%     -    0s
+     0     0    7.00000    0   19    8.80000    7.00000  20.5%     -    0s
+H    0     0                       8.4000000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0   10    8.40000    7.00000  16.7%     -    0s
+     0     0    7.00000    0    4    8.40000    7.00000  16.7%     -    0s
+H    0     0                       7.8000000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     0    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+     0     2    7.00000    0    4    7.80000    7.00000  10.3%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 29
+  Implied bound: 40
+  Clique: 6
+  MIR: 16
+  Flow cover: 2
+  Inf proof: 4
+  Zero half: 1
+  RLT: 3
+  Relax-and-lift: 10
+
+Explored 1228 nodes (10920 simplex iterations) in 0.90 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 5: 7.8 8.4 8.8 ... 10.4
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.800000000000e+00, best bound 7.800000000000e+00, gap 0.0000%
+
+User-callback calls 2649, time in user-callback 0.01 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:55:51 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 222 rows, 210 columns and 655 nonzeros
+Model fingerprint: 0x741be57a
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 9.6000000
+Presolve removed 70 rows and 85 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 125 columns, 430 nonzeros
+Variable types: 0 continuous, 125 integer (90 binary)
+
+Root relaxation: objective 7.000000e+00, 28 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    7    9.60000    7.00000  27.1%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   14    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   14    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    2    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.2000000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    4    7.20000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+     0     2    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 3
+  Implied bound: 2
+  Projected implied bound: 3
+  Clique: 1
+  MIR: 6
+  Flow cover: 3
+  Zero half: 1
+  RLT: 1
+  Relax-and-lift: 6
+
+Explored 7 nodes (623 simplex iterations) in 1.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 7.2 8 8.2 9.6 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.200000000000e+00, best bound 7.200000000000e+00, gap 0.0000%
+
+User-callback calls 163, time in user-callback 0.00 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:59:21 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 222 rows, 210 columns and 655 nonzeros
+Model fingerprint: 0x741be57a
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 9.6000000
+Presolve removed 70 rows and 85 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 125 columns, 430 nonzeros
+Variable types: 0 continuous, 125 integer (90 binary)
+
+Root relaxation: objective 7.000000e+00, 28 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    7    9.60000    7.00000  27.1%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   14    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   14    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    2    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.2000000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    4    7.20000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+     0     2    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 3
+  Implied bound: 2
+  Projected implied bound: 3
+  Clique: 1
+  MIR: 6
+  Flow cover: 3
+  Zero half: 1
+  RLT: 1
+  Relax-and-lift: 6
+
+Explored 7 nodes (623 simplex iterations) in 0.85 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 7.2 8 8.2 9.6 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.200000000000e+00, best bound 7.200000000000e+00, gap 0.0000%
+
+User-callback calls 168, time in user-callback 0.00 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 15:59:37 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 222 rows, 210 columns and 655 nonzeros
+Model fingerprint: 0x741be57a
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 9.6000000
+Presolve removed 70 rows and 85 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 125 columns, 430 nonzeros
+Variable types: 0 continuous, 125 integer (90 binary)
+
+Root relaxation: objective 7.000000e+00, 28 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    7    9.60000    7.00000  27.1%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   14    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   14    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    2    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.2000000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    4    7.20000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+     0     2    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 3
+  Implied bound: 2
+  Projected implied bound: 3
+  Clique: 1
+  MIR: 6
+  Flow cover: 3
+  Zero half: 1
+  RLT: 1
+  Relax-and-lift: 6
+
+Explored 7 nodes (623 simplex iterations) in 1.27 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 7.2 8 8.2 9.6 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.200000000000e+00, best bound 7.200000000000e+00, gap 0.0000%
+
+User-callback calls 160, time in user-callback 0.00 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 16:00:18 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 222 rows, 210 columns and 655 nonzeros
+Model fingerprint: 0x741be57a
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 9.6000000
+Presolve removed 70 rows and 85 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 125 columns, 430 nonzeros
+Variable types: 0 continuous, 125 integer (90 binary)
+
+Root relaxation: objective 7.000000e+00, 28 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    7    9.60000    7.00000  27.1%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   14    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   14    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    2    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.2000000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    4    7.20000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+     0     2    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 3
+  Implied bound: 2
+  Projected implied bound: 3
+  Clique: 1
+  MIR: 6
+  Flow cover: 3
+  Zero half: 1
+  RLT: 1
+  Relax-and-lift: 6
+
+Explored 7 nodes (623 simplex iterations) in 0.92 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 7.2 8 8.2 9.6 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.200000000000e+00, best bound 7.200000000000e+00, gap 0.0000%
+
+User-callback calls 165, time in user-callback 0.00 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:16:41 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 222 rows, 210 columns and 655 nonzeros
+Model fingerprint: 0x741be57a
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 9.6000000
+Presolve removed 70 rows and 85 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 125 columns, 430 nonzeros
+Variable types: 0 continuous, 125 integer (90 binary)
+
+Root relaxation: objective 7.000000e+00, 28 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    7    9.60000    7.00000  27.1%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   14    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   14    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    2    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.2000000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    4    7.20000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+     0     2    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 3
+  Implied bound: 2
+  Projected implied bound: 3
+  Clique: 1
+  MIR: 6
+  Flow cover: 3
+  Zero half: 1
+  RLT: 1
+  Relax-and-lift: 6
+
+Explored 7 nodes (623 simplex iterations) in 1.07 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 7.2 8 8.2 9.6 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.200000000000e+00, best bound 7.200000000000e+00, gap 0.0000%
+
+User-callback calls 168, time in user-callback 0.00 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 9.1.2 (linux64) logging started Tue Nov  9 19:16:47 2021
+
+Changed value of parameter LogFile to lemke-s5-l4.log
+   Prev:   Default: 
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 222 rows, 210 columns and 655 nonzeros
+Model fingerprint: 0x741be57a
+Variable types: 0 continuous, 210 integer (170 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 8e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 9.6000000
+Presolve removed 70 rows and 85 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 125 columns, 430 nonzeros
+Variable types: 0 continuous, 125 integer (90 binary)
+
+Root relaxation: objective 7.000000e+00, 28 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.00000    0    7    9.60000    7.00000  27.1%     -    0s
+H    0     0                       8.2000000    7.00000  14.6%     -    0s
+     0     0    7.00000    0   14    8.20000    7.00000  14.6%     -    0s
+H    0     0                       8.0000000    7.00000  12.5%     -    0s
+     0     0    7.00000    0   14    8.00000    7.00000  12.5%     -    0s
+     0     0    7.00000    0    2    8.00000    7.00000  12.5%     -    0s
+H    0     0                       7.2000000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    4    7.20000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+     0     0    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+     0     2    7.00000    0    5    7.20000    7.00000  2.78%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 3
+  Implied bound: 2
+  Projected implied bound: 3
+  Clique: 1
+  MIR: 6
+  Flow cover: 3
+  Zero half: 1
+  RLT: 1
+  Relax-and-lift: 6
+
+Explored 7 nodes (623 simplex iterations) in 0.78 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: 7.2 8 8.2 9.6 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.200000000000e+00, best bound 7.200000000000e+00, gap 0.0000%
+
+User-callback calls 162, time in user-callback 0.00 sec
+Warning: variables 0 and 42 have the same name "X[1,0]"
+Warning: linear constraint 45 and linear constraint 46 have the same name "weight-constr-t4"
+Warning: to let Gurobi read it back, use rlp format

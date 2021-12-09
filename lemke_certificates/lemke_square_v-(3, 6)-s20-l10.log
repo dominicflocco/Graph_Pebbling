@@ -1,0 +1,56 @@
+
+Gurobi 9.1.2 (linux64) logging started Wed Dec  1 09:16:41 2021
+
+Changed value of parameter LogFile to lemke_square_v-(3, 6)-s20-l10.log
+   Prev:   Default: 
+Changed value of parameter Threads to 32
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Warning: variable name "X[(7, 4),(7, 3)]" has a space
+Warning: constraint name "flow-constr-t0-v(3, 0)" has a space
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 5993 rows, 5440 columns and 20620 nonzeros
+Model fingerprint: 0x181174d3
+Variable types: 0 continuous, 5440 integer (4800 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e-01, 1e-01]
+  Bounds range     [1e+00, 5e+02]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 617 rows and 660 columns
+Presolve time: 0.04s
+Presolved: 5376 rows, 4780 columns, 17830 nonzeros
+Variable types: 0 continuous, 4780 integer (4140 binary)
+
+Root relaxation: objective 6.400000e+01, 126 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   64.00000    0   42          -   64.00000      -     -    0s
+     0     0   64.00000    0  109          -   64.00000      -     -    0s
+     0     0   64.00000    0  109          -   64.00000      -     -    0s
+     0     0   64.00000    0   50          -   64.00000      -     -    0s
+     0     0   64.00000    0   54          -   64.00000      -     -    0s
+     0     0   64.00000    0   56          -   64.00000      -     -    0s
+
+Cutting planes:
+  Gomory: 3
+  Cover: 61
+  Implied bound: 78
+  Clique: 13
+  MIR: 39
+  StrongCG: 1
+  Flow cover: 29
+  Zero half: 1
+  RLT: 11
+  Relax-and-lift: 30
+
+Explored 1 nodes (1576 simplex iterations) in 0.39 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 0
+
+Solve interrupted
+Best objective -, best bound 6.400000000000e+01, gap -
