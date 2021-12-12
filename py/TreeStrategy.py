@@ -18,6 +18,18 @@ import time
 class TreeStrategy: 
 
     def __init__(self, graph, root, length): 
+        """
+        Initializes TreeStrategy Object. 
+        
+        Attributes: 
+            graph - PebblingGraph object 
+            root - root of TreeStrategy 
+            length - maximum length of TreeStrategy 
+            weights - associated weight function that maps vertices to 
+                the nonnegative integers 
+            nodes - list of nodes in TreeStrategy  
+            edges - list of edges in TreeStrategy
+        """
         self.root = root 
         self.edges = []
         self.weights = {}
@@ -25,13 +37,36 @@ class TreeStrategy:
         self.maxLen = length
         self.nodes = list(set([i for i, j in self.edges]))
 
-    def addWeight(self, vertex, weight): 
+    def addWeight(self, vertex, weight):
+        """
+        Adds a weight to the associated weight function of the TreeStrategy 
+        
+        Parameters: 
+            vertex - node in strategy 
+            weight - nonnegative integer to be assigned to vertex 
+        """
         self.weights[vertex] = weight
     
     def addEdge(self, src, dst): 
+        """
+        Adds a directed edge to the TreeStrategy structure. Directed edges 
+        point away from root r.
+        
+        Parameters: 
+            src - source vertex of edge to be added
+            dst - destination vertex of edge to be added
+        """
         self.edges.append((src, dst))
 
     def getWeight(self, vertex):
+        """
+        Gets the weight of a specified vetex in TreeStrategy 
+        
+        Parameters: 
+            vertex - vertex in TreeStrategy 
+        Returns: 
+            weight - weight of vertex in TreeStrategy 
+        """
         return self.weights[vertex]
     
     def size(self):
@@ -39,7 +74,21 @@ class TreeStrategy:
 
 class NonTreeStrategy: 
     
-    def __init__(self, graph, edges): 
+    def __init__(self, graph, edges):
+        """
+        Initializes NonTreeStrategy object. 
+        
+        Attributes: 
+            graph - PebblingGraph object 
+            root - root of strategy
+            weights - associated weight function that maps vertices to 
+                the nonnegative integers 
+            nodes - list of nodes in TreeStrategy  
+            edges - list of edges in TreeStrategy
+            lollipop - nx.DiGraph object that stores structure of NonTreeStrategy. 
+                Edges are directed towards x0
+        
+        """
         self.graph = graph 
         self.root = self.graph.root 
         self.edges = list(edges) 
@@ -56,12 +105,27 @@ class NonTreeStrategy:
         
 
     def getWeight(self, vertex):
+        """
+        Gets the weight of a specified vetex in NonTreeStrategy 
+        
+        Parameters: 
+            vertex - vertex in NonTreeStrategy 
+        Returns: 
+            weight - weight of vertex in NonTreeStrategy 
+        """
         return self.weights[vertex]
 
     def size(self):
         return len(self.edges)
 
     def generateWeights(self):
+        """
+        Generates associated weight function for an even lollipop strategy 
+        using Lemma 3.4.1 (Cranston et. al). The function leverages the directed
+        edges in even lollipop strategies, which point edges towards x0, to generate
+        valid vertex weights. 
+        
+        """
         # try to make weights integers 
 
         tail = []
