@@ -92,6 +92,22 @@ class Optimizer:
         print("----------------------------")
         
     def hybridOpt(self, graph, lollipops, size, length):
+        """
+        Mixed-Integer Linear Program that uses combination of even lollipop strategies 
+        and tree strategies to minimize the pebbling bound of a given pebbling graph. The
+        program takes in a set of fixed lollipop strategies and their associated weight functions
+        and optimizes the scaling of these weight functions and generates a set of tree
+        strategies that, along with the scaled lollipop strategies, minimizes the 
+        pebbling bound.
+        
+        Parameters: 
+            graph - pebbling graph 
+            lollipops - set of Nontree Objects 
+            size - number of tree strategies to generate 
+            length - max length of tree strategies 
+        Returns: 
+            bound - pebbling bound obtained by solution
+        """
 
         model = gp.Model('hybrid-optimizer')
         model.setParam(GRB.Param.LogFile, self.logFile + '-s' + str(size) + '-l' + str(length)+ '.log')
@@ -124,9 +140,9 @@ class Optimizer:
         for i in range(size):
             X[i] = model.addVars(arcs, vtype=GRB.BINARY, name='X') 
             Y[i] = model.addVars(nodes, vtype=GRB.BINARY, name='Y')
-            Z[i] = model.addVars(nodes, lb=0, ub=ubz, vtype=GRB.INTEGER, name='Z')
+            Z[i] = model.addVars(nodes, lb=0, ub=ubz, vtype=GRB.CONTINUOUS, name='Z')
 
-        B = model.addVar(range(len(lollipops)), lb=0, vtype=GRB.INTEGER, name="beta")
+        B = model.addVar(range(len(lollipops)), lb=0, vtype=GRB.COUNTINUOUS, name="beta")
         # Add Constraints
         # Flow Constraint
         for t in range(size): # for all t in T
@@ -288,7 +304,7 @@ class Optimizer:
         for i in range(size):
             X[i] = model.addVars(graph.arcs, vtype=GRB.BINARY, name='X') 
             Y[i] = model.addVars(graph.nodes, vtype=GRB.BINARY, name='Y')
-            Z[i] = model.addVars(graph.nodes, lb=0, ub=ubz, vtype=GRB.INTEGER, name='Z')
+            Z[i] = model.addVars(graph.nodes, lb=0, ub=ubz, vtype=GRB.CONTINUOUS, name='Z')
 
         # Add Constraints
         # Flow Constraint
@@ -422,7 +438,7 @@ class Optimizer:
         for i in range(size):
             X[i] = model.addVars(arcs, vtype=GRB.BINARY, name='X') 
             Y[i] = model.addVars(nodes, vtype=GRB.BINARY, name='Y')
-            Z[i] = model.addVars(nodes, lb=0, ub=ubz, vtype=GRB.INTEGER, name='Z')
+            Z[i] = model.addVars(nodes, lb=0, ub=ubz, vtype=GRB.CONTINUOUS, name='Z')
         
         # Add Constraints
         # Flow Constraint
