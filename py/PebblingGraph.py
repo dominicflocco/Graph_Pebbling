@@ -231,6 +231,18 @@ class PebblingGraph:
         return lollipops
 
     def isUnique(self, cycle, allCycles): 
+        """
+        Determines whethere given cycle is unique from a set of cycles previously
+        found in a Pebbling Graph. A cycle is unique from a set of cycles if 
+        if has vertex and edge sets that are unique from all previously found cycles. 
+        
+        Parameters: 
+            cycle - object we wish to determine if unique 
+            allCycles - set of cycles already found in graph 
+        Returns: 
+            True if cycle is unique from set all Cycles 
+            False otherwise
+        """
 
         uniqueList = []
         arcs = list(set([(j,i) for i,j in cycle]))
