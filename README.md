@@ -1,5 +1,4 @@
-# README
-
+# Graph Pebbling
 Mixed-Integer Linear Programming Approaches to Weight Function Generation in Graph Pebbling
 
 This code base provides an inquiry into Mixed-Integer Linear Programming (MILP) approaches for 
