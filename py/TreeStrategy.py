@@ -23,13 +23,18 @@ class TreeStrategy:
         self.weights = {}
         self.graph = graph 
         self.maxLen = length
-        self.nodes = list(set([i for i, j in self.edges]))
+        self.nodes = set()
+        self.nodes.add(root)
+        self.tree = nx.Graph()
+        self.diTree = nx.DiGraph()
 
     def addWeight(self, vertex, weight): 
         self.weights[vertex] = weight
-    
+
     def addEdge(self, src, dst): 
-        self.edges.append((src, dst))
+        self.edges.append((str(src), str(dst)))
+        self.nodes.add(src)
+        self.nodes.add(dst)
 
     def getWeight(self, vertex):
         return self.weights[vertex]
@@ -37,12 +42,78 @@ class TreeStrategy:
     def size(self):
         return len(self.edges)
 
+    def saveCertificate(self, filename): 
+
+        n = int(math.sqrt(len(self.graph.nodes)))
+        cert = np.zeros((n,n))
+        for v in list(self.nodes):
+            i = int(v[1])
+            j = int(v[4])
+            cert[i][j] = round(self.getWeight(v), 2)   
+        pd.DataFrame(cert).to_csv(filename)
+    
+    def saveEdges(self, filename):
+
+        pd.DataFrame(self.edges).to_csv(filename)
+    
+    def visualizeStrategy(self, filename=False):
+        
+        self.tree.add_edges_from(self.edges)
+        labels ={}
+        
+        for v in list(self.nodes):
+            w = self.getWeight(v)
+            label = v + "\n" + str(round(w, 2))
+            labels[str(v)] = label
+        labels[self.root] = 'r'
+        # print(list(self.nodes))
+        # Networkx parameters
+        node_size = 600
+        font_size = 10
+        color = 'whitesmoke'
+        pos = nx.kamada_kawai_layout(self.tree)
+
+        nx.draw(self.tree, 
+            pos=pos, 
+            node_size=node_size, 
+            font_size=font_size, 
+            labels=labels, 
+            with_labels=True, 
+            node_color=color)
+            
+        plt.show()
+        if filename: 
+            plt.savefig(filename)
+        plt.close()
+
+    def verify(self): 
+        self.tree.add_edges_from(self.edges)
+        directedEdges = []
+        visited = set()
+        v = self.root
+        while len(visited) != len(self.nodes):
+            neighbors = set(self.tree[v])
+            notvisited = list(neighbors.symmetric_difference(visited))
+
+            for u in notvisited:
+                directedEdges.append((v, u))
+                visited.add(u)
+                
+            
+
+
+
+
+
+
+
 class NonTreeStrategy: 
     
     def __init__(self, graph, edges): 
         self.graph = graph 
         self.root = self.graph.root 
         self.edges = list(edges) 
+        
         outNodes = set([str(i) for i, j in self.edges])
         inNodes = set([str(j) for i, j in self.edges])
         self.nodes = list(outNodes.union(inNodes))

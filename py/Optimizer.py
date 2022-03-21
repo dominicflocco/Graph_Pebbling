@@ -10,7 +10,7 @@ import math
 import csv
 import pandas as pd
 import time
-import cplex 
+import cplex as cpx
 
 from TreeStrategy import TreeStrategy 
 from TreeStrategy import NonTreeStrategy
@@ -19,7 +19,7 @@ from PebblingGraph import PebblingGraph
 
 class Optimizer: 
 
-    def __init__(self, solver, logFile, lpFile, threads=False, objGap=False, timeLimit=False, cert=False):
+    def __init__(self, solver, logFile, lpFile, paramFile,threads=False, objGap=False, timeLimit=False, cert=False):
         """
         Initialize the Optimizer class. 
 
@@ -38,8 +38,9 @@ class Optimizer:
         self.logFile = logFile
         self.objGap = objGap
         self.cert = cert
+        self.paramFile = paramFile
 
-    def printResults(self, n, e, size, length, rt, r, bound):
+    def printResults(self, n, e, size, length, rt, r, bound, numNodes, sym):
         """
         Pretty print results and important information from optimization to console. 
 
@@ -54,16 +55,34 @@ class Optimizer:
 
         """
         
+        
+        params = {}
+        if sym:  
+            params["Tree Type"] = "symmetric"
+        else:
+            params["Tree Type"] = "vanilla"
+        params['Threads'] = str(self.threads)
+        params['Solver'] = self.solver
+        params["|V|"] = str(n)
+        params['|E|'] = str(e)
+        params['|T|'] = str(size)
+        if numNodes:
+            params['Num Nodes'] = str(numNodes)
+        else: 
+            params['Num Nodes'] = "unbounded"
+        params['Max Len'] = str(length)
+        params['runtime'] = str(rt)
+        params["root"] = str(r)
+        params['Bound'] = str(bound)
         print("----------------------------")
-        print("|V| = " + str(n))
-        print("|E| = " + str(e))
-        print("|T| = " + str(size*2))
-        print("Max. Length = " + str(length))
-        print("Runtime: " + str(rt))
-        print("root: " + str(r))
-        print("Bound =  " + str(bound))
+        for k,v in params.items():
+            print("%s: %s" % (k, v))
         print("----------------------------")
-
+        param_df = pd.DataFrame(columns=params.keys())
+        param_df = param_df.append(params, ignore_index=True)
+        param_df.to_csv(self.paramFile + ".csv")
+        return param_df 
+        
     def printHybridResults(self, n, e, N, size, length, rt, r, bound):
         """
         Pretty print results and important information from optimization to console. 
@@ -180,7 +199,8 @@ class Optimizer:
 
         if self.solver == "CPLEX":
             trees = {} 
-            cplexModel = cplex.importModel(lpFilename)
+            
+            cplexModel = cpx.importModel(lpFilename)
             cplexModel.solve()
 
             for t in range(size):
@@ -222,32 +242,33 @@ class Optimizer:
 
             rt = model.Runtime
         
-        #self.saveCertificate(strategies)
+        
         self.printHybridResults(n, e, N, size, length, rt, r, bound) 
         
         return strategies, bound, rt
         
-    def saveCertificate(self, strategies): 
+    # def saveCertificate(self, strategies): 
 
-        weights = {}
-        t = 0
-        for strat in strategies.keys():
-            strategy = strategies[strat]
-            weights[t] = np.zeros((int(math.sqrt(len(strategy.nodes))), int(math.sqrt(len(strategy.nodes)))))
-            for v in strategy.nodes:
-                i = int(v[1])
-                j = int(v[4])
-                weights[t][i][j] = strategy.weights[v]
-            t+= 1
+    #     weights = {}
+    #     t = 0
+    #     for strat in strategies.keys():
+    #         strategy = strategies[strat]
+    #         weights[t] = np.zeros((int(math.sqrt(len(strategy.nodes))), int(math.sqrt(len(strategy.nodes)))))
+    #         for v in strategy.nodes:
+    #             i = int(v[1])
+    #             j = int(v[4])
+    #             weights[t][i][j] = strategy.weights[v]
+    #         t+= 1
 
-        for t in weights:
-            pd.DataFrame(weights[t]).to_csv("lemke_sq_certificate-v" + str(strategies[0].root) + ".csv")
-        i = 0
+    #     for t in weights:
+    #         pd.DataFrame(weights[t]).to_csv("lemke_sq_certificate-v" + str(strategies[0].root) + ".csv")
+    #     i = 0
 
-        for t in strategies:
-            pd.DataFrame(strategies[t].edges).to_csv("lemke_sq_edges_tree-v"+ str(strategies[0].root) + ".csv")
-            i += 1 
-    def generateTreeStrategies(self, graph, size, length):
+    #     for t in strategies:
+    #         pd.DataFrame(strategies[t].edges).to_csv("lemke_sq_edges_tree-v"+ str(strategies[0].root) + ".csv")
+    #         i += 1 
+    
+    def generateTreeStrategies(self, graph, size, length, numNodes):
         """
         Generates a set of tree strategies using linear integer programming and a specified
         solver. 
@@ -264,16 +285,17 @@ class Optimizer:
         """ 
         model = gp.Model('tree-optimizer')
 
-       
+        model.setParam(GRB.Param.LogFile, self.logFile + '.log')
+        model.setParam(GRB.Param.MIPFocus, 1)
+
         if self.threads: 
             model.Params.Threads = self.threads
-        
         if self.timeLimit: 
-
             model.setParam(GRB.Param.TimeLimit, self.timeLimit)
+        if self.objGap:
+            model.setParam(GRB.Param.MIPGap, self.objGap)
         
-        model.setParam(GRB.Param.LogFile, self.logFile + '-s' + str(size) + '-l' + str(length)+ '.log')
-        model.setParam(GRB.Param.MIPGap, self.objGap)
+        
         r = str(graph.root)
         e = len(graph.edges)
         n = len(graph.nodes)
@@ -284,11 +306,13 @@ class Optimizer:
         X = {}
         Y = {}
         Z = {}
+
+        arcs = list(graph.arcs)
         
         for i in range(size):
-            X[i] = model.addVars(graph.arcs, vtype=GRB.BINARY, name='X') 
+            X[i] = model.addVars(arcs, vtype=GRB.BINARY, name='X') 
             Y[i] = model.addVars(graph.nodes, vtype=GRB.BINARY, name='Y')
-            Z[i] = model.addVars(graph.nodes, lb=0, ub=ubz, vtype=GRB.INTEGER, name='Z')
+            Z[i] = model.addVars(graph.nodes, lb=0, ub=ubz, vtype=GRB.CONTINUOUS, name='Z')
 
         # Add Constraints
         # Flow Constraint
@@ -325,6 +349,14 @@ class Optimizer:
             for i in graph.nodes: # for all i in V
                 model.addConstr(Z[t][i] - (2**(length-1))*Y[t][i] <= 0, name='weight-constr2-t'+ str(t) + '-v' + str(i))
                 model.addConstr(Y[t][i] - Z[t][i] <= 0,  name='weight-constr3-t'+ str(t) + '-v' + str(i))
+        
+        # Tree Size Constraint 
+        if numNodes: 
+            for t in range(size):
+                expr = gp.LinExpr()
+                for i in graph.nodes: 
+                        expr.addTerms(1.0, Y[t][i])
+                model.addConstr(expr - numNodes <= 0) 
 
         # Set objective
         obj = gp.LinExpr()
@@ -334,35 +366,44 @@ class Optimizer:
 
         model.setObjective(obj, GRB.MINIMIZE)
 
-        lpFilename = self.lpFile + "_size" + str(size) + "_len" + str(length) + '.lp'
+        lpFilename = self.lpFile + '.lp'
         model.write(lpFilename)
 
         if self.solver == "CPLEX": 
-            cplexModel = cplex.importModel(lpFilename)
+            
+            cplexModel = cpx.Cplex(lpFilename)
             cplexModel.solve()
+            
+            cpx.parameters.threads = self.threads
 
+            status = CPXsetlogfilename(cplexModel, self.logFile + '.log')
+            
             strategies = {}
             for t in range(size):
-                trees[t] = TreeStrategy(graph, graph.root, length)
-                for i in graph.nodes:
-                    tree[t].addWeight(i, cplexModel.GetValue(Z[t][i]))
+                strategies[t] = TreeStrategy(graph, graph.root, length)
                 for i, j in graph.arcs:
-                    if cplexModel.GetValue(X[t][(i, j)]):
-                        trees[t].addEdge(i, j)
+                    if cplexModel.getValue(X[t][(i, j)]):
+                        strategies[t].addEdge(i, j)
+                for i in graph.nodes:
+                    strategies[t].addWeight(i, cplexModel.getValue(Z[t][i]))
+                
 
             bound = cplexModel.getObjValue()
             bound = math.floor(bound) + 1
+
         else: 
             model.optimize()
+            
             # store results
             strategies = {}
             for t in range(size):
-                trees[t] = TreeStrategy(graph, graph.root, length)
-                for i in graph.nodes:
-                    tree[t].addWeight(i, Z[t][i].x)
+                strategies[t] = TreeStrategy(graph, graph.root, length)
                 for i, j in graph.arcs:
                     if X[t][(i, j)].x:
-                        trees[t].addEdge(i, j)
+                        strategies[t].addEdge(i, j)
+                for i in graph.nodes:
+                    strategies[t].addWeight(i, Z[t][i].x)
+                
 
   
             bound = model.objVal
@@ -370,11 +411,12 @@ class Optimizer:
 
             rt = model.Runtime
        
-        self.printResults(n, e, length, rt, r, bound)
-
+        self.printResults(n, e, size, length, rt, r, bound, numNodes, False) 
+        
         return strategies, bound
      
-    def generateTreeStrategiesSym(self, graph, size, length):
+
+    def generateTreeStrategiesSym(self, graph, size, length, numNodes):
         """
         Generates a set of tree strategies using linear integer programming and a specified
         solver. Leverages symmetry on graph product to reduce constraints. 
@@ -389,8 +431,12 @@ class Optimizer:
             bound - pebbling bound found from set of strategies 
             
         """
+        
         model = gp.Model('tree-optimizer-symmetry')
-        model.setParam(GRB.Param.LogFile, self.logFile + '-s' + str(size) + '-l' + str(length)+ '.log')
+
+        model.setParam(GRB.Param.LogFile, self.logFile +'.log')
+        model.setParam(GRB.Param.MIPFocus, 1)
+        
         if self.threads:
             model.Params.Threads = self.threads
 
@@ -422,7 +468,7 @@ class Optimizer:
         for i in range(size):
             X[i] = model.addVars(arcs, vtype=GRB.BINARY, name='X') 
             Y[i] = model.addVars(nodes, vtype=GRB.BINARY, name='Y')
-            Z[i] = model.addVars(nodes, lb=0, ub=ubz, vtype=GRB.INTEGER, name='Z')
+            Z[i] = model.addVars(nodes, lb=0, ub=ubz, vtype=GRB.CONTINUOUS, name='Z')
         
         # Add Constraints
         # Flow Constraint
@@ -471,13 +517,15 @@ class Optimizer:
                 obj.addTerms(1.0/(size*2), Z[t][i_prime]) 
         
         model.setObjective(obj, GRB.MINIMIZE)
-        lpFilename = self.lpFile + "_size" + str(size) + "_len" + str(length) + '.lp'
+        lpFilename = self.lpFile +'.lp'
         model.write(lpFilename)
 
         if self.solver == "CPLEX":
             trees = {} 
-            cplexModel = cplex.importModel(lpFilename)
+            cplexModel = cpx.importModel(lpFilename)
             cplexModel.solve()
+            if self.threads: 
+                cpx.parameters.threads = self.threads
 
             for t in range(size):
                 trees[t] = TreeStrategy(graph, graph.root, length)
@@ -523,12 +571,12 @@ class Optimizer:
 
             rt = model.Runtime
         
-        self.saveCertificate(strategies)
-        self.printResults(n, e, size, length, rt, r, bound) 
         
-        return strategies, bound, rt
+        result_df = self.printResults(n, e, size, length, rt, r, bound, numNodes, True) 
         
-    def saveCertificate(self, strategies): 
+        return strategies, bound, result_df
+        
+    def saveCertificate(self, strategies, size): 
 
         weights = {}
         t = 0
@@ -542,11 +590,11 @@ class Optimizer:
             t+= 1
 
         for t in weights:
-            pd.DataFrame(weights[t]).to_csv("lemke_sq_certificate-v" + str(strategies[0].root) + ".csv")
+            pd.DataFrame(weights[t]).to_csv("lemke_sq_cert"+ str(t) + "-s"+ str(size) + ".csv")
         i = 0
 
         for t in strategies:
-            pd.DataFrame(strategies[t].edges).to_csv("lemke_sq_edges_tree-v"+ str(strategies[0].root) + ".csv")
+            pd.DataFrame(strategies[t].edges).to_csv("lemke_sq_edges_tree" + str(i) + "-s" + str(size) + ".csv")
             i += 1 
 
     def maxUnsolvable(self, strategies, graph):
@@ -597,9 +645,9 @@ class Optimizer:
             model.addConstr(configExpr - weightExpr <= 0)
         
         obj = gp.LinExpr()
-            if v != graph.root:
+        if v != graph.root:
 
-                obj.addTerms(1.0, V[v])
+            obj.addTerms(1.0, V[v])
         model.setObjective(obj, GRB.MAXIMIZE)
         model.write(self.lpFile)
         model.optimize()

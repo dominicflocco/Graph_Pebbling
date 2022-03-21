@@ -1,0 +1,2 @@
+,Tree Type,Threads,Solver,|V|,|E|,|T|,Num Nodes,Max Len,runtime,root,Bound
+0,symmetric,4,Gurobi,64,208,6,unbounded,16,6.5069239139556885,"(4, 0)",87

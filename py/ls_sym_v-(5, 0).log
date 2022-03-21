@@ -1,0 +1,87 @@
+
+Gurobi 9.1.2 (linux64) logging started Sat Mar 19 12:55:25 2022
+
+Changed value of parameter LogFile to ls_sym_v-(5, 0).log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter Threads to 4
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variable name "X[(1, 0),(0, 0)]" has a space
+Warning: constraint name "flow-constr-t0-v(1, 4)" has a space
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 4 threads
+Optimize a model with 3657 rows, 3264 columns and 12462 nonzeros
+Model fingerprint: 0xf29845c3
+Variable types: 384 continuous, 2880 integer (2880 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+04]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 3e+04]
+  RHS range        [1e+00, 7e+04]
+Presolve removed 219 rows and 216 columns
+Presolve time: 0.05s
+Presolved: 3438 rows, 3048 columns, 22839 nonzeros
+Variable types: 384 continuous, 2664 integer (2664 binary)
+
+Root relaxation: objective 6.400000e+01, 174 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   64.00000    0   46          -   64.00000      -     -    0s
+     0     0   64.00000    0   67          -   64.00000      -     -    0s
+     0     0   64.00000    0   79          -   64.00000      -     -    0s
+     0     0   64.00000    0   40          -   64.00000      -     -    0s
+     0     0   64.00000    0   42          -   64.00000      -     -    0s
+H    0     0                    2682.6666665   64.00000  97.6%     -    0s
+H    0     0                    1210.6875000   64.00000  94.7%     -    0s
+H    0     0                     566.3333333   64.00000  88.7%     -    0s
+     0     0   64.00000    0   34  566.33333   64.00000  88.7%     -    0s
+H    0     0                     520.7738095   64.00000  87.7%     -    0s
+     0     0   64.00000    0   38  520.77381   64.00000  87.7%     -    0s
+     0     0   64.00000    0   50  520.77381   64.00000  87.7%     -    0s
+     0     0   64.00000    0   26  520.77381   64.00000  87.7%     -    0s
+H    0     0                     520.3690476   64.00000  87.7%     -    1s
+H    0     0                     460.7500000   64.00000  86.1%     -    1s
+H    0     0                     315.6666666   64.00000  79.7%     -    1s
+     0     2   64.00000    0   26  315.66667   64.00000  79.7%     -    1s
+H   31    36                     147.0000000   64.00000  56.5%  21.9    2s
+H   89   138                     145.8333333   64.00000  56.1%   9.3    3s
+H  100   138                     125.8333333   64.00000  49.1%   8.4    3s
+H  124   138                     121.5000000   64.00000  47.3%   7.1    3s
+H  137   193                     120.8333333   64.00000  47.0%   6.8    4s
+H  151   193                     119.2500000   64.00000  46.3%   6.5    4s
+H  166   193                     111.3333333   64.00000  42.5%   6.1    4s
+H  181   193                     105.0000000   64.00000  39.0%   5.9    4s
+H  197   412                     100.6666667   64.00000  36.4%  14.1    6s
+H  203   412                      89.5000000   64.00000  28.5%  13.9    6s
+H  494  1205                      87.5666667   64.00000  26.9%   7.3    7s
+H  500  1205                      87.0000000   64.00000  26.4%   7.3    7s
+H 1077  1205                      86.7222222   64.00000  26.2%   5.6    7s
+H 1336  1205                      86.6666667   64.00000  26.2%   6.0    7s
+H 1341  1246                      85.5000000   64.00000  25.1%   6.0    8s
+H 1407  1185                      85.1666667   64.00000  24.9%   5.9    9s
+H 1408  1127                      84.5000000   64.00000  24.3%   5.9    9s
+H 1408  1070                      83.4444444   64.00000  23.3%   5.9    9s
+H 1409  1018                      82.6666667   64.00000  22.6%   5.9    9s
+H 1411   968                      81.0000000   64.00000  21.0%   5.9   10s
+H 1411   919                      80.8333333   64.00000  20.8%   5.9   10s
+H 1411   873                      77.7916667   64.00000  17.7%   5.9   10s
+H 1413   830                      77.0000000   64.00000  16.9%   5.9   10s
+H 1416   790                      73.7083333   64.00000  13.2%   5.9   11s
+H 1416   751                      71.7051282   64.00000  10.7%   5.9   11s
+H 1421   721                      71.2222222   64.00000  10.1%  25.2   12s
+H 1423   684                      70.4583333   64.00000  9.17%  25.3   12s
+H 1448   670                      70.2916667   64.00000  8.95%  25.5   12s
+H 1502   671                      69.7500000   64.00000  8.24%  25.2   12s
+H 1503   640                      69.5833333   64.00000  8.02%  25.2   12s
+H 1585   678                      69.3125000   64.00000  7.66%  24.6   13s
+H 1585   650                      69.3095238   64.00000  7.66%  24.6   13s
+H 1596   620                      69.2916667   64.00000  7.64%  24.5   13s
+H 1624   690                      69.0666667   64.00000  7.34%  24.3   14s
+H 1702   640                      68.6666667   64.00000  6.80%  23.8   14s
+  2452  1125   64.00000  125   86   68.66667   64.00000  6.80%  19.3   16s

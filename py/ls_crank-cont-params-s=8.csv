@@ -1,0 +1,2 @@
+,Tree Type,Threads,Solver,|V|,|E|,|T|,Num Nodes,Max Len,runtime,root,Bound
+0,vanilla,1,Gurobi,64,208,8,unbounded,16,38901.08002996445,"(0, 0)",108

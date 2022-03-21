@@ -1,0 +1,67 @@
+
+Gurobi 9.1.2 (linux64) logging started Tue Feb  8 14:40:23 2022
+
+Changed value of parameter LogFile to lemke_square_gurobi_s=8.log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 3
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter Threads to 16
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 16 threads
+Optimize a model with 4879 rows, 4352 columns and 16728 nonzeros
+Model fingerprint: 0x59b033ef
+Variable types: 512 continuous, 3840 integer (3840 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+03]
+  Objective range  [1e-01, 1e-01]
+  Bounds range     [1e+00, 2e+03]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 184 rows and 208 columns
+Presolve time: 0.34s
+Presolved: 4695 rows, 4144 columns, 32149 nonzeros
+Variable types: 504 continuous, 3640 integer (3640 binary)
+Presolved: 4695 rows, 4144 columns, 32149 nonzeros
+
+
+Root relaxation: objective 6.300000e+01, 326 iterations, 0.06 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   63.00000    0  121          -   63.00000      -     -    2s
+     0     0   63.00000    0  125          -   63.00000      -     -    5s
+     0     0   63.00000    0  150          -   63.00000      -     -    5s
+     0     0   63.00000    0  115          -   63.00000      -     -    8s
+H    0     0                    3509.4375000   63.00000  98.2%     -    9s
+     0     0   63.00000    0  115 3509.43750   63.00000  98.2%     -   10s
+H    0     0                     243.8088989   63.00000  74.2%     -   11s
+H    0     0                     214.6250000   63.00000  70.6%     -   11s
+H    0     2                     213.0000000   63.00000  70.4%     -   14s
+     0     2   63.00000    0  115  213.00000   63.00000  70.4%     -   14s
+     3     8   63.00000    2  208  213.00000   63.00000  70.4%   808   15s
+H   31    48                     193.0000000   63.00000  67.4%   658   23s
+H   42    48                     184.1250000   63.00000  65.8%   852   24s
+    47    64   63.00000    5  286  184.12500   63.00000  65.8%   900   25s
+
+Cutting planes:
+  Gomory: 28
+  Cover: 723
+  Implied bound: 1529
+  Projected implied bound: 10
+  Clique: 35
+  MIR: 2669
+  StrongCG: 5
+  Flow cover: 3455
+  GUB cover: 70
+  Zero half: 41
+  RLT: 216
+  Relax-and-lift: 521
+
+Explored 80 nodes (96387 simplex iterations) in 27.44 seconds
+Thread count was 16 (of 32 available processors)
+
+Solution count 6: 184.125 193 213 ... 3509.44
+
+Solve interrupted
+Best objective 1.841249999997e+02, best bound 6.300000000000e+01, gap 65.7841%

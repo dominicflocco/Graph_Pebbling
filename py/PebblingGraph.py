@@ -36,8 +36,8 @@ class PebblingGraph:
         """
 
         self.root = str(root)
-        self.edges = [(str(u), str(v)) for u, v in edges]
-        # self.edges = edges
+        #self.edges = [(str(u), str(v)) for u, v in edges]
+        self.edges = edges
         self.graph = nx.Graph()
         self.graph.add_edges_from(self.edges)
 
@@ -145,11 +145,11 @@ class PebblingGraph:
         #print(cycleEdges)
         for v in cycle:
             
-            path = nx.shortest_path(self.graph, str(v), self.root)
+            path = nx.shortest_path(self.graph, v, self.root)
             pathEdges = [(path[i], path[i+1]) for i in range(len(path) - 1)]
             vertices = list(path)
            
-            vertices.remove(str(v))
+            vertices.remove(v)
             
             valid = True
             for e in cycleEdges:
@@ -356,7 +356,6 @@ class PebblingGraph:
                 elif v not in strategies[t].weights:
                     weight[v] = ""
                 else:
-
                     weight[v] = int(math.ceil(strategies[t].getWeight(v)))
                     total_weights[v] += int(math.ceil(weight[v]))
 
@@ -365,8 +364,8 @@ class PebblingGraph:
             weights = nx.get_node_attributes(orig, 'weight')
 
             widths = [orig[u][v]['width'] for u, v in orig.edges()]
-
-            plt.subplot(dim_fig, dim_fig, t+2)
+            if multiview:
+                plt.subplot(dim_fig, dim_fig, t+2)
 
             nx.draw(orig, pos,
                     width=widths,
@@ -379,9 +378,9 @@ class PebblingGraph:
             if not multiview:
                 plt.show()
                 plt.savefig('t' + str(t) + '_size' + str(len(strategies)) + '_len' + str(strategies[0].maxLen))
+                plt.close()
 
-
-        plt.subplot(dim_fig, dim_fig, dim_fig**2)
+        #plt.subplot(dim_fig, dim_fig, dim_fig**2)
         nx.draw(self.graph, pos,
                 node_size=node_size,
                 font_size=font_size,
