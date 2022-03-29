@@ -1,9 +1,0 @@
-
-Gurobi 9.1.2 (linux64) logging started Tue Feb  8 14:35:53 2022
-
-Changed value of parameter LogFile to lemke_square_cplex_s=15.log
-   Prev:   Default: 
-Changed value of parameter MIPFocus to 3
-   Prev: 0  Min: 0  Max: 3  Default: 0
-Changed value of parameter Threads to 1
-   Prev: 0  Min: 0  Max: 1024  Default: 0
