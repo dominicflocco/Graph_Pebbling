@@ -51,21 +51,9 @@ class TreeStrategy:
         self.weights[vertex] = weight
 
     def addEdge(self, src, dst): 
-<<<<<<< HEAD
         self.edges.append((str(src), str(dst)))
         self.nodes.add(src)
         self.nodes.add(dst)
-=======
-        """
-        Adds a directed edge to the TreeStrategy structure. Directed edges 
-        point away from root r.
-        
-        Parameters: 
-            src - source vertex of edge to be added
-            dst - destination vertex of edge to be added
-        """
-        self.edges.append((src, dst))
->>>>>>> 0d553fe4887b107744472a7a466654a41886d8b7
 
     def getWeight(self, vertex):
         """

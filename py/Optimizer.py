@@ -10,7 +10,7 @@ import math
 import csv
 import pandas as pd
 import time
-import cplex as cpx
+# import cplex as cpx
 
 from TreeStrategy import TreeStrategy 
 from TreeStrategy import NonTreeStrategy

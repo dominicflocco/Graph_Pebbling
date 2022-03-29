@@ -44,10 +44,10 @@ def treeStrategyOptCrank(graph, size, length, numNodes):
 def treeStrategyOptSymCrank(graph, size, length, numNodes):
 
     optimizer = Optimizer(solver = "Gurobi", 
-                                threads = 4,
-                                logFile = "ls_sym-v" + str(graph.root),
-                                lpFile = "ls_sym-v" + str(graph.root),
-                                paramFile = "ls_sym_params-v" + str(graph.root),
+                                threads = None,
+                                logFile = "ls_sym2-v" + str(graph.root),
+                                lpFile = "ls_sym2-v" + str(graph.root),
+                                paramFile = "ls_sym2_params-v" + str(graph.root),
                                 objGap=False,
                                 timeLimit=False, 
                                 cert=True)
@@ -55,12 +55,12 @@ def treeStrategyOptSymCrank(graph, size, length, numNodes):
     res = optimizer.generateTreeStrategiesSym(graph, size, length, numNodes)
     strategies = res[0]
     for t in strategies.keys():
-        strategies[t].saveCertificate("ls_sym_cert"+ str(t)+ "-v" + str(graph.root) +".csv")
-        strategies[t].saveEdges("ls_sym_edges" + str(t)+ "-v" + str(graph.root) + ".csv")
+        strategies[t].saveCertificate("ls_sym2_cert"+ str(t)+ "-v" + str(graph.root) +".csv")
+        strategies[t].saveEdges("ls_sym2_edges" + str(t)+ "-v" + str(graph.root) + ".csv")
 
     # visualize strategy 
-    # for t in strategies.keys():
-    #     strategies[t].visualizeStrategy("ls_crank_sym-cont_strategy-fullthread" + str(t) + "-s" + str(size) + ".png")
+    for t in strategies.keys():
+        strategies[t].visualizeStrategy("ls_sym2_strategy" + str(t) + "-s" + str(size) + ".png")
 
 def trimStrategies(graph): 
 
@@ -272,7 +272,7 @@ def main():
     # # Lemke Square 
     lemkeSquare = nx.cartesian_product(lemke.graph, lemke.graph)
     lemkeSquare = list(lemkeSquare.edges())
-    r = (7,7)
+    r = (0,0)
     #print(countElementaryCirtuits(64))
     lemkeSquare = PebblingGraph(lemkeSquare, r)
     # treeStrategyOpt(lemkeSquare, 6, 15)
@@ -282,13 +282,13 @@ def main():
 
     #treeStrategyOptCrank(lemkeSquare, 6, 12, None)
     # boundLemkeSquare(lemkeSquare)
-    # treeStrategyOptSymCrank(lemkeSquare, 12, 16, None)
+    treeStrategyOptSymCrank(lemkeSquare, 20, 16, None)
     # # Bruhat 
     bruhat = [(0,1), (0,2), (0,4), (1,2), (1,7), (2,3), (2,20), (3,23), (4, 5), (4, 8), (5,6), (5,9), (6,7), (6,10), (7,11),
               (8,9), (8,16), (9,12), (10,11), (10,13), (11, 19), (12, 13), (12,14), (13,15), (14, 15), (14,17), (15, 18),
               (16, 17), (16,20), (17, 21), (18,19), (18,22), (19,23), (20, 21), (21,22), (22,23)]
     r = 1
-    bruhat = PebblingGraph(bruhat, r)
+    # bruhat = PebblingGraph(bruhat, r)
     #treeStrategyOptCrank(bruhat, 8, 8, None)
     # # n-cube
     n = 3
@@ -309,8 +309,8 @@ def main():
     # Petersen 
     petersen = [(0,1), (1,2), (2,3), (3,4), (4,0), (0,6), (1,7), (2,8), (3,9), (4,5), (5,7), (5,8), (6,9), (6,8), (7,9)]
     r = 5
-    petersen = PebblingGraph(petersen, r)
-    confirmResults(bruhat, 6, 8, None, "bruhat")
+    # petersen = PebblingGraph(petersen, r)
+    # confirmResults(bruhat, 6, 8, None, "bruhat")
     # Lolipop 
     # lolipop = [(0,1), (1,2), (2,3), (3,4), (4,1)]
     # lolipop = PebblingGraph(lolipop, r)
