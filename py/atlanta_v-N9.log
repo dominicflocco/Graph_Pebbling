@@ -1,0 +1,67 @@
+
+Gurobi 9.1.2 (linux64) logging started Wed Mar 30 00:19:19 2022
+
+Changed value of parameter LogFile to atlanta_v-N9.log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 600.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variables 0 and 74 have the same name "X[N6,N1]"
+Warning: linear constraint 96 and linear constraint 97 have the same name "weight-constr-t5"
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 506 rows, 444 columns and 1470 nonzeros
+Model fingerprint: 0x57255f5b
+Variable types: 90 continuous, 354 integer (354 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 5e+05]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 84 rows and 102 columns
+Presolve time: 0.00s
+Presolved: 422 rows, 342 columns, 1968 nonzeros
+Variable types: 72 continuous, 270 integer (258 binary)
+
+Root relaxation: objective 1.400000e+01, 59 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   14.00000    0   20          -   14.00000      -     -    0s
+     0     0   14.00000    0   21          -   14.00000      -     -    0s
+H    0     0                     135.1666666   14.00000  89.6%     -    0s
+H    0     0                      42.0000000   14.00000  66.7%     -    0s
+     0     0   14.00000    0    8   42.00000   14.00000  66.7%     -    0s
+     0     0   14.00000    0   12   42.00000   14.00000  66.7%     -    0s
+     0     0   14.00000    0    4   42.00000   14.00000  66.7%     -    0s
+     0     2   14.00000    0    4   42.00000   14.00000  66.7%     -    0s
+H   42    64                      41.0000000   14.00000  65.9%  10.1    0s
+H   96   126                      30.5000000   14.00000  54.1%   8.8    0s
+H  102   126                      30.0000000   14.00000  53.3%   8.7    0s
+H  161   188                      29.6666667   14.00000  52.8%   7.6    1s
+H  171   188                      29.3666667   14.00000  52.3%   7.7    1s
+H  186   188                      29.3333333   14.00000  52.3%   7.8    1s
+*  223   244               9      14.3333333   14.00000  2.33%   8.0    1s
+
+Cutting planes:
+  Learned: 8
+  Gomory: 12
+  Cover: 40
+  Implied bound: 17
+  Clique: 14
+  MIR: 23
+  Flow cover: 68
+  GUB cover: 6
+  RLT: 20
+  Relax-and-lift: 5
+
+Explored 13664 nodes (131430 simplex iterations) in 2.88 seconds
+Thread count was 32 (of 64 available processors)
+
+Solution count 9: 14.3333 29.3333 29.3667 ... 135.167
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.433333333139e+01, best bound 1.433333333139e+01, gap 0.0000%

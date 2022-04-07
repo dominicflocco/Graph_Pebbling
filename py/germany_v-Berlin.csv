@@ -1,0 +1,2 @@
+,Tree Type,Threads,Solver,|V|,|E|,|T|,Num Nodes,Max Len,runtime,root,Bound
+0,symmetric,None,Gurobi,50,88,6,unbounded,20,1200.0350739955902,Berlin,179

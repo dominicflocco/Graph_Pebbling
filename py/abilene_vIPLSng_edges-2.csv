@@ -1,0 +1,8 @@
+,0,1
+0,IPLSng,CHINng
+1,DNVRng,SNVAng
+2,SNVAng,DNVRng
+3,DNVRng,STTLng
+4,STTLng,DNVRng
+5,SNVAng,STTLng
+6,STTLng,SNVAng

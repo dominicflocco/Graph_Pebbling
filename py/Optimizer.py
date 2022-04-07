@@ -427,9 +427,9 @@ class Optimizer:
 
             rt = model.Runtime
        
-        self.printResults(n, e, size, length, rt, r, bound, numNodes, False) 
+        result_df = self.printResults(n, e, size, length, rt, r, bound, numNodes, True) 
         
-        return strategies, bound
+        return strategies, bound, result_df
      
 
     def generateTreeStrategiesSym(self, graph, size, length, numNodes):

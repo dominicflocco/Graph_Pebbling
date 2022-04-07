@@ -126,14 +126,7 @@ class TreeStrategy:
                 directedEdges.append((v, u))
                 visited.add(u)
                 
-            
-
-
-
-
-
-
-
+    
 class NonTreeStrategy: 
     
     def __init__(self, graph, edges):

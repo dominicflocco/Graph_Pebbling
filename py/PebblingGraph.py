@@ -37,7 +37,8 @@ class PebblingGraph:
 
         self.root = str(root)
         #self.edges = [(str(u), str(v)) for u, v in edges]
-        self.edges = edges
+        self.edges = list(set(edges))
+
         self.graph = nx.Graph()
         self.graph.add_edges_from(self.edges)
 
@@ -46,7 +47,8 @@ class PebblingGraph:
             self.arcs.append((str(v), str(u)))
             if u != v:
                 self.arcs.append((str(u), str(v)))
-
+        
+        self.arcs = list(set(self.arcs))
         
         self.nodes = list(set([str(i) for i, j in self.arcs]))
 

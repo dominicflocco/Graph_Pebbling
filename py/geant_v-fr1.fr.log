@@ -1,0 +1,83 @@
+
+Gurobi 9.1.2 (linux64) logging started Wed Mar 30 16:52:47 2022
+
+Changed value of parameter LogFile to geant_v-fr1.fr.log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 600.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variables 0 and 116 have the same name "X[ch1.ch,at1.at]"
+Warning: linear constraint 138 and linear constraint 139 have the same name "weight-constr-t5"
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 783 rows, 696 columns and 2334 nonzeros
+Model fingerprint: 0x68681404
+Variable types: 132 continuous, 564 integer (564 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 5e+05]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 168 rows and 198 columns
+Presolve time: 0.00s
+Presolved: 615 rows, 498 columns, 2820 nonzeros
+Variable types: 120 continuous, 378 integer (372 binary)
+
+Root relaxation: objective 2.100000e+01, 84 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   21.00000    0   31          -   21.00000      -     -    0s
+H    0     0                      48.0000000   21.00000  56.2%     -    0s
+H    0     0                      39.0000000   21.00000  46.2%     -    0s
+H    0     0                      35.1666667   21.00000  40.3%     -    0s
+     0     0   21.00000    0   35   35.16667   21.00000  40.3%     -    0s
+H    0     0                      35.0000000   21.00000  40.0%     -    0s
+H    0     0                      34.5000000   21.00000  39.1%     -    0s
+H    0     0                      34.3333333   21.00000  38.8%     -    0s
+H    0     0                      32.7000000   21.00000  35.8%     -    0s
+     0     0   21.00000    0   35   32.70000   21.00000  35.8%     -    0s
+H    0     0                      32.3026184   21.00000  35.0%     -    0s
+     0     0   21.00000    0   23   32.30262   21.00000  35.0%     -    0s
+     0     0   21.00000    0   35   32.30262   21.00000  35.0%     -    0s
+     0     0   21.00000    0   25   32.30262   21.00000  35.0%     -    0s
+     0     0   21.00000    0   28   32.30262   21.00000  35.0%     -    0s
+     0     0   21.00000    0   25   32.30262   21.00000  35.0%     -    0s
+     0     0   21.00000    0   14   32.30262   21.00000  35.0%     -    0s
+     0     2   21.00000    0   12   32.30262   21.00000  35.0%     -    0s
+H   95   127                      31.7500000   21.00000  33.9%   9.9    0s
+H   97   127                      31.3333333   21.00000  33.0%   9.8    0s
+H   98   127                      31.1666667   21.00000  32.6%   9.8    0s
+H  113   127                      31.0000000   21.00000  32.3%   9.1    0s
+H  126   127                      30.8333333   21.00000  31.9%   8.8    0s
+H  128   159                      30.5833333   21.00000  31.3%   8.7    0s
+H  136   159                      30.3333333   21.00000  30.8%   8.5    0s
+H  138   159                      30.1666667   21.00000  30.4%   8.8    0s
+H  159   191                      30.0000000   21.00000  30.0%   8.3    1s
+* 1184  1662              35      23.0000006   21.00000  8.70%   8.3    2s
+
+Cutting planes:
+  Learned: 15
+  Gomory: 4
+  Cover: 47
+  Implied bound: 25
+  Clique: 35
+  MIR: 38
+  Flow cover: 67
+  GUB cover: 5
+  Zero half: 1
+  RLT: 19
+  Relax-and-lift: 52
+
+Explored 3976 nodes (43376 simplex iterations) in 4.63 seconds
+Thread count was 32 (of 64 available processors)
+
+Solution count 10: 23 30 30.1667 ... 31.75
+No other solutions better than 23
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (7.6308e-06) exceeds tolerance
+Best objective 2.299999999850e+01, best bound 2.299999999850e+01, gap 0.0000%

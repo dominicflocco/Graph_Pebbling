@@ -1,0 +1,111 @@
+
+Gurobi 9.1.2 (linux64) logging started Tue Mar 29 22:13:10 2022
+
+Changed value of parameter LogFile to abilene_v-ATLAng.log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 600.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variables 0 and 54 have the same name "X[ATLAM5,ATLAng]"
+Warning: linear constraint 78 and linear constraint 79 have the same name "weight-constr-t5"
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 365 rows, 324 columns and 1026 nonzeros
+Model fingerprint: 0x9a4c2bd6
+Variable types: 72 continuous, 252 integer (252 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 5e+05]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 72 rows and 90 columns
+Presolve time: 0.00s
+Presolved: 293 rows, 234 columns, 1224 nonzeros
+Variable types: 60 continuous, 174 integer (168 binary)
+
+Root relaxation: objective 1.100000e+01, 46 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   11.00000    0   15          -   11.00000      -     -    0s
+H    0     0                      26.0000000   11.00000  57.7%     -    0s
+H    0     0                      24.0000000   11.00000  54.2%     -    0s
+     0     0   11.00000    0   17   24.00000   11.00000  54.2%     -    0s
+H    0     0                      23.1666667   11.00000  52.5%     -    0s
+H    0     0                      23.0000000   11.00000  52.2%     -    0s
+     0     0   11.00000    0    1   23.00000   11.00000  52.2%     -    0s
+     0     0   11.00000    0    7   23.00000   11.00000  52.2%     -    0s
+     0     0   11.00000    0    5   23.00000   11.00000  52.2%     -    0s
+*    0     0               0      11.0000000   11.00000  0.00%     -    0s
+
+Cutting planes:
+  Learned: 1
+  Cover: 2
+  Implied bound: 3
+  MIR: 2
+  Flow cover: 3
+
+Explored 1 nodes (736 simplex iterations) in 0.05 seconds
+Thread count was 32 (of 64 available processors)
+
+Solution count 5: 11 23 23.1667 ... 26
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (5.7222e-06) exceeds tolerance
+Warning: max bound violation (1.9074e-06) exceeds tolerance
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Tue Mar 29 22:16:19 2022
+
+Changed value of parameter LogFile to abilene_v-ATLAng.log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 600.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variables 0 and 54 have the same name "X[ATLAM5,ATLAng]"
+Warning: linear constraint 78 and linear constraint 79 have the same name "weight-constr-t5"
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 365 rows, 324 columns and 1026 nonzeros
+Model fingerprint: 0x385cdff0
+Variable types: 72 continuous, 252 integer (252 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 5e+05]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective 27.0000000
+Presolve removed 72 rows and 90 columns
+Presolve time: 0.00s
+Presolved: 293 rows, 234 columns, 1224 nonzeros
+Variable types: 60 continuous, 174 integer (168 binary)
+
+Root relaxation: objective 1.100000e+01, 46 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   11.00000    0   14   27.00000   11.00000  59.3%     -    0s
+H    0     0                      26.0000000   11.00000  57.7%     -    0s
+H    0     0                      24.5000000   11.00000  55.1%     -    0s
+     0     0   11.00000    0   14   24.50000   11.00000  55.1%     -    0s
+H    0     0                      24.0000000   11.00000  54.2%     -    0s
+H    0     0                      24.0000000   11.00000  54.2%     -    0s
+     0     2   11.00000    0    2   24.00000   11.00000  54.2%     -    0s
+H    8    12                      23.1666667   11.00000  52.5%  41.0    0s
+H   10    12                      22.8333333   11.00000  51.8%  34.7    0s
+*   30    36               5      22.0000006   11.00000  50.0%  18.7    0s
+*   39    36               5      11.0000000   11.00000  0.00%  16.2    0s
+
+Explored 47 nodes (968 simplex iterations) in 0.06 seconds
+Thread count was 32 (of 64 available processors)
+
+Solution count 9: 11 22 22.8333 ... 27
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%

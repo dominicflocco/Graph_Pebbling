@@ -1,0 +1,59 @@
+
+Gurobi 9.1.2 (linux64) logging started Thu Mar 31 09:07:33 2022
+
+Changed value of parameter LogFile to ny_v-N15.log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 600.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variables 0 and 130 have the same name "X[N2,N1]"
+Warning: linear constraint 102 and linear constraint 103 have the same name "weight-constr-t5"
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 789 rows, 780 columns and 2652 nonzeros
+Model fingerprint: 0xa5b92f7a
+Variable types: 96 continuous, 684 integer (684 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 5e+05]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective 32.8333333
+Presolve removed 390 rows and 438 columns
+Presolve time: 0.00s
+Presolved: 399 rows, 342 columns, 2178 nonzeros
+Variable types: 72 continuous, 270 integer (252 binary)
+
+Root relaxation: objective 1.500000e+01, 54 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   15.00000    0    4   32.83333   15.00000  54.3%     -    0s
+H    0     0                      17.6666667   15.00000  15.1%     -    0s
+     0     0   15.00000    0    5   17.66667   15.00000  15.1%     -    0s
+H    0     0                      16.8333333   15.00000  10.9%     -    0s
+     0     0   15.00000    0    9   16.83333   15.00000  10.9%     -    0s
+H    0     0                      16.6666667   15.00000  10.0%     -    0s
+     0     0   15.00000    0    6   16.66667   15.00000  10.0%     -    0s
+H    0     0                      16.0000000   15.00000  6.25%     -    0s
+     0     0   15.00000    0    4   16.00000   15.00000  6.25%     -    0s
+     0     0   15.00000    0    4   16.00000   15.00000  6.25%     -    0s
+     0     2   15.00000    0    4   16.00000   15.00000  6.25%     -    0s
+H   93   120                      15.1666667   15.00000  1.10%   5.4    0s
+H   96   120                      15.0000000   15.00000  0.00%   5.3    0s
+
+Cutting planes:
+  Learned: 1
+  Cover: 2
+  Implied bound: 2
+
+Explored 125 nodes (1352 simplex iterations) in 0.24 seconds
+Thread count was 32 (of 64 available processors)
+
+Solution count 7: 15 15.1667 16 ... 32.8333
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.500000000000e+01, best bound 1.500000000000e+01, gap 0.0000%

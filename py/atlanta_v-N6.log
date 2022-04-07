@@ -1,0 +1,60 @@
+
+Gurobi 9.1.2 (linux64) logging started Tue Mar 29 23:49:10 2022
+
+Changed value of parameter LogFile to atlanta_v-N6.log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 600.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variables 0 and 74 have the same name "X[N6,N1]"
+Warning: linear constraint 96 and linear constraint 97 have the same name "weight-constr-t5"
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 506 rows, 444 columns and 1470 nonzeros
+Model fingerprint: 0x0851cfb4
+Variable types: 90 continuous, 354 integer (354 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 5e+05]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 84 rows and 102 columns
+Presolve time: 0.00s
+Presolved: 422 rows, 342 columns, 1992 nonzeros
+Variable types: 84 continuous, 258 integer (258 binary)
+
+Root relaxation: objective 1.400000e+01, 58 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   14.00000    0   20          -   14.00000      -     -    0s
+H    0     0                     138.9999999   14.00000  89.9%     -    0s
+H    0     0                      28.0000000   14.00000  50.0%     -    0s
+     0     0   14.00000    0   13   28.00000   14.00000  50.0%     -    0s
+H    0     0                      27.0000000   14.00000  48.1%     -    0s
+     0     2   14.00000    0    7   27.00000   14.00000  48.1%     -    0s
+H   47    53                      26.6666667   14.00000  47.5%  11.0    0s
+H   89   111                      26.0000000   14.00000  46.2%  10.9    0s
+H   89   111                      24.3333333   14.00000  42.5%  10.9    0s
+H   94   111                      24.1666667   14.00000  42.1%  11.4    0s
+H  107   111                      23.1666667   14.00000  39.6%  11.1    0s
+H  157   169                      23.0000000   14.00000  39.1%  10.4    0s
+*  761   726              20      20.6666667   14.00000  32.3%   7.6    1s
+* 1356  1201              27      16.3333333   14.00000  14.3%   7.5    1s
+* 1642  1194              16      14.3333346   14.00000  2.33%   7.2    1s
+* 1819  1354              27      14.3333333   14.00000  2.33%   7.4    1s
+* 2736  1529              20      14.0000000   14.00000  0.00%   8.0    2s
+
+Cutting planes:
+  Learned: 2
+
+Explored 3429 nodes (28533 simplex iterations) in 2.70 seconds
+Thread count was 32 (of 64 available processors)
+
+Solution count 10: 14 14.3333 14.3333 ... 26
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.400000000000e+01, best bound 1.400000000000e+01, gap 0.0000%

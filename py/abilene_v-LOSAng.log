@@ -1,0 +1,130 @@
+
+Gurobi 9.1.2 (linux64) logging started Tue Mar 29 22:26:23 2022
+
+Changed value of parameter LogFile to abilene_v-LOSAng.log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 600.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variables 0 and 54 have the same name "X[ATLAM5,ATLAng]"
+Warning: linear constraint 78 and linear constraint 79 have the same name "weight-constr-t5"
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 389 rows, 324 columns and 1086 nonzeros
+Model fingerprint: 0xddc91d7b
+Variable types: 72 continuous, 252 integer (252 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 5e+05]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 66 rows and 72 columns
+Presolve time: 0.00s
+Presolved: 323 rows, 252 columns, 1374 nonzeros
+Variable types: 66 continuous, 186 integer (186 binary)
+
+Root relaxation: objective 1.200000e+01, 58 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   12.00000    0   12          -   12.00000      -     -    0s
+H    0     0                      41.8333333   12.00000  71.3%     -    0s
+H    0     0                      41.6666667   12.00000  71.2%     -    0s
+     0     0   12.00000    0   14   41.66667   12.00000  71.2%     -    0s
+H    0     0                      33.1666667   12.00000  63.8%     -    0s
+H    0     0                      31.0000000   12.00000  61.3%     -    0s
+     0     0   12.00000    0   13   31.00000   12.00000  61.3%     -    0s
+H    0     0                      30.3333333   12.00000  60.4%     -    0s
+H    0     0                      27.3333333   12.00000  56.1%     -    0s
+H    0     0                      26.3333333   12.00000  54.4%     -    0s
+H    0     0                      26.3333333   12.00000  54.4%     -    0s
+     0     0   12.00000    0    8   26.33333   12.00000  54.4%     -    0s
+     0     0   12.00000    0    8   26.33333   12.00000  54.4%     -    0s
+     0     0   12.00000    0    8   26.33333   12.00000  54.4%     -    0s
+H    0     0                      24.1666667   12.00000  50.3%     -    0s
+     0     2   12.00000    0    8   24.16667   12.00000  50.3%     -    0s
+H   31    52                      24.1111111   12.00000  50.2%   8.1    0s
+H   35    52                      24.0000000   12.00000  50.0%   7.5    0s
+H   40    52                      23.8333333   12.00000  49.7%   7.8    0s
+H   93   116                      23.6666667   12.00000  49.3%   9.6    0s
+H  108   116                      23.5000000   12.00000  48.9%   9.5    0s
+* 1460  1119              40      18.5000016   12.00000  35.1%   7.0    0s
+* 2186  1379              30      15.6666667   12.00000  23.4%   6.9    1s
+* 2487  1981              25      14.6666667   12.00000  18.2%   6.7    1s
+
+Cutting planes:
+  Learned: 8
+  Gomory: 12
+  Cover: 27
+  Implied bound: 13
+  Clique: 23
+  MIR: 20
+  StrongCG: 1
+  Flow cover: 47
+  GUB cover: 2
+  RLT: 12
+  Relax-and-lift: 25
+
+Explored 6232 nodes (46136 simplex iterations) in 2.23 seconds
+Thread count was 32 (of 64 available processors)
+
+Solution count 10: 14.6667 15.6667 18.5 ... 26.3333
+No other solutions better than 14.6667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.466666603079e+01, best bound 1.466666603079e+01, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Mon Apr  4 18:57:09 2022
+
+Changed value of parameter LogFile to abilene_v-LOSAng.log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 1200.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variables 0 and 54 have the same name "X[LOSAng,SNVAng]"
+Warning: linear constraint 78 and linear constraint 79 have the same name "weight-constr-t5"
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 389 rows, 324 columns and 1086 nonzeros
+Model fingerprint: 0xafb60c21
+Variable types: 72 continuous, 252 integer (252 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 5e+05]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 66 rows and 72 columns
+Presolve time: 0.00s
+Presolved: 323 rows, 252 columns, 1374 nonzeros
+Variable types: 66 continuous, 186 integer (186 binary)
+Found heuristic solution: objective 41.0000000
+
+Root relaxation: objective 1.200000e+01, 56 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   12.00000    0   12   41.00000   12.00000  70.7%     -    0s
+H    0     0                      24.8333333   12.00000  51.7%     -    0s
+     0     0   12.00000    0   21   24.83333   12.00000  51.7%     -    0s
+     0     0   12.00000    0   21   24.83333   12.00000  51.7%     -    0s
+H    0     0                      24.8333333   12.00000  51.7%     -    0s
+     0     0   12.00000    0   12   24.83333   12.00000  51.7%     -    0s
+     0     0   12.00000    0   12   24.83333   12.00000  51.7%     -    0s
+H    0     0                      24.6666667   12.00000  51.4%     -    0s
+     0     2   12.00000    0   10   24.66667   12.00000  51.4%     -    0s
+H    3     8                      24.3333333   12.00000  50.7%  12.0    0s
+H   33    48                      24.1666667   12.00000  50.3%   7.5    0s
+H   83    98                      24.0000000   12.00000  50.0%   9.0    0s
+H   85    98                      23.8333333   12.00000  49.7%   8.8    0s
+H  147   129                      23.6666667   12.00000  49.3%   8.8    0s
+H  254   188                      23.5833333   12.00000  49.1%   7.8    0s
+H  283   188                      23.5000000   12.00000  48.9%   7.5    0s
+* 1098   757              30      23.1666667   12.00000  48.2%   7.1    1s
+* 2104  1192              52      22.5000044   12.00000  46.7%   6.6    2s
+* 3067  1875              40      21.3333403   12.00000  43.8%   6.6    2s

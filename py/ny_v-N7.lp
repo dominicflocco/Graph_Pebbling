@@ -1,0 +1,1579 @@
+\ Model tree-optimizer
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+  0.1666666666666667 Z[N11] + 0.1666666666666667 Z[N7]
+   + 0.1666666666666667 Z[N8] + 0.1666666666666667 Z[N4]
+   + 0.1666666666666667 Z[N2] + 0.1666666666666667 Z[N15]
+   + 0.1666666666666667 Z[N5] + 0.1666666666666667 Z[N6]
+   + 0.1666666666666667 Z[N3] + 0.1666666666666667 Z[N12]
+   + 0.1666666666666667 Z[N14] + 0.1666666666666667 Z[N9]
+   + 0.1666666666666667 Z[N10] + 0.1666666666666667 Z[N13]
+   + 0.1666666666666667 Z[N1] + 0.1666666666666667 Z[N16]
+   + 0.1666666666666667 Z[N11] + 0.1666666666666667 Z[N7]
+   + 0.1666666666666667 Z[N8] + 0.1666666666666667 Z[N4]
+   + 0.1666666666666667 Z[N2] + 0.1666666666666667 Z[N15]
+   + 0.1666666666666667 Z[N5] + 0.1666666666666667 Z[N6]
+   + 0.1666666666666667 Z[N3] + 0.1666666666666667 Z[N12]
+   + 0.1666666666666667 Z[N14] + 0.1666666666666667 Z[N9]
+   + 0.1666666666666667 Z[N10] + 0.1666666666666667 Z[N13]
+   + 0.1666666666666667 Z[N1] + 0.1666666666666667 Z[N16]
+   + 0.1666666666666667 Z[N11] + 0.1666666666666667 Z[N7]
+   + 0.1666666666666667 Z[N8] + 0.1666666666666667 Z[N4]
+   + 0.1666666666666667 Z[N2] + 0.1666666666666667 Z[N15]
+   + 0.1666666666666667 Z[N5] + 0.1666666666666667 Z[N6]
+   + 0.1666666666666667 Z[N3] + 0.1666666666666667 Z[N12]
+   + 0.1666666666666667 Z[N14] + 0.1666666666666667 Z[N9]
+   + 0.1666666666666667 Z[N10] + 0.1666666666666667 Z[N13]
+   + 0.1666666666666667 Z[N1] + 0.1666666666666667 Z[N16]
+   + 0.1666666666666667 Z[N11] + 0.1666666666666667 Z[N7]
+   + 0.1666666666666667 Z[N8] + 0.1666666666666667 Z[N4]
+   + 0.1666666666666667 Z[N2] + 0.1666666666666667 Z[N15]
+   + 0.1666666666666667 Z[N5] + 0.1666666666666667 Z[N6]
+   + 0.1666666666666667 Z[N3] + 0.1666666666666667 Z[N12]
+   + 0.1666666666666667 Z[N14] + 0.1666666666666667 Z[N9]
+   + 0.1666666666666667 Z[N10] + 0.1666666666666667 Z[N13]
+   + 0.1666666666666667 Z[N1] + 0.1666666666666667 Z[N16]
+   + 0.1666666666666667 Z[N11] + 0.1666666666666667 Z[N7]
+   + 0.1666666666666667 Z[N8] + 0.1666666666666667 Z[N4]
+   + 0.1666666666666667 Z[N2] + 0.1666666666666667 Z[N15]
+   + 0.1666666666666667 Z[N5] + 0.1666666666666667 Z[N6]
+   + 0.1666666666666667 Z[N3] + 0.1666666666666667 Z[N12]
+   + 0.1666666666666667 Z[N14] + 0.1666666666666667 Z[N9]
+   + 0.1666666666666667 Z[N10] + 0.1666666666666667 Z[N13]
+   + 0.1666666666666667 Z[N1] + 0.1666666666666667 Z[N16]
+   + 0.1666666666666667 Z[N11] + 0.1666666666666667 Z[N7]
+   + 0.1666666666666667 Z[N8] + 0.1666666666666667 Z[N4]
+   + 0.1666666666666667 Z[N2] + 0.1666666666666667 Z[N15]
+   + 0.1666666666666667 Z[N5] + 0.1666666666666667 Z[N6]
+   + 0.1666666666666667 Z[N3] + 0.1666666666666667 Z[N12]
+   + 0.1666666666666667 Z[N14] + 0.1666666666666667 Z[N9]
+   + 0.1666666666666667 Z[N10] + 0.1666666666666667 Z[N13]
+   + 0.1666666666666667 Z[N1] + 0.1666666666666667 Z[N16]
+Subject To
+ flow-constr-t0-vN11: X[N3,N11] + X[N4,N11] + X[N9,N11] + X[N10,N11]
+   - Y[N11] = 0
+ flow-constr-t0-vN7: X[N1,N7] + X[N3,N7] + X[N4,N7] + X[N6,N7] + X[N8,N7]
+   + X[N9,N7] + X[N10,N7] + X[N12,N7] + X[N13,N7] + X[N14,N7] + X[N15,N7]
+   - Y[N7] = 0
+ flow-constr-t0-vN8: X[N1,N8] + X[N3,N8] + X[N4,N8] + X[N6,N8] + X[N7,N8]
+   - Y[N8] = 0
+ flow-constr-t0-vN4: X[N3,N4] + X[N7,N4] + X[N8,N4] + X[N9,N4] + X[N10,N4]
+   + X[N11,N4] - Y[N4] = 0
+ flow-constr-t0-vN2: X[N1,N2] + X[N5,N2] + X[N6,N2] + X[N12,N2] + X[N13,N2]
+   + X[N15,N2] - Y[N2] = 0
+ flow-constr-t0-vN15: X[N1,N15] + X[N2,N15] + X[N5,N15] + X[N7,N15]
+   + X[N9,N15] + X[N10,N15] + X[N12,N15] + X[N13,N15] + X[N14,N15] - Y[N15]
+   = 0
+ flow-constr-t0-vN5: X[N1,N5] + X[N2,N5] + X[N12,N5] + X[N13,N5]
+   + X[N15,N5] - Y[N5] = 0
+ flow-constr-t0-vN6: X[N1,N6] + X[N2,N6] + X[N3,N6] + X[N7,N6] + X[N8,N6]
+   - Y[N6] = 0
+ flow-constr-t0-vN3: X[N4,N3] + X[N6,N3] + X[N7,N3] + X[N8,N3] + X[N11,N3]
+   - Y[N3] = 0
+ flow-constr-t0-vN12: X[N1,N12] + X[N2,N12] + X[N5,N12] + X[N7,N12]
+   + X[N13,N12] + X[N15,N12] - Y[N12] = 0
+ flow-constr-t0-vN14: X[N7,N14] + X[N9,N14] + X[N10,N14] + X[N13,N14]
+   + X[N15,N14] + X[N16,N14] - Y[N14] = 0
+ flow-constr-t0-vN9: X[N4,N9] + X[N7,N9] + X[N10,N9] + X[N11,N9]
+   + X[N14,N9] + X[N15,N9] + X[N16,N9] - Y[N9] = 0
+ flow-constr-t0-vN10: X[N4,N10] + X[N7,N10] + X[N9,N10] + X[N11,N10]
+   + X[N14,N10] + X[N15,N10] - Y[N10] = 0
+ flow-constr-t0-vN13: X[N1,N13] + X[N2,N13] + X[N5,N13] + X[N7,N13]
+   + X[N12,N13] + X[N14,N13] + X[N15,N13] - Y[N13] = 0
+ flow-constr-t0-vN1: X[N2,N1] + X[N5,N1] + X[N6,N1] + X[N7,N1] + X[N8,N1]
+   + X[N12,N1] + X[N13,N1] + X[N15,N1] - Y[N1] = 0
+ flow-constr-t0-vN16: X[N9,N16] + X[N14,N16] - Y[N16] = 0
+ flow-constr-t1-vN11: X[N3,N11] + X[N4,N11] + X[N9,N11] + X[N10,N11]
+   - Y[N11] = 0
+ flow-constr-t1-vN7: X[N1,N7] + X[N3,N7] + X[N4,N7] + X[N6,N7] + X[N8,N7]
+   + X[N9,N7] + X[N10,N7] + X[N12,N7] + X[N13,N7] + X[N14,N7] + X[N15,N7]
+   - Y[N7] = 0
+ flow-constr-t1-vN8: X[N1,N8] + X[N3,N8] + X[N4,N8] + X[N6,N8] + X[N7,N8]
+   - Y[N8] = 0
+ flow-constr-t1-vN4: X[N3,N4] + X[N7,N4] + X[N8,N4] + X[N9,N4] + X[N10,N4]
+   + X[N11,N4] - Y[N4] = 0
+ flow-constr-t1-vN2: X[N1,N2] + X[N5,N2] + X[N6,N2] + X[N12,N2] + X[N13,N2]
+   + X[N15,N2] - Y[N2] = 0
+ flow-constr-t1-vN15: X[N1,N15] + X[N2,N15] + X[N5,N15] + X[N7,N15]
+   + X[N9,N15] + X[N10,N15] + X[N12,N15] + X[N13,N15] + X[N14,N15] - Y[N15]
+   = 0
+ flow-constr-t1-vN5: X[N1,N5] + X[N2,N5] + X[N12,N5] + X[N13,N5]
+   + X[N15,N5] - Y[N5] = 0
+ flow-constr-t1-vN6: X[N1,N6] + X[N2,N6] + X[N3,N6] + X[N7,N6] + X[N8,N6]
+   - Y[N6] = 0
+ flow-constr-t1-vN3: X[N4,N3] + X[N6,N3] + X[N7,N3] + X[N8,N3] + X[N11,N3]
+   - Y[N3] = 0
+ flow-constr-t1-vN12: X[N1,N12] + X[N2,N12] + X[N5,N12] + X[N7,N12]
+   + X[N13,N12] + X[N15,N12] - Y[N12] = 0
+ flow-constr-t1-vN14: X[N7,N14] + X[N9,N14] + X[N10,N14] + X[N13,N14]
+   + X[N15,N14] + X[N16,N14] - Y[N14] = 0
+ flow-constr-t1-vN9: X[N4,N9] + X[N7,N9] + X[N10,N9] + X[N11,N9]
+   + X[N14,N9] + X[N15,N9] + X[N16,N9] - Y[N9] = 0
+ flow-constr-t1-vN10: X[N4,N10] + X[N7,N10] + X[N9,N10] + X[N11,N10]
+   + X[N14,N10] + X[N15,N10] - Y[N10] = 0
+ flow-constr-t1-vN13: X[N1,N13] + X[N2,N13] + X[N5,N13] + X[N7,N13]
+   + X[N12,N13] + X[N14,N13] + X[N15,N13] - Y[N13] = 0
+ flow-constr-t1-vN1: X[N2,N1] + X[N5,N1] + X[N6,N1] + X[N7,N1] + X[N8,N1]
+   + X[N12,N1] + X[N13,N1] + X[N15,N1] - Y[N1] = 0
+ flow-constr-t1-vN16: X[N9,N16] + X[N14,N16] - Y[N16] = 0
+ flow-constr-t2-vN11: X[N3,N11] + X[N4,N11] + X[N9,N11] + X[N10,N11]
+   - Y[N11] = 0
+ flow-constr-t2-vN7: X[N1,N7] + X[N3,N7] + X[N4,N7] + X[N6,N7] + X[N8,N7]
+   + X[N9,N7] + X[N10,N7] + X[N12,N7] + X[N13,N7] + X[N14,N7] + X[N15,N7]
+   - Y[N7] = 0
+ flow-constr-t2-vN8: X[N1,N8] + X[N3,N8] + X[N4,N8] + X[N6,N8] + X[N7,N8]
+   - Y[N8] = 0
+ flow-constr-t2-vN4: X[N3,N4] + X[N7,N4] + X[N8,N4] + X[N9,N4] + X[N10,N4]
+   + X[N11,N4] - Y[N4] = 0
+ flow-constr-t2-vN2: X[N1,N2] + X[N5,N2] + X[N6,N2] + X[N12,N2] + X[N13,N2]
+   + X[N15,N2] - Y[N2] = 0
+ flow-constr-t2-vN15: X[N1,N15] + X[N2,N15] + X[N5,N15] + X[N7,N15]
+   + X[N9,N15] + X[N10,N15] + X[N12,N15] + X[N13,N15] + X[N14,N15] - Y[N15]
+   = 0
+ flow-constr-t2-vN5: X[N1,N5] + X[N2,N5] + X[N12,N5] + X[N13,N5]
+   + X[N15,N5] - Y[N5] = 0
+ flow-constr-t2-vN6: X[N1,N6] + X[N2,N6] + X[N3,N6] + X[N7,N6] + X[N8,N6]
+   - Y[N6] = 0
+ flow-constr-t2-vN3: X[N4,N3] + X[N6,N3] + X[N7,N3] + X[N8,N3] + X[N11,N3]
+   - Y[N3] = 0
+ flow-constr-t2-vN12: X[N1,N12] + X[N2,N12] + X[N5,N12] + X[N7,N12]
+   + X[N13,N12] + X[N15,N12] - Y[N12] = 0
+ flow-constr-t2-vN14: X[N7,N14] + X[N9,N14] + X[N10,N14] + X[N13,N14]
+   + X[N15,N14] + X[N16,N14] - Y[N14] = 0
+ flow-constr-t2-vN9: X[N4,N9] + X[N7,N9] + X[N10,N9] + X[N11,N9]
+   + X[N14,N9] + X[N15,N9] + X[N16,N9] - Y[N9] = 0
+ flow-constr-t2-vN10: X[N4,N10] + X[N7,N10] + X[N9,N10] + X[N11,N10]
+   + X[N14,N10] + X[N15,N10] - Y[N10] = 0
+ flow-constr-t2-vN13: X[N1,N13] + X[N2,N13] + X[N5,N13] + X[N7,N13]
+   + X[N12,N13] + X[N14,N13] + X[N15,N13] - Y[N13] = 0
+ flow-constr-t2-vN1: X[N2,N1] + X[N5,N1] + X[N6,N1] + X[N7,N1] + X[N8,N1]
+   + X[N12,N1] + X[N13,N1] + X[N15,N1] - Y[N1] = 0
+ flow-constr-t2-vN16: X[N9,N16] + X[N14,N16] - Y[N16] = 0
+ flow-constr-t3-vN11: X[N3,N11] + X[N4,N11] + X[N9,N11] + X[N10,N11]
+   - Y[N11] = 0
+ flow-constr-t3-vN7: X[N1,N7] + X[N3,N7] + X[N4,N7] + X[N6,N7] + X[N8,N7]
+   + X[N9,N7] + X[N10,N7] + X[N12,N7] + X[N13,N7] + X[N14,N7] + X[N15,N7]
+   - Y[N7] = 0
+ flow-constr-t3-vN8: X[N1,N8] + X[N3,N8] + X[N4,N8] + X[N6,N8] + X[N7,N8]
+   - Y[N8] = 0
+ flow-constr-t3-vN4: X[N3,N4] + X[N7,N4] + X[N8,N4] + X[N9,N4] + X[N10,N4]
+   + X[N11,N4] - Y[N4] = 0
+ flow-constr-t3-vN2: X[N1,N2] + X[N5,N2] + X[N6,N2] + X[N12,N2] + X[N13,N2]
+   + X[N15,N2] - Y[N2] = 0
+ flow-constr-t3-vN15: X[N1,N15] + X[N2,N15] + X[N5,N15] + X[N7,N15]
+   + X[N9,N15] + X[N10,N15] + X[N12,N15] + X[N13,N15] + X[N14,N15] - Y[N15]
+   = 0
+ flow-constr-t3-vN5: X[N1,N5] + X[N2,N5] + X[N12,N5] + X[N13,N5]
+   + X[N15,N5] - Y[N5] = 0
+ flow-constr-t3-vN6: X[N1,N6] + X[N2,N6] + X[N3,N6] + X[N7,N6] + X[N8,N6]
+   - Y[N6] = 0
+ flow-constr-t3-vN3: X[N4,N3] + X[N6,N3] + X[N7,N3] + X[N8,N3] + X[N11,N3]
+   - Y[N3] = 0
+ flow-constr-t3-vN12: X[N1,N12] + X[N2,N12] + X[N5,N12] + X[N7,N12]
+   + X[N13,N12] + X[N15,N12] - Y[N12] = 0
+ flow-constr-t3-vN14: X[N7,N14] + X[N9,N14] + X[N10,N14] + X[N13,N14]
+   + X[N15,N14] + X[N16,N14] - Y[N14] = 0
+ flow-constr-t3-vN9: X[N4,N9] + X[N7,N9] + X[N10,N9] + X[N11,N9]
+   + X[N14,N9] + X[N15,N9] + X[N16,N9] - Y[N9] = 0
+ flow-constr-t3-vN10: X[N4,N10] + X[N7,N10] + X[N9,N10] + X[N11,N10]
+   + X[N14,N10] + X[N15,N10] - Y[N10] = 0
+ flow-constr-t3-vN13: X[N1,N13] + X[N2,N13] + X[N5,N13] + X[N7,N13]
+   + X[N12,N13] + X[N14,N13] + X[N15,N13] - Y[N13] = 0
+ flow-constr-t3-vN1: X[N2,N1] + X[N5,N1] + X[N6,N1] + X[N7,N1] + X[N8,N1]
+   + X[N12,N1] + X[N13,N1] + X[N15,N1] - Y[N1] = 0
+ flow-constr-t3-vN16: X[N9,N16] + X[N14,N16] - Y[N16] = 0
+ flow-constr-t4-vN11: X[N3,N11] + X[N4,N11] + X[N9,N11] + X[N10,N11]
+   - Y[N11] = 0
+ flow-constr-t4-vN7: X[N1,N7] + X[N3,N7] + X[N4,N7] + X[N6,N7] + X[N8,N7]
+   + X[N9,N7] + X[N10,N7] + X[N12,N7] + X[N13,N7] + X[N14,N7] + X[N15,N7]
+   - Y[N7] = 0
+ flow-constr-t4-vN8: X[N1,N8] + X[N3,N8] + X[N4,N8] + X[N6,N8] + X[N7,N8]
+   - Y[N8] = 0
+ flow-constr-t4-vN4: X[N3,N4] + X[N7,N4] + X[N8,N4] + X[N9,N4] + X[N10,N4]
+   + X[N11,N4] - Y[N4] = 0
+ flow-constr-t4-vN2: X[N1,N2] + X[N5,N2] + X[N6,N2] + X[N12,N2] + X[N13,N2]
+   + X[N15,N2] - Y[N2] = 0
+ flow-constr-t4-vN15: X[N1,N15] + X[N2,N15] + X[N5,N15] + X[N7,N15]
+   + X[N9,N15] + X[N10,N15] + X[N12,N15] + X[N13,N15] + X[N14,N15] - Y[N15]
+   = 0
+ flow-constr-t4-vN5: X[N1,N5] + X[N2,N5] + X[N12,N5] + X[N13,N5]
+   + X[N15,N5] - Y[N5] = 0
+ flow-constr-t4-vN6: X[N1,N6] + X[N2,N6] + X[N3,N6] + X[N7,N6] + X[N8,N6]
+   - Y[N6] = 0
+ flow-constr-t4-vN3: X[N4,N3] + X[N6,N3] + X[N7,N3] + X[N8,N3] + X[N11,N3]
+   - Y[N3] = 0
+ flow-constr-t4-vN12: X[N1,N12] + X[N2,N12] + X[N5,N12] + X[N7,N12]
+   + X[N13,N12] + X[N15,N12] - Y[N12] = 0
+ flow-constr-t4-vN14: X[N7,N14] + X[N9,N14] + X[N10,N14] + X[N13,N14]
+   + X[N15,N14] + X[N16,N14] - Y[N14] = 0
+ flow-constr-t4-vN9: X[N4,N9] + X[N7,N9] + X[N10,N9] + X[N11,N9]
+   + X[N14,N9] + X[N15,N9] + X[N16,N9] - Y[N9] = 0
+ flow-constr-t4-vN10: X[N4,N10] + X[N7,N10] + X[N9,N10] + X[N11,N10]
+   + X[N14,N10] + X[N15,N10] - Y[N10] = 0
+ flow-constr-t4-vN13: X[N1,N13] + X[N2,N13] + X[N5,N13] + X[N7,N13]
+   + X[N12,N13] + X[N14,N13] + X[N15,N13] - Y[N13] = 0
+ flow-constr-t4-vN1: X[N2,N1] + X[N5,N1] + X[N6,N1] + X[N7,N1] + X[N8,N1]
+   + X[N12,N1] + X[N13,N1] + X[N15,N1] - Y[N1] = 0
+ flow-constr-t4-vN16: X[N9,N16] + X[N14,N16] - Y[N16] = 0
+ flow-constr-t5-vN11: X[N3,N11] + X[N4,N11] + X[N9,N11] + X[N10,N11]
+   - Y[N11] = 0
+ flow-constr-t5-vN7: X[N1,N7] + X[N3,N7] + X[N4,N7] + X[N6,N7] + X[N8,N7]
+   + X[N9,N7] + X[N10,N7] + X[N12,N7] + X[N13,N7] + X[N14,N7] + X[N15,N7]
+   - Y[N7] = 0
+ flow-constr-t5-vN8: X[N1,N8] + X[N3,N8] + X[N4,N8] + X[N6,N8] + X[N7,N8]
+   - Y[N8] = 0
+ flow-constr-t5-vN4: X[N3,N4] + X[N7,N4] + X[N8,N4] + X[N9,N4] + X[N10,N4]
+   + X[N11,N4] - Y[N4] = 0
+ flow-constr-t5-vN2: X[N1,N2] + X[N5,N2] + X[N6,N2] + X[N12,N2] + X[N13,N2]
+   + X[N15,N2] - Y[N2] = 0
+ flow-constr-t5-vN15: X[N1,N15] + X[N2,N15] + X[N5,N15] + X[N7,N15]
+   + X[N9,N15] + X[N10,N15] + X[N12,N15] + X[N13,N15] + X[N14,N15] - Y[N15]
+   = 0
+ flow-constr-t5-vN5: X[N1,N5] + X[N2,N5] + X[N12,N5] + X[N13,N5]
+   + X[N15,N5] - Y[N5] = 0
+ flow-constr-t5-vN6: X[N1,N6] + X[N2,N6] + X[N3,N6] + X[N7,N6] + X[N8,N6]
+   - Y[N6] = 0
+ flow-constr-t5-vN3: X[N4,N3] + X[N6,N3] + X[N7,N3] + X[N8,N3] + X[N11,N3]
+   - Y[N3] = 0
+ flow-constr-t5-vN12: X[N1,N12] + X[N2,N12] + X[N5,N12] + X[N7,N12]
+   + X[N13,N12] + X[N15,N12] - Y[N12] = 0
+ flow-constr-t5-vN14: X[N7,N14] + X[N9,N14] + X[N10,N14] + X[N13,N14]
+   + X[N15,N14] + X[N16,N14] - Y[N14] = 0
+ flow-constr-t5-vN9: X[N4,N9] + X[N7,N9] + X[N10,N9] + X[N11,N9]
+   + X[N14,N9] + X[N15,N9] + X[N16,N9] - Y[N9] = 0
+ flow-constr-t5-vN10: X[N4,N10] + X[N7,N10] + X[N9,N10] + X[N11,N10]
+   + X[N14,N10] + X[N15,N10] - Y[N10] = 0
+ flow-constr-t5-vN13: X[N1,N13] + X[N2,N13] + X[N5,N13] + X[N7,N13]
+   + X[N12,N13] + X[N14,N13] + X[N15,N13] - Y[N13] = 0
+ flow-constr-t5-vN1: X[N2,N1] + X[N5,N1] + X[N6,N1] + X[N7,N1] + X[N8,N1]
+   + X[N12,N1] + X[N13,N1] + X[N15,N1] - Y[N1] = 0
+ flow-constr-t5-vN16: X[N9,N16] + X[N14,N16] - Y[N16] = 0
+ root-constr-t0: Y[N8] + Y[N4] + Y[N15] + Y[N6] + Y[N3] + Y[N12] + Y[N14]
+   + Y[N9] + Y[N10] + Y[N13] + Y[N1] >= 1
+ root-constr-t1: Y[N8] + Y[N4] + Y[N15] + Y[N6] + Y[N3] + Y[N12] + Y[N14]
+   + Y[N9] + Y[N10] + Y[N13] + Y[N1] >= 1
+ root-constr-t2: Y[N8] + Y[N4] + Y[N15] + Y[N6] + Y[N3] + Y[N12] + Y[N14]
+   + Y[N9] + Y[N10] + Y[N13] + Y[N1] >= 1
+ root-constr-t3: Y[N8] + Y[N4] + Y[N15] + Y[N6] + Y[N3] + Y[N12] + Y[N14]
+   + Y[N9] + Y[N10] + Y[N13] + Y[N1] >= 1
+ root-constr-t4: Y[N8] + Y[N4] + Y[N15] + Y[N6] + Y[N3] + Y[N12] + Y[N14]
+   + Y[N9] + Y[N10] + Y[N13] + Y[N1] >= 1
+ root-constr-t5: Y[N8] + Y[N4] + Y[N15] + Y[N6] + Y[N3] + Y[N12] + Y[N14]
+   + Y[N9] + Y[N10] + Y[N13] + Y[N1] >= 1
+ weight-constr-t5: Z[N11] + Z[N11] + Z[N11] + Z[N11] + Z[N11] + Z[N11]
+   >= 6
+ weight-constr-t5: Z[N8] + Z[N8] + Z[N8] + Z[N8] + Z[N8] + Z[N8] >= 6
+ weight-constr-t5: Z[N4] + Z[N4] + Z[N4] + Z[N4] + Z[N4] + Z[N4] >= 6
+ weight-constr-t5: Z[N2] + Z[N2] + Z[N2] + Z[N2] + Z[N2] + Z[N2] >= 6
+ weight-constr-t5: Z[N15] + Z[N15] + Z[N15] + Z[N15] + Z[N15] + Z[N15]
+   >= 6
+ weight-constr-t5: Z[N5] + Z[N5] + Z[N5] + Z[N5] + Z[N5] + Z[N5] >= 6
+ weight-constr-t5: Z[N6] + Z[N6] + Z[N6] + Z[N6] + Z[N6] + Z[N6] >= 6
+ weight-constr-t5: Z[N3] + Z[N3] + Z[N3] + Z[N3] + Z[N3] + Z[N3] >= 6
+ weight-constr-t5: Z[N12] + Z[N12] + Z[N12] + Z[N12] + Z[N12] + Z[N12]
+   >= 6
+ weight-constr-t5: Z[N14] + Z[N14] + Z[N14] + Z[N14] + Z[N14] + Z[N14]
+   >= 6
+ weight-constr-t5: Z[N9] + Z[N9] + Z[N9] + Z[N9] + Z[N9] + Z[N9] >= 6
+ weight-constr-t5: Z[N10] + Z[N10] + Z[N10] + Z[N10] + Z[N10] + Z[N10]
+   >= 6
+ weight-constr-t5: Z[N13] + Z[N13] + Z[N13] + Z[N13] + Z[N13] + Z[N13]
+   >= 6
+ weight-constr-t5: Z[N1] + Z[N1] + Z[N1] + Z[N1] + Z[N1] + Z[N1] >= 6
+ weight-constr-t5: Z[N16] + Z[N16] + Z[N16] + Z[N16] + Z[N16] + Z[N16]
+   >= 6
+ strat-constr-t0-aN2N1: - 1.048576e+06 X[N2,N1] + Z[N2] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t0-aN1N2: - 1.048576e+06 X[N1,N2] - 2 Z[N2] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t0-aN5N1: - 1.048576e+06 X[N5,N1] + Z[N5] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t0-aN1N5: - 1.048576e+06 X[N1,N5] - 2 Z[N5] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t0-aN6N1: - 1.048576e+06 X[N6,N1] + Z[N6] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t0-aN1N6: - 1.048576e+06 X[N1,N6] - 2 Z[N6] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t0-aN8N1: - 1.048576e+06 X[N8,N1] + Z[N8] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t0-aN1N8: - 1.048576e+06 X[N1,N8] - 2 Z[N8] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t0-aN12N1: - 1.048576e+06 X[N12,N1] + Z[N12] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t0-aN1N12: - 1.048576e+06 X[N1,N12] - 2 Z[N12] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t0-aN13N1: - 1.048576e+06 X[N13,N1] + Z[N13] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t0-aN1N13: - 1.048576e+06 X[N1,N13] - 2 Z[N13] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t0-aN15N1: - 1.048576e+06 X[N15,N1] + Z[N15] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t0-aN1N15: - 1.048576e+06 X[N1,N15] - 2 Z[N15] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t0-aN5N2: - 1.048576e+06 X[N5,N2] - 2 Z[N2] + Z[N5]
+   >= -1.048576e+06
+ strat-constr-t0-aN2N5: - 1.048576e+06 X[N2,N5] + Z[N2] - 2 Z[N5]
+   >= -1.048576e+06
+ strat-constr-t0-aN6N2: - 1.048576e+06 X[N6,N2] - 2 Z[N2] + Z[N6]
+   >= -1.048576e+06
+ strat-constr-t0-aN2N6: - 1.048576e+06 X[N2,N6] + Z[N2] - 2 Z[N6]
+   >= -1.048576e+06
+ strat-constr-t0-aN12N2: - 1.048576e+06 X[N12,N2] - 2 Z[N2] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t0-aN2N12: - 1.048576e+06 X[N2,N12] + Z[N2] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t0-aN13N2: - 1.048576e+06 X[N13,N2] - 2 Z[N2] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t0-aN2N13: - 1.048576e+06 X[N2,N13] + Z[N2] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t0-aN15N2: - 1.048576e+06 X[N15,N2] - 2 Z[N2] + Z[N15]
+   >= -1.048576e+06
+ strat-constr-t0-aN2N15: - 1.048576e+06 X[N2,N15] + Z[N2] - 2 Z[N15]
+   >= -1.048576e+06
+ strat-constr-t0-aN4N3: - 1.048576e+06 X[N4,N3] + Z[N4] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t0-aN3N4: - 1.048576e+06 X[N3,N4] - 2 Z[N4] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t0-aN6N3: - 1.048576e+06 X[N6,N3] + Z[N6] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t0-aN3N6: - 1.048576e+06 X[N3,N6] - 2 Z[N6] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t0-aN8N3: - 1.048576e+06 X[N8,N3] + Z[N8] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t0-aN3N8: - 1.048576e+06 X[N3,N8] - 2 Z[N8] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t0-aN11N3: - 1.048576e+06 X[N11,N3] + Z[N11] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t0-aN3N11: - 1.048576e+06 X[N3,N11] - 2 Z[N11] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t0-aN8N4: - 1.048576e+06 X[N8,N4] + Z[N8] - 2 Z[N4]
+   >= -1.048576e+06
+ strat-constr-t0-aN4N8: - 1.048576e+06 X[N4,N8] - 2 Z[N8] + Z[N4]
+   >= -1.048576e+06
+ strat-constr-t0-aN9N4: - 1.048576e+06 X[N9,N4] - 2 Z[N4] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t0-aN4N9: - 1.048576e+06 X[N4,N9] + Z[N4] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t0-aN10N4: - 1.048576e+06 X[N10,N4] - 2 Z[N4] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t0-aN4N10: - 1.048576e+06 X[N4,N10] + Z[N4] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t0-aN11N4: - 1.048576e+06 X[N11,N4] + Z[N11] - 2 Z[N4]
+   >= -1.048576e+06
+ strat-constr-t0-aN4N11: - 1.048576e+06 X[N4,N11] - 2 Z[N11] + Z[N4]
+   >= -1.048576e+06
+ strat-constr-t0-aN12N5: - 1.048576e+06 X[N12,N5] - 2 Z[N5] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t0-aN5N12: - 1.048576e+06 X[N5,N12] + Z[N5] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t0-aN13N5: - 1.048576e+06 X[N13,N5] - 2 Z[N5] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t0-aN5N13: - 1.048576e+06 X[N5,N13] + Z[N5] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t0-aN15N5: - 1.048576e+06 X[N15,N5] + Z[N15] - 2 Z[N5]
+   >= -1.048576e+06
+ strat-constr-t0-aN5N15: - 1.048576e+06 X[N5,N15] - 2 Z[N15] + Z[N5]
+   >= -1.048576e+06
+ strat-constr-t0-aN8N6: - 1.048576e+06 X[N8,N6] + Z[N8] - 2 Z[N6]
+   >= -1.048576e+06
+ strat-constr-t0-aN6N8: - 1.048576e+06 X[N6,N8] - 2 Z[N8] + Z[N6]
+   >= -1.048576e+06
+ strat-constr-t0-aN10N9: - 1.048576e+06 X[N10,N9] - 2 Z[N9] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t0-aN9N10: - 1.048576e+06 X[N9,N10] + Z[N9] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t0-aN11N9: - 1.048576e+06 X[N11,N9] + Z[N11] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t0-aN9N11: - 1.048576e+06 X[N9,N11] - 2 Z[N11] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t0-aN14N9: - 1.048576e+06 X[N14,N9] + Z[N14] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t0-aN9N14: - 1.048576e+06 X[N9,N14] - 2 Z[N14] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t0-aN15N9: - 1.048576e+06 X[N15,N9] + Z[N15] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t0-aN9N15: - 1.048576e+06 X[N9,N15] - 2 Z[N15] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t0-aN16N9: - 1.048576e+06 X[N16,N9] - 2 Z[N9] + Z[N16]
+   >= -1.048576e+06
+ strat-constr-t0-aN9N16: - 1.048576e+06 X[N9,N16] + Z[N9] - 2 Z[N16]
+   >= -1.048576e+06
+ strat-constr-t0-aN11N10: - 1.048576e+06 X[N11,N10] + Z[N11] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t0-aN10N11: - 1.048576e+06 X[N10,N11] - 2 Z[N11] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t0-aN14N10: - 1.048576e+06 X[N14,N10] + Z[N14] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t0-aN10N14: - 1.048576e+06 X[N10,N14] - 2 Z[N14] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t0-aN15N10: - 1.048576e+06 X[N15,N10] + Z[N15] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t0-aN10N15: - 1.048576e+06 X[N10,N15] - 2 Z[N15] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t0-aN13N12: - 1.048576e+06 X[N13,N12] - 2 Z[N12] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t0-aN12N13: - 1.048576e+06 X[N12,N13] + Z[N12] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t0-aN15N12: - 1.048576e+06 X[N15,N12] + Z[N15] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t0-aN12N15: - 1.048576e+06 X[N12,N15] - 2 Z[N15] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t0-aN14N13: - 1.048576e+06 X[N14,N13] + Z[N14] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t0-aN13N14: - 1.048576e+06 X[N13,N14] - 2 Z[N14] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t0-aN15N13: - 1.048576e+06 X[N15,N13] + Z[N15] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t0-aN13N15: - 1.048576e+06 X[N13,N15] - 2 Z[N15] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t0-aN15N14: - 1.048576e+06 X[N15,N14] + Z[N15] - 2 Z[N14]
+   >= -1.048576e+06
+ strat-constr-t0-aN14N15: - 1.048576e+06 X[N14,N15] - 2 Z[N15] + Z[N14]
+   >= -1.048576e+06
+ strat-constr-t0-aN16N14: - 1.048576e+06 X[N16,N14] - 2 Z[N14] + Z[N16]
+   >= -1.048576e+06
+ strat-constr-t0-aN14N16: - 1.048576e+06 X[N14,N16] + Z[N14] - 2 Z[N16]
+   >= -1.048576e+06
+ strat-constr-t1-aN2N1: - 1.048576e+06 X[N2,N1] + Z[N2] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t1-aN1N2: - 1.048576e+06 X[N1,N2] - 2 Z[N2] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t1-aN5N1: - 1.048576e+06 X[N5,N1] + Z[N5] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t1-aN1N5: - 1.048576e+06 X[N1,N5] - 2 Z[N5] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t1-aN6N1: - 1.048576e+06 X[N6,N1] + Z[N6] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t1-aN1N6: - 1.048576e+06 X[N1,N6] - 2 Z[N6] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t1-aN8N1: - 1.048576e+06 X[N8,N1] + Z[N8] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t1-aN1N8: - 1.048576e+06 X[N1,N8] - 2 Z[N8] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t1-aN12N1: - 1.048576e+06 X[N12,N1] + Z[N12] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t1-aN1N12: - 1.048576e+06 X[N1,N12] - 2 Z[N12] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t1-aN13N1: - 1.048576e+06 X[N13,N1] + Z[N13] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t1-aN1N13: - 1.048576e+06 X[N1,N13] - 2 Z[N13] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t1-aN15N1: - 1.048576e+06 X[N15,N1] + Z[N15] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t1-aN1N15: - 1.048576e+06 X[N1,N15] - 2 Z[N15] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t1-aN5N2: - 1.048576e+06 X[N5,N2] - 2 Z[N2] + Z[N5]
+   >= -1.048576e+06
+ strat-constr-t1-aN2N5: - 1.048576e+06 X[N2,N5] + Z[N2] - 2 Z[N5]
+   >= -1.048576e+06
+ strat-constr-t1-aN6N2: - 1.048576e+06 X[N6,N2] - 2 Z[N2] + Z[N6]
+   >= -1.048576e+06
+ strat-constr-t1-aN2N6: - 1.048576e+06 X[N2,N6] + Z[N2] - 2 Z[N6]
+   >= -1.048576e+06
+ strat-constr-t1-aN12N2: - 1.048576e+06 X[N12,N2] - 2 Z[N2] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t1-aN2N12: - 1.048576e+06 X[N2,N12] + Z[N2] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t1-aN13N2: - 1.048576e+06 X[N13,N2] - 2 Z[N2] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t1-aN2N13: - 1.048576e+06 X[N2,N13] + Z[N2] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t1-aN15N2: - 1.048576e+06 X[N15,N2] - 2 Z[N2] + Z[N15]
+   >= -1.048576e+06
+ strat-constr-t1-aN2N15: - 1.048576e+06 X[N2,N15] + Z[N2] - 2 Z[N15]
+   >= -1.048576e+06
+ strat-constr-t1-aN4N3: - 1.048576e+06 X[N4,N3] + Z[N4] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t1-aN3N4: - 1.048576e+06 X[N3,N4] - 2 Z[N4] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t1-aN6N3: - 1.048576e+06 X[N6,N3] + Z[N6] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t1-aN3N6: - 1.048576e+06 X[N3,N6] - 2 Z[N6] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t1-aN8N3: - 1.048576e+06 X[N8,N3] + Z[N8] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t1-aN3N8: - 1.048576e+06 X[N3,N8] - 2 Z[N8] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t1-aN11N3: - 1.048576e+06 X[N11,N3] + Z[N11] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t1-aN3N11: - 1.048576e+06 X[N3,N11] - 2 Z[N11] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t1-aN8N4: - 1.048576e+06 X[N8,N4] + Z[N8] - 2 Z[N4]
+   >= -1.048576e+06
+ strat-constr-t1-aN4N8: - 1.048576e+06 X[N4,N8] - 2 Z[N8] + Z[N4]
+   >= -1.048576e+06
+ strat-constr-t1-aN9N4: - 1.048576e+06 X[N9,N4] - 2 Z[N4] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t1-aN4N9: - 1.048576e+06 X[N4,N9] + Z[N4] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t1-aN10N4: - 1.048576e+06 X[N10,N4] - 2 Z[N4] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t1-aN4N10: - 1.048576e+06 X[N4,N10] + Z[N4] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t1-aN11N4: - 1.048576e+06 X[N11,N4] + Z[N11] - 2 Z[N4]
+   >= -1.048576e+06
+ strat-constr-t1-aN4N11: - 1.048576e+06 X[N4,N11] - 2 Z[N11] + Z[N4]
+   >= -1.048576e+06
+ strat-constr-t1-aN12N5: - 1.048576e+06 X[N12,N5] - 2 Z[N5] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t1-aN5N12: - 1.048576e+06 X[N5,N12] + Z[N5] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t1-aN13N5: - 1.048576e+06 X[N13,N5] - 2 Z[N5] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t1-aN5N13: - 1.048576e+06 X[N5,N13] + Z[N5] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t1-aN15N5: - 1.048576e+06 X[N15,N5] + Z[N15] - 2 Z[N5]
+   >= -1.048576e+06
+ strat-constr-t1-aN5N15: - 1.048576e+06 X[N5,N15] - 2 Z[N15] + Z[N5]
+   >= -1.048576e+06
+ strat-constr-t1-aN8N6: - 1.048576e+06 X[N8,N6] + Z[N8] - 2 Z[N6]
+   >= -1.048576e+06
+ strat-constr-t1-aN6N8: - 1.048576e+06 X[N6,N8] - 2 Z[N8] + Z[N6]
+   >= -1.048576e+06
+ strat-constr-t1-aN10N9: - 1.048576e+06 X[N10,N9] - 2 Z[N9] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t1-aN9N10: - 1.048576e+06 X[N9,N10] + Z[N9] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t1-aN11N9: - 1.048576e+06 X[N11,N9] + Z[N11] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t1-aN9N11: - 1.048576e+06 X[N9,N11] - 2 Z[N11] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t1-aN14N9: - 1.048576e+06 X[N14,N9] + Z[N14] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t1-aN9N14: - 1.048576e+06 X[N9,N14] - 2 Z[N14] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t1-aN15N9: - 1.048576e+06 X[N15,N9] + Z[N15] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t1-aN9N15: - 1.048576e+06 X[N9,N15] - 2 Z[N15] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t1-aN16N9: - 1.048576e+06 X[N16,N9] - 2 Z[N9] + Z[N16]
+   >= -1.048576e+06
+ strat-constr-t1-aN9N16: - 1.048576e+06 X[N9,N16] + Z[N9] - 2 Z[N16]
+   >= -1.048576e+06
+ strat-constr-t1-aN11N10: - 1.048576e+06 X[N11,N10] + Z[N11] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t1-aN10N11: - 1.048576e+06 X[N10,N11] - 2 Z[N11] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t1-aN14N10: - 1.048576e+06 X[N14,N10] + Z[N14] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t1-aN10N14: - 1.048576e+06 X[N10,N14] - 2 Z[N14] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t1-aN15N10: - 1.048576e+06 X[N15,N10] + Z[N15] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t1-aN10N15: - 1.048576e+06 X[N10,N15] - 2 Z[N15] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t1-aN13N12: - 1.048576e+06 X[N13,N12] - 2 Z[N12] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t1-aN12N13: - 1.048576e+06 X[N12,N13] + Z[N12] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t1-aN15N12: - 1.048576e+06 X[N15,N12] + Z[N15] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t1-aN12N15: - 1.048576e+06 X[N12,N15] - 2 Z[N15] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t1-aN14N13: - 1.048576e+06 X[N14,N13] + Z[N14] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t1-aN13N14: - 1.048576e+06 X[N13,N14] - 2 Z[N14] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t1-aN15N13: - 1.048576e+06 X[N15,N13] + Z[N15] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t1-aN13N15: - 1.048576e+06 X[N13,N15] - 2 Z[N15] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t1-aN15N14: - 1.048576e+06 X[N15,N14] + Z[N15] - 2 Z[N14]
+   >= -1.048576e+06
+ strat-constr-t1-aN14N15: - 1.048576e+06 X[N14,N15] - 2 Z[N15] + Z[N14]
+   >= -1.048576e+06
+ strat-constr-t1-aN16N14: - 1.048576e+06 X[N16,N14] - 2 Z[N14] + Z[N16]
+   >= -1.048576e+06
+ strat-constr-t1-aN14N16: - 1.048576e+06 X[N14,N16] + Z[N14] - 2 Z[N16]
+   >= -1.048576e+06
+ strat-constr-t2-aN2N1: - 1.048576e+06 X[N2,N1] + Z[N2] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t2-aN1N2: - 1.048576e+06 X[N1,N2] - 2 Z[N2] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t2-aN5N1: - 1.048576e+06 X[N5,N1] + Z[N5] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t2-aN1N5: - 1.048576e+06 X[N1,N5] - 2 Z[N5] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t2-aN6N1: - 1.048576e+06 X[N6,N1] + Z[N6] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t2-aN1N6: - 1.048576e+06 X[N1,N6] - 2 Z[N6] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t2-aN8N1: - 1.048576e+06 X[N8,N1] + Z[N8] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t2-aN1N8: - 1.048576e+06 X[N1,N8] - 2 Z[N8] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t2-aN12N1: - 1.048576e+06 X[N12,N1] + Z[N12] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t2-aN1N12: - 1.048576e+06 X[N1,N12] - 2 Z[N12] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t2-aN13N1: - 1.048576e+06 X[N13,N1] + Z[N13] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t2-aN1N13: - 1.048576e+06 X[N1,N13] - 2 Z[N13] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t2-aN15N1: - 1.048576e+06 X[N15,N1] + Z[N15] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t2-aN1N15: - 1.048576e+06 X[N1,N15] - 2 Z[N15] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t2-aN5N2: - 1.048576e+06 X[N5,N2] - 2 Z[N2] + Z[N5]
+   >= -1.048576e+06
+ strat-constr-t2-aN2N5: - 1.048576e+06 X[N2,N5] + Z[N2] - 2 Z[N5]
+   >= -1.048576e+06
+ strat-constr-t2-aN6N2: - 1.048576e+06 X[N6,N2] - 2 Z[N2] + Z[N6]
+   >= -1.048576e+06
+ strat-constr-t2-aN2N6: - 1.048576e+06 X[N2,N6] + Z[N2] - 2 Z[N6]
+   >= -1.048576e+06
+ strat-constr-t2-aN12N2: - 1.048576e+06 X[N12,N2] - 2 Z[N2] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t2-aN2N12: - 1.048576e+06 X[N2,N12] + Z[N2] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t2-aN13N2: - 1.048576e+06 X[N13,N2] - 2 Z[N2] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t2-aN2N13: - 1.048576e+06 X[N2,N13] + Z[N2] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t2-aN15N2: - 1.048576e+06 X[N15,N2] - 2 Z[N2] + Z[N15]
+   >= -1.048576e+06
+ strat-constr-t2-aN2N15: - 1.048576e+06 X[N2,N15] + Z[N2] - 2 Z[N15]
+   >= -1.048576e+06
+ strat-constr-t2-aN4N3: - 1.048576e+06 X[N4,N3] + Z[N4] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t2-aN3N4: - 1.048576e+06 X[N3,N4] - 2 Z[N4] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t2-aN6N3: - 1.048576e+06 X[N6,N3] + Z[N6] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t2-aN3N6: - 1.048576e+06 X[N3,N6] - 2 Z[N6] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t2-aN8N3: - 1.048576e+06 X[N8,N3] + Z[N8] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t2-aN3N8: - 1.048576e+06 X[N3,N8] - 2 Z[N8] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t2-aN11N3: - 1.048576e+06 X[N11,N3] + Z[N11] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t2-aN3N11: - 1.048576e+06 X[N3,N11] - 2 Z[N11] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t2-aN8N4: - 1.048576e+06 X[N8,N4] + Z[N8] - 2 Z[N4]
+   >= -1.048576e+06
+ strat-constr-t2-aN4N8: - 1.048576e+06 X[N4,N8] - 2 Z[N8] + Z[N4]
+   >= -1.048576e+06
+ strat-constr-t2-aN9N4: - 1.048576e+06 X[N9,N4] - 2 Z[N4] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t2-aN4N9: - 1.048576e+06 X[N4,N9] + Z[N4] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t2-aN10N4: - 1.048576e+06 X[N10,N4] - 2 Z[N4] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t2-aN4N10: - 1.048576e+06 X[N4,N10] + Z[N4] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t2-aN11N4: - 1.048576e+06 X[N11,N4] + Z[N11] - 2 Z[N4]
+   >= -1.048576e+06
+ strat-constr-t2-aN4N11: - 1.048576e+06 X[N4,N11] - 2 Z[N11] + Z[N4]
+   >= -1.048576e+06
+ strat-constr-t2-aN12N5: - 1.048576e+06 X[N12,N5] - 2 Z[N5] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t2-aN5N12: - 1.048576e+06 X[N5,N12] + Z[N5] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t2-aN13N5: - 1.048576e+06 X[N13,N5] - 2 Z[N5] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t2-aN5N13: - 1.048576e+06 X[N5,N13] + Z[N5] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t2-aN15N5: - 1.048576e+06 X[N15,N5] + Z[N15] - 2 Z[N5]
+   >= -1.048576e+06
+ strat-constr-t2-aN5N15: - 1.048576e+06 X[N5,N15] - 2 Z[N15] + Z[N5]
+   >= -1.048576e+06
+ strat-constr-t2-aN8N6: - 1.048576e+06 X[N8,N6] + Z[N8] - 2 Z[N6]
+   >= -1.048576e+06
+ strat-constr-t2-aN6N8: - 1.048576e+06 X[N6,N8] - 2 Z[N8] + Z[N6]
+   >= -1.048576e+06
+ strat-constr-t2-aN10N9: - 1.048576e+06 X[N10,N9] - 2 Z[N9] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t2-aN9N10: - 1.048576e+06 X[N9,N10] + Z[N9] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t2-aN11N9: - 1.048576e+06 X[N11,N9] + Z[N11] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t2-aN9N11: - 1.048576e+06 X[N9,N11] - 2 Z[N11] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t2-aN14N9: - 1.048576e+06 X[N14,N9] + Z[N14] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t2-aN9N14: - 1.048576e+06 X[N9,N14] - 2 Z[N14] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t2-aN15N9: - 1.048576e+06 X[N15,N9] + Z[N15] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t2-aN9N15: - 1.048576e+06 X[N9,N15] - 2 Z[N15] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t2-aN16N9: - 1.048576e+06 X[N16,N9] - 2 Z[N9] + Z[N16]
+   >= -1.048576e+06
+ strat-constr-t2-aN9N16: - 1.048576e+06 X[N9,N16] + Z[N9] - 2 Z[N16]
+   >= -1.048576e+06
+ strat-constr-t2-aN11N10: - 1.048576e+06 X[N11,N10] + Z[N11] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t2-aN10N11: - 1.048576e+06 X[N10,N11] - 2 Z[N11] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t2-aN14N10: - 1.048576e+06 X[N14,N10] + Z[N14] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t2-aN10N14: - 1.048576e+06 X[N10,N14] - 2 Z[N14] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t2-aN15N10: - 1.048576e+06 X[N15,N10] + Z[N15] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t2-aN10N15: - 1.048576e+06 X[N10,N15] - 2 Z[N15] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t2-aN13N12: - 1.048576e+06 X[N13,N12] - 2 Z[N12] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t2-aN12N13: - 1.048576e+06 X[N12,N13] + Z[N12] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t2-aN15N12: - 1.048576e+06 X[N15,N12] + Z[N15] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t2-aN12N15: - 1.048576e+06 X[N12,N15] - 2 Z[N15] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t2-aN14N13: - 1.048576e+06 X[N14,N13] + Z[N14] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t2-aN13N14: - 1.048576e+06 X[N13,N14] - 2 Z[N14] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t2-aN15N13: - 1.048576e+06 X[N15,N13] + Z[N15] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t2-aN13N15: - 1.048576e+06 X[N13,N15] - 2 Z[N15] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t2-aN15N14: - 1.048576e+06 X[N15,N14] + Z[N15] - 2 Z[N14]
+   >= -1.048576e+06
+ strat-constr-t2-aN14N15: - 1.048576e+06 X[N14,N15] - 2 Z[N15] + Z[N14]
+   >= -1.048576e+06
+ strat-constr-t2-aN16N14: - 1.048576e+06 X[N16,N14] - 2 Z[N14] + Z[N16]
+   >= -1.048576e+06
+ strat-constr-t2-aN14N16: - 1.048576e+06 X[N14,N16] + Z[N14] - 2 Z[N16]
+   >= -1.048576e+06
+ strat-constr-t3-aN2N1: - 1.048576e+06 X[N2,N1] + Z[N2] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t3-aN1N2: - 1.048576e+06 X[N1,N2] - 2 Z[N2] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t3-aN5N1: - 1.048576e+06 X[N5,N1] + Z[N5] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t3-aN1N5: - 1.048576e+06 X[N1,N5] - 2 Z[N5] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t3-aN6N1: - 1.048576e+06 X[N6,N1] + Z[N6] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t3-aN1N6: - 1.048576e+06 X[N1,N6] - 2 Z[N6] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t3-aN8N1: - 1.048576e+06 X[N8,N1] + Z[N8] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t3-aN1N8: - 1.048576e+06 X[N1,N8] - 2 Z[N8] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t3-aN12N1: - 1.048576e+06 X[N12,N1] + Z[N12] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t3-aN1N12: - 1.048576e+06 X[N1,N12] - 2 Z[N12] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t3-aN13N1: - 1.048576e+06 X[N13,N1] + Z[N13] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t3-aN1N13: - 1.048576e+06 X[N1,N13] - 2 Z[N13] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t3-aN15N1: - 1.048576e+06 X[N15,N1] + Z[N15] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t3-aN1N15: - 1.048576e+06 X[N1,N15] - 2 Z[N15] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t3-aN5N2: - 1.048576e+06 X[N5,N2] - 2 Z[N2] + Z[N5]
+   >= -1.048576e+06
+ strat-constr-t3-aN2N5: - 1.048576e+06 X[N2,N5] + Z[N2] - 2 Z[N5]
+   >= -1.048576e+06
+ strat-constr-t3-aN6N2: - 1.048576e+06 X[N6,N2] - 2 Z[N2] + Z[N6]
+   >= -1.048576e+06
+ strat-constr-t3-aN2N6: - 1.048576e+06 X[N2,N6] + Z[N2] - 2 Z[N6]
+   >= -1.048576e+06
+ strat-constr-t3-aN12N2: - 1.048576e+06 X[N12,N2] - 2 Z[N2] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t3-aN2N12: - 1.048576e+06 X[N2,N12] + Z[N2] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t3-aN13N2: - 1.048576e+06 X[N13,N2] - 2 Z[N2] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t3-aN2N13: - 1.048576e+06 X[N2,N13] + Z[N2] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t3-aN15N2: - 1.048576e+06 X[N15,N2] - 2 Z[N2] + Z[N15]
+   >= -1.048576e+06
+ strat-constr-t3-aN2N15: - 1.048576e+06 X[N2,N15] + Z[N2] - 2 Z[N15]
+   >= -1.048576e+06
+ strat-constr-t3-aN4N3: - 1.048576e+06 X[N4,N3] + Z[N4] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t3-aN3N4: - 1.048576e+06 X[N3,N4] - 2 Z[N4] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t3-aN6N3: - 1.048576e+06 X[N6,N3] + Z[N6] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t3-aN3N6: - 1.048576e+06 X[N3,N6] - 2 Z[N6] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t3-aN8N3: - 1.048576e+06 X[N8,N3] + Z[N8] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t3-aN3N8: - 1.048576e+06 X[N3,N8] - 2 Z[N8] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t3-aN11N3: - 1.048576e+06 X[N11,N3] + Z[N11] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t3-aN3N11: - 1.048576e+06 X[N3,N11] - 2 Z[N11] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t3-aN8N4: - 1.048576e+06 X[N8,N4] + Z[N8] - 2 Z[N4]
+   >= -1.048576e+06
+ strat-constr-t3-aN4N8: - 1.048576e+06 X[N4,N8] - 2 Z[N8] + Z[N4]
+   >= -1.048576e+06
+ strat-constr-t3-aN9N4: - 1.048576e+06 X[N9,N4] - 2 Z[N4] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t3-aN4N9: - 1.048576e+06 X[N4,N9] + Z[N4] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t3-aN10N4: - 1.048576e+06 X[N10,N4] - 2 Z[N4] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t3-aN4N10: - 1.048576e+06 X[N4,N10] + Z[N4] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t3-aN11N4: - 1.048576e+06 X[N11,N4] + Z[N11] - 2 Z[N4]
+   >= -1.048576e+06
+ strat-constr-t3-aN4N11: - 1.048576e+06 X[N4,N11] - 2 Z[N11] + Z[N4]
+   >= -1.048576e+06
+ strat-constr-t3-aN12N5: - 1.048576e+06 X[N12,N5] - 2 Z[N5] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t3-aN5N12: - 1.048576e+06 X[N5,N12] + Z[N5] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t3-aN13N5: - 1.048576e+06 X[N13,N5] - 2 Z[N5] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t3-aN5N13: - 1.048576e+06 X[N5,N13] + Z[N5] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t3-aN15N5: - 1.048576e+06 X[N15,N5] + Z[N15] - 2 Z[N5]
+   >= -1.048576e+06
+ strat-constr-t3-aN5N15: - 1.048576e+06 X[N5,N15] - 2 Z[N15] + Z[N5]
+   >= -1.048576e+06
+ strat-constr-t3-aN8N6: - 1.048576e+06 X[N8,N6] + Z[N8] - 2 Z[N6]
+   >= -1.048576e+06
+ strat-constr-t3-aN6N8: - 1.048576e+06 X[N6,N8] - 2 Z[N8] + Z[N6]
+   >= -1.048576e+06
+ strat-constr-t3-aN10N9: - 1.048576e+06 X[N10,N9] - 2 Z[N9] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t3-aN9N10: - 1.048576e+06 X[N9,N10] + Z[N9] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t3-aN11N9: - 1.048576e+06 X[N11,N9] + Z[N11] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t3-aN9N11: - 1.048576e+06 X[N9,N11] - 2 Z[N11] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t3-aN14N9: - 1.048576e+06 X[N14,N9] + Z[N14] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t3-aN9N14: - 1.048576e+06 X[N9,N14] - 2 Z[N14] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t3-aN15N9: - 1.048576e+06 X[N15,N9] + Z[N15] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t3-aN9N15: - 1.048576e+06 X[N9,N15] - 2 Z[N15] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t3-aN16N9: - 1.048576e+06 X[N16,N9] - 2 Z[N9] + Z[N16]
+   >= -1.048576e+06
+ strat-constr-t3-aN9N16: - 1.048576e+06 X[N9,N16] + Z[N9] - 2 Z[N16]
+   >= -1.048576e+06
+ strat-constr-t3-aN11N10: - 1.048576e+06 X[N11,N10] + Z[N11] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t3-aN10N11: - 1.048576e+06 X[N10,N11] - 2 Z[N11] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t3-aN14N10: - 1.048576e+06 X[N14,N10] + Z[N14] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t3-aN10N14: - 1.048576e+06 X[N10,N14] - 2 Z[N14] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t3-aN15N10: - 1.048576e+06 X[N15,N10] + Z[N15] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t3-aN10N15: - 1.048576e+06 X[N10,N15] - 2 Z[N15] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t3-aN13N12: - 1.048576e+06 X[N13,N12] - 2 Z[N12] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t3-aN12N13: - 1.048576e+06 X[N12,N13] + Z[N12] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t3-aN15N12: - 1.048576e+06 X[N15,N12] + Z[N15] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t3-aN12N15: - 1.048576e+06 X[N12,N15] - 2 Z[N15] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t3-aN14N13: - 1.048576e+06 X[N14,N13] + Z[N14] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t3-aN13N14: - 1.048576e+06 X[N13,N14] - 2 Z[N14] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t3-aN15N13: - 1.048576e+06 X[N15,N13] + Z[N15] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t3-aN13N15: - 1.048576e+06 X[N13,N15] - 2 Z[N15] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t3-aN15N14: - 1.048576e+06 X[N15,N14] + Z[N15] - 2 Z[N14]
+   >= -1.048576e+06
+ strat-constr-t3-aN14N15: - 1.048576e+06 X[N14,N15] - 2 Z[N15] + Z[N14]
+   >= -1.048576e+06
+ strat-constr-t3-aN16N14: - 1.048576e+06 X[N16,N14] - 2 Z[N14] + Z[N16]
+   >= -1.048576e+06
+ strat-constr-t3-aN14N16: - 1.048576e+06 X[N14,N16] + Z[N14] - 2 Z[N16]
+   >= -1.048576e+06
+ strat-constr-t4-aN2N1: - 1.048576e+06 X[N2,N1] + Z[N2] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t4-aN1N2: - 1.048576e+06 X[N1,N2] - 2 Z[N2] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t4-aN5N1: - 1.048576e+06 X[N5,N1] + Z[N5] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t4-aN1N5: - 1.048576e+06 X[N1,N5] - 2 Z[N5] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t4-aN6N1: - 1.048576e+06 X[N6,N1] + Z[N6] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t4-aN1N6: - 1.048576e+06 X[N1,N6] - 2 Z[N6] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t4-aN8N1: - 1.048576e+06 X[N8,N1] + Z[N8] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t4-aN1N8: - 1.048576e+06 X[N1,N8] - 2 Z[N8] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t4-aN12N1: - 1.048576e+06 X[N12,N1] + Z[N12] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t4-aN1N12: - 1.048576e+06 X[N1,N12] - 2 Z[N12] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t4-aN13N1: - 1.048576e+06 X[N13,N1] + Z[N13] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t4-aN1N13: - 1.048576e+06 X[N1,N13] - 2 Z[N13] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t4-aN15N1: - 1.048576e+06 X[N15,N1] + Z[N15] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t4-aN1N15: - 1.048576e+06 X[N1,N15] - 2 Z[N15] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t4-aN5N2: - 1.048576e+06 X[N5,N2] - 2 Z[N2] + Z[N5]
+   >= -1.048576e+06
+ strat-constr-t4-aN2N5: - 1.048576e+06 X[N2,N5] + Z[N2] - 2 Z[N5]
+   >= -1.048576e+06
+ strat-constr-t4-aN6N2: - 1.048576e+06 X[N6,N2] - 2 Z[N2] + Z[N6]
+   >= -1.048576e+06
+ strat-constr-t4-aN2N6: - 1.048576e+06 X[N2,N6] + Z[N2] - 2 Z[N6]
+   >= -1.048576e+06
+ strat-constr-t4-aN12N2: - 1.048576e+06 X[N12,N2] - 2 Z[N2] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t4-aN2N12: - 1.048576e+06 X[N2,N12] + Z[N2] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t4-aN13N2: - 1.048576e+06 X[N13,N2] - 2 Z[N2] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t4-aN2N13: - 1.048576e+06 X[N2,N13] + Z[N2] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t4-aN15N2: - 1.048576e+06 X[N15,N2] - 2 Z[N2] + Z[N15]
+   >= -1.048576e+06
+ strat-constr-t4-aN2N15: - 1.048576e+06 X[N2,N15] + Z[N2] - 2 Z[N15]
+   >= -1.048576e+06
+ strat-constr-t4-aN4N3: - 1.048576e+06 X[N4,N3] + Z[N4] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t4-aN3N4: - 1.048576e+06 X[N3,N4] - 2 Z[N4] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t4-aN6N3: - 1.048576e+06 X[N6,N3] + Z[N6] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t4-aN3N6: - 1.048576e+06 X[N3,N6] - 2 Z[N6] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t4-aN8N3: - 1.048576e+06 X[N8,N3] + Z[N8] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t4-aN3N8: - 1.048576e+06 X[N3,N8] - 2 Z[N8] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t4-aN11N3: - 1.048576e+06 X[N11,N3] + Z[N11] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t4-aN3N11: - 1.048576e+06 X[N3,N11] - 2 Z[N11] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t4-aN8N4: - 1.048576e+06 X[N8,N4] + Z[N8] - 2 Z[N4]
+   >= -1.048576e+06
+ strat-constr-t4-aN4N8: - 1.048576e+06 X[N4,N8] - 2 Z[N8] + Z[N4]
+   >= -1.048576e+06
+ strat-constr-t4-aN9N4: - 1.048576e+06 X[N9,N4] - 2 Z[N4] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t4-aN4N9: - 1.048576e+06 X[N4,N9] + Z[N4] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t4-aN10N4: - 1.048576e+06 X[N10,N4] - 2 Z[N4] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t4-aN4N10: - 1.048576e+06 X[N4,N10] + Z[N4] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t4-aN11N4: - 1.048576e+06 X[N11,N4] + Z[N11] - 2 Z[N4]
+   >= -1.048576e+06
+ strat-constr-t4-aN4N11: - 1.048576e+06 X[N4,N11] - 2 Z[N11] + Z[N4]
+   >= -1.048576e+06
+ strat-constr-t4-aN12N5: - 1.048576e+06 X[N12,N5] - 2 Z[N5] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t4-aN5N12: - 1.048576e+06 X[N5,N12] + Z[N5] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t4-aN13N5: - 1.048576e+06 X[N13,N5] - 2 Z[N5] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t4-aN5N13: - 1.048576e+06 X[N5,N13] + Z[N5] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t4-aN15N5: - 1.048576e+06 X[N15,N5] + Z[N15] - 2 Z[N5]
+   >= -1.048576e+06
+ strat-constr-t4-aN5N15: - 1.048576e+06 X[N5,N15] - 2 Z[N15] + Z[N5]
+   >= -1.048576e+06
+ strat-constr-t4-aN8N6: - 1.048576e+06 X[N8,N6] + Z[N8] - 2 Z[N6]
+   >= -1.048576e+06
+ strat-constr-t4-aN6N8: - 1.048576e+06 X[N6,N8] - 2 Z[N8] + Z[N6]
+   >= -1.048576e+06
+ strat-constr-t4-aN10N9: - 1.048576e+06 X[N10,N9] - 2 Z[N9] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t4-aN9N10: - 1.048576e+06 X[N9,N10] + Z[N9] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t4-aN11N9: - 1.048576e+06 X[N11,N9] + Z[N11] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t4-aN9N11: - 1.048576e+06 X[N9,N11] - 2 Z[N11] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t4-aN14N9: - 1.048576e+06 X[N14,N9] + Z[N14] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t4-aN9N14: - 1.048576e+06 X[N9,N14] - 2 Z[N14] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t4-aN15N9: - 1.048576e+06 X[N15,N9] + Z[N15] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t4-aN9N15: - 1.048576e+06 X[N9,N15] - 2 Z[N15] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t4-aN16N9: - 1.048576e+06 X[N16,N9] - 2 Z[N9] + Z[N16]
+   >= -1.048576e+06
+ strat-constr-t4-aN9N16: - 1.048576e+06 X[N9,N16] + Z[N9] - 2 Z[N16]
+   >= -1.048576e+06
+ strat-constr-t4-aN11N10: - 1.048576e+06 X[N11,N10] + Z[N11] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t4-aN10N11: - 1.048576e+06 X[N10,N11] - 2 Z[N11] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t4-aN14N10: - 1.048576e+06 X[N14,N10] + Z[N14] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t4-aN10N14: - 1.048576e+06 X[N10,N14] - 2 Z[N14] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t4-aN15N10: - 1.048576e+06 X[N15,N10] + Z[N15] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t4-aN10N15: - 1.048576e+06 X[N10,N15] - 2 Z[N15] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t4-aN13N12: - 1.048576e+06 X[N13,N12] - 2 Z[N12] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t4-aN12N13: - 1.048576e+06 X[N12,N13] + Z[N12] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t4-aN15N12: - 1.048576e+06 X[N15,N12] + Z[N15] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t4-aN12N15: - 1.048576e+06 X[N12,N15] - 2 Z[N15] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t4-aN14N13: - 1.048576e+06 X[N14,N13] + Z[N14] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t4-aN13N14: - 1.048576e+06 X[N13,N14] - 2 Z[N14] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t4-aN15N13: - 1.048576e+06 X[N15,N13] + Z[N15] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t4-aN13N15: - 1.048576e+06 X[N13,N15] - 2 Z[N15] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t4-aN15N14: - 1.048576e+06 X[N15,N14] + Z[N15] - 2 Z[N14]
+   >= -1.048576e+06
+ strat-constr-t4-aN14N15: - 1.048576e+06 X[N14,N15] - 2 Z[N15] + Z[N14]
+   >= -1.048576e+06
+ strat-constr-t4-aN16N14: - 1.048576e+06 X[N16,N14] - 2 Z[N14] + Z[N16]
+   >= -1.048576e+06
+ strat-constr-t4-aN14N16: - 1.048576e+06 X[N14,N16] + Z[N14] - 2 Z[N16]
+   >= -1.048576e+06
+ strat-constr-t5-aN2N1: - 1.048576e+06 X[N2,N1] + Z[N2] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t5-aN1N2: - 1.048576e+06 X[N1,N2] - 2 Z[N2] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t5-aN5N1: - 1.048576e+06 X[N5,N1] + Z[N5] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t5-aN1N5: - 1.048576e+06 X[N1,N5] - 2 Z[N5] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t5-aN6N1: - 1.048576e+06 X[N6,N1] + Z[N6] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t5-aN1N6: - 1.048576e+06 X[N1,N6] - 2 Z[N6] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t5-aN8N1: - 1.048576e+06 X[N8,N1] + Z[N8] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t5-aN1N8: - 1.048576e+06 X[N1,N8] - 2 Z[N8] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t5-aN12N1: - 1.048576e+06 X[N12,N1] + Z[N12] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t5-aN1N12: - 1.048576e+06 X[N1,N12] - 2 Z[N12] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t5-aN13N1: - 1.048576e+06 X[N13,N1] + Z[N13] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t5-aN1N13: - 1.048576e+06 X[N1,N13] - 2 Z[N13] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t5-aN15N1: - 1.048576e+06 X[N15,N1] + Z[N15] - 2 Z[N1]
+   >= -1.048576e+06
+ strat-constr-t5-aN1N15: - 1.048576e+06 X[N1,N15] - 2 Z[N15] + Z[N1]
+   >= -1.048576e+06
+ strat-constr-t5-aN5N2: - 1.048576e+06 X[N5,N2] - 2 Z[N2] + Z[N5]
+   >= -1.048576e+06
+ strat-constr-t5-aN2N5: - 1.048576e+06 X[N2,N5] + Z[N2] - 2 Z[N5]
+   >= -1.048576e+06
+ strat-constr-t5-aN6N2: - 1.048576e+06 X[N6,N2] - 2 Z[N2] + Z[N6]
+   >= -1.048576e+06
+ strat-constr-t5-aN2N6: - 1.048576e+06 X[N2,N6] + Z[N2] - 2 Z[N6]
+   >= -1.048576e+06
+ strat-constr-t5-aN12N2: - 1.048576e+06 X[N12,N2] - 2 Z[N2] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t5-aN2N12: - 1.048576e+06 X[N2,N12] + Z[N2] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t5-aN13N2: - 1.048576e+06 X[N13,N2] - 2 Z[N2] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t5-aN2N13: - 1.048576e+06 X[N2,N13] + Z[N2] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t5-aN15N2: - 1.048576e+06 X[N15,N2] - 2 Z[N2] + Z[N15]
+   >= -1.048576e+06
+ strat-constr-t5-aN2N15: - 1.048576e+06 X[N2,N15] + Z[N2] - 2 Z[N15]
+   >= -1.048576e+06
+ strat-constr-t5-aN4N3: - 1.048576e+06 X[N4,N3] + Z[N4] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t5-aN3N4: - 1.048576e+06 X[N3,N4] - 2 Z[N4] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t5-aN6N3: - 1.048576e+06 X[N6,N3] + Z[N6] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t5-aN3N6: - 1.048576e+06 X[N3,N6] - 2 Z[N6] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t5-aN8N3: - 1.048576e+06 X[N8,N3] + Z[N8] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t5-aN3N8: - 1.048576e+06 X[N3,N8] - 2 Z[N8] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t5-aN11N3: - 1.048576e+06 X[N11,N3] + Z[N11] - 2 Z[N3]
+   >= -1.048576e+06
+ strat-constr-t5-aN3N11: - 1.048576e+06 X[N3,N11] - 2 Z[N11] + Z[N3]
+   >= -1.048576e+06
+ strat-constr-t5-aN8N4: - 1.048576e+06 X[N8,N4] + Z[N8] - 2 Z[N4]
+   >= -1.048576e+06
+ strat-constr-t5-aN4N8: - 1.048576e+06 X[N4,N8] - 2 Z[N8] + Z[N4]
+   >= -1.048576e+06
+ strat-constr-t5-aN9N4: - 1.048576e+06 X[N9,N4] - 2 Z[N4] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t5-aN4N9: - 1.048576e+06 X[N4,N9] + Z[N4] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t5-aN10N4: - 1.048576e+06 X[N10,N4] - 2 Z[N4] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t5-aN4N10: - 1.048576e+06 X[N4,N10] + Z[N4] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t5-aN11N4: - 1.048576e+06 X[N11,N4] + Z[N11] - 2 Z[N4]
+   >= -1.048576e+06
+ strat-constr-t5-aN4N11: - 1.048576e+06 X[N4,N11] - 2 Z[N11] + Z[N4]
+   >= -1.048576e+06
+ strat-constr-t5-aN12N5: - 1.048576e+06 X[N12,N5] - 2 Z[N5] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t5-aN5N12: - 1.048576e+06 X[N5,N12] + Z[N5] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t5-aN13N5: - 1.048576e+06 X[N13,N5] - 2 Z[N5] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t5-aN5N13: - 1.048576e+06 X[N5,N13] + Z[N5] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t5-aN15N5: - 1.048576e+06 X[N15,N5] + Z[N15] - 2 Z[N5]
+   >= -1.048576e+06
+ strat-constr-t5-aN5N15: - 1.048576e+06 X[N5,N15] - 2 Z[N15] + Z[N5]
+   >= -1.048576e+06
+ strat-constr-t5-aN8N6: - 1.048576e+06 X[N8,N6] + Z[N8] - 2 Z[N6]
+   >= -1.048576e+06
+ strat-constr-t5-aN6N8: - 1.048576e+06 X[N6,N8] - 2 Z[N8] + Z[N6]
+   >= -1.048576e+06
+ strat-constr-t5-aN10N9: - 1.048576e+06 X[N10,N9] - 2 Z[N9] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t5-aN9N10: - 1.048576e+06 X[N9,N10] + Z[N9] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t5-aN11N9: - 1.048576e+06 X[N11,N9] + Z[N11] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t5-aN9N11: - 1.048576e+06 X[N9,N11] - 2 Z[N11] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t5-aN14N9: - 1.048576e+06 X[N14,N9] + Z[N14] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t5-aN9N14: - 1.048576e+06 X[N9,N14] - 2 Z[N14] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t5-aN15N9: - 1.048576e+06 X[N15,N9] + Z[N15] - 2 Z[N9]
+   >= -1.048576e+06
+ strat-constr-t5-aN9N15: - 1.048576e+06 X[N9,N15] - 2 Z[N15] + Z[N9]
+   >= -1.048576e+06
+ strat-constr-t5-aN16N9: - 1.048576e+06 X[N16,N9] - 2 Z[N9] + Z[N16]
+   >= -1.048576e+06
+ strat-constr-t5-aN9N16: - 1.048576e+06 X[N9,N16] + Z[N9] - 2 Z[N16]
+   >= -1.048576e+06
+ strat-constr-t5-aN11N10: - 1.048576e+06 X[N11,N10] + Z[N11] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t5-aN10N11: - 1.048576e+06 X[N10,N11] - 2 Z[N11] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t5-aN14N10: - 1.048576e+06 X[N14,N10] + Z[N14] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t5-aN10N14: - 1.048576e+06 X[N10,N14] - 2 Z[N14] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t5-aN15N10: - 1.048576e+06 X[N15,N10] + Z[N15] - 2 Z[N10]
+   >= -1.048576e+06
+ strat-constr-t5-aN10N15: - 1.048576e+06 X[N10,N15] - 2 Z[N15] + Z[N10]
+   >= -1.048576e+06
+ strat-constr-t5-aN13N12: - 1.048576e+06 X[N13,N12] - 2 Z[N12] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t5-aN12N13: - 1.048576e+06 X[N12,N13] + Z[N12] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t5-aN15N12: - 1.048576e+06 X[N15,N12] + Z[N15] - 2 Z[N12]
+   >= -1.048576e+06
+ strat-constr-t5-aN12N15: - 1.048576e+06 X[N12,N15] - 2 Z[N15] + Z[N12]
+   >= -1.048576e+06
+ strat-constr-t5-aN14N13: - 1.048576e+06 X[N14,N13] + Z[N14] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t5-aN13N14: - 1.048576e+06 X[N13,N14] - 2 Z[N14] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t5-aN15N13: - 1.048576e+06 X[N15,N13] + Z[N15] - 2 Z[N13]
+   >= -1.048576e+06
+ strat-constr-t5-aN13N15: - 1.048576e+06 X[N13,N15] - 2 Z[N15] + Z[N13]
+   >= -1.048576e+06
+ strat-constr-t5-aN15N14: - 1.048576e+06 X[N15,N14] + Z[N15] - 2 Z[N14]
+   >= -1.048576e+06
+ strat-constr-t5-aN14N15: - 1.048576e+06 X[N14,N15] - 2 Z[N15] + Z[N14]
+   >= -1.048576e+06
+ strat-constr-t5-aN16N14: - 1.048576e+06 X[N16,N14] - 2 Z[N14] + Z[N16]
+   >= -1.048576e+06
+ strat-constr-t5-aN14N16: - 1.048576e+06 X[N14,N16] + Z[N14] - 2 Z[N16]
+   >= -1.048576e+06
+ weight-constr2-t0-vN11: - 524288 Y[N11] + Z[N11] <= 0
+ weight-constr3-t0-vN11: Y[N11] - Z[N11] <= 0
+ weight-constr2-t0-vN7: - 524288 Y[N7] + Z[N7] <= 0
+ weight-constr3-t0-vN7: Y[N7] - Z[N7] <= 0
+ weight-constr2-t0-vN8: - 524288 Y[N8] + Z[N8] <= 0
+ weight-constr3-t0-vN8: Y[N8] - Z[N8] <= 0
+ weight-constr2-t0-vN4: - 524288 Y[N4] + Z[N4] <= 0
+ weight-constr3-t0-vN4: Y[N4] - Z[N4] <= 0
+ weight-constr2-t0-vN2: - 524288 Y[N2] + Z[N2] <= 0
+ weight-constr3-t0-vN2: Y[N2] - Z[N2] <= 0
+ weight-constr2-t0-vN15: - 524288 Y[N15] + Z[N15] <= 0
+ weight-constr3-t0-vN15: Y[N15] - Z[N15] <= 0
+ weight-constr2-t0-vN5: - 524288 Y[N5] + Z[N5] <= 0
+ weight-constr3-t0-vN5: Y[N5] - Z[N5] <= 0
+ weight-constr2-t0-vN6: - 524288 Y[N6] + Z[N6] <= 0
+ weight-constr3-t0-vN6: Y[N6] - Z[N6] <= 0
+ weight-constr2-t0-vN3: - 524288 Y[N3] + Z[N3] <= 0
+ weight-constr3-t0-vN3: Y[N3] - Z[N3] <= 0
+ weight-constr2-t0-vN12: - 524288 Y[N12] + Z[N12] <= 0
+ weight-constr3-t0-vN12: Y[N12] - Z[N12] <= 0
+ weight-constr2-t0-vN14: - 524288 Y[N14] + Z[N14] <= 0
+ weight-constr3-t0-vN14: Y[N14] - Z[N14] <= 0
+ weight-constr2-t0-vN9: - 524288 Y[N9] + Z[N9] <= 0
+ weight-constr3-t0-vN9: Y[N9] - Z[N9] <= 0
+ weight-constr2-t0-vN10: - 524288 Y[N10] + Z[N10] <= 0
+ weight-constr3-t0-vN10: Y[N10] - Z[N10] <= 0
+ weight-constr2-t0-vN13: - 524288 Y[N13] + Z[N13] <= 0
+ weight-constr3-t0-vN13: Y[N13] - Z[N13] <= 0
+ weight-constr2-t0-vN1: - 524288 Y[N1] + Z[N1] <= 0
+ weight-constr3-t0-vN1: Y[N1] - Z[N1] <= 0
+ weight-constr2-t0-vN16: - 524288 Y[N16] + Z[N16] <= 0
+ weight-constr3-t0-vN16: Y[N16] - Z[N16] <= 0
+ weight-constr2-t1-vN11: - 524288 Y[N11] + Z[N11] <= 0
+ weight-constr3-t1-vN11: Y[N11] - Z[N11] <= 0
+ weight-constr2-t1-vN7: - 524288 Y[N7] + Z[N7] <= 0
+ weight-constr3-t1-vN7: Y[N7] - Z[N7] <= 0
+ weight-constr2-t1-vN8: - 524288 Y[N8] + Z[N8] <= 0
+ weight-constr3-t1-vN8: Y[N8] - Z[N8] <= 0
+ weight-constr2-t1-vN4: - 524288 Y[N4] + Z[N4] <= 0
+ weight-constr3-t1-vN4: Y[N4] - Z[N4] <= 0
+ weight-constr2-t1-vN2: - 524288 Y[N2] + Z[N2] <= 0
+ weight-constr3-t1-vN2: Y[N2] - Z[N2] <= 0
+ weight-constr2-t1-vN15: - 524288 Y[N15] + Z[N15] <= 0
+ weight-constr3-t1-vN15: Y[N15] - Z[N15] <= 0
+ weight-constr2-t1-vN5: - 524288 Y[N5] + Z[N5] <= 0
+ weight-constr3-t1-vN5: Y[N5] - Z[N5] <= 0
+ weight-constr2-t1-vN6: - 524288 Y[N6] + Z[N6] <= 0
+ weight-constr3-t1-vN6: Y[N6] - Z[N6] <= 0
+ weight-constr2-t1-vN3: - 524288 Y[N3] + Z[N3] <= 0
+ weight-constr3-t1-vN3: Y[N3] - Z[N3] <= 0
+ weight-constr2-t1-vN12: - 524288 Y[N12] + Z[N12] <= 0
+ weight-constr3-t1-vN12: Y[N12] - Z[N12] <= 0
+ weight-constr2-t1-vN14: - 524288 Y[N14] + Z[N14] <= 0
+ weight-constr3-t1-vN14: Y[N14] - Z[N14] <= 0
+ weight-constr2-t1-vN9: - 524288 Y[N9] + Z[N9] <= 0
+ weight-constr3-t1-vN9: Y[N9] - Z[N9] <= 0
+ weight-constr2-t1-vN10: - 524288 Y[N10] + Z[N10] <= 0
+ weight-constr3-t1-vN10: Y[N10] - Z[N10] <= 0
+ weight-constr2-t1-vN13: - 524288 Y[N13] + Z[N13] <= 0
+ weight-constr3-t1-vN13: Y[N13] - Z[N13] <= 0
+ weight-constr2-t1-vN1: - 524288 Y[N1] + Z[N1] <= 0
+ weight-constr3-t1-vN1: Y[N1] - Z[N1] <= 0
+ weight-constr2-t1-vN16: - 524288 Y[N16] + Z[N16] <= 0
+ weight-constr3-t1-vN16: Y[N16] - Z[N16] <= 0
+ weight-constr2-t2-vN11: - 524288 Y[N11] + Z[N11] <= 0
+ weight-constr3-t2-vN11: Y[N11] - Z[N11] <= 0
+ weight-constr2-t2-vN7: - 524288 Y[N7] + Z[N7] <= 0
+ weight-constr3-t2-vN7: Y[N7] - Z[N7] <= 0
+ weight-constr2-t2-vN8: - 524288 Y[N8] + Z[N8] <= 0
+ weight-constr3-t2-vN8: Y[N8] - Z[N8] <= 0
+ weight-constr2-t2-vN4: - 524288 Y[N4] + Z[N4] <= 0
+ weight-constr3-t2-vN4: Y[N4] - Z[N4] <= 0
+ weight-constr2-t2-vN2: - 524288 Y[N2] + Z[N2] <= 0
+ weight-constr3-t2-vN2: Y[N2] - Z[N2] <= 0
+ weight-constr2-t2-vN15: - 524288 Y[N15] + Z[N15] <= 0
+ weight-constr3-t2-vN15: Y[N15] - Z[N15] <= 0
+ weight-constr2-t2-vN5: - 524288 Y[N5] + Z[N5] <= 0
+ weight-constr3-t2-vN5: Y[N5] - Z[N5] <= 0
+ weight-constr2-t2-vN6: - 524288 Y[N6] + Z[N6] <= 0
+ weight-constr3-t2-vN6: Y[N6] - Z[N6] <= 0
+ weight-constr2-t2-vN3: - 524288 Y[N3] + Z[N3] <= 0
+ weight-constr3-t2-vN3: Y[N3] - Z[N3] <= 0
+ weight-constr2-t2-vN12: - 524288 Y[N12] + Z[N12] <= 0
+ weight-constr3-t2-vN12: Y[N12] - Z[N12] <= 0
+ weight-constr2-t2-vN14: - 524288 Y[N14] + Z[N14] <= 0
+ weight-constr3-t2-vN14: Y[N14] - Z[N14] <= 0
+ weight-constr2-t2-vN9: - 524288 Y[N9] + Z[N9] <= 0
+ weight-constr3-t2-vN9: Y[N9] - Z[N9] <= 0
+ weight-constr2-t2-vN10: - 524288 Y[N10] + Z[N10] <= 0
+ weight-constr3-t2-vN10: Y[N10] - Z[N10] <= 0
+ weight-constr2-t2-vN13: - 524288 Y[N13] + Z[N13] <= 0
+ weight-constr3-t2-vN13: Y[N13] - Z[N13] <= 0
+ weight-constr2-t2-vN1: - 524288 Y[N1] + Z[N1] <= 0
+ weight-constr3-t2-vN1: Y[N1] - Z[N1] <= 0
+ weight-constr2-t2-vN16: - 524288 Y[N16] + Z[N16] <= 0
+ weight-constr3-t2-vN16: Y[N16] - Z[N16] <= 0
+ weight-constr2-t3-vN11: - 524288 Y[N11] + Z[N11] <= 0
+ weight-constr3-t3-vN11: Y[N11] - Z[N11] <= 0
+ weight-constr2-t3-vN7: - 524288 Y[N7] + Z[N7] <= 0
+ weight-constr3-t3-vN7: Y[N7] - Z[N7] <= 0
+ weight-constr2-t3-vN8: - 524288 Y[N8] + Z[N8] <= 0
+ weight-constr3-t3-vN8: Y[N8] - Z[N8] <= 0
+ weight-constr2-t3-vN4: - 524288 Y[N4] + Z[N4] <= 0
+ weight-constr3-t3-vN4: Y[N4] - Z[N4] <= 0
+ weight-constr2-t3-vN2: - 524288 Y[N2] + Z[N2] <= 0
+ weight-constr3-t3-vN2: Y[N2] - Z[N2] <= 0
+ weight-constr2-t3-vN15: - 524288 Y[N15] + Z[N15] <= 0
+ weight-constr3-t3-vN15: Y[N15] - Z[N15] <= 0
+ weight-constr2-t3-vN5: - 524288 Y[N5] + Z[N5] <= 0
+ weight-constr3-t3-vN5: Y[N5] - Z[N5] <= 0
+ weight-constr2-t3-vN6: - 524288 Y[N6] + Z[N6] <= 0
+ weight-constr3-t3-vN6: Y[N6] - Z[N6] <= 0
+ weight-constr2-t3-vN3: - 524288 Y[N3] + Z[N3] <= 0
+ weight-constr3-t3-vN3: Y[N3] - Z[N3] <= 0
+ weight-constr2-t3-vN12: - 524288 Y[N12] + Z[N12] <= 0
+ weight-constr3-t3-vN12: Y[N12] - Z[N12] <= 0
+ weight-constr2-t3-vN14: - 524288 Y[N14] + Z[N14] <= 0
+ weight-constr3-t3-vN14: Y[N14] - Z[N14] <= 0
+ weight-constr2-t3-vN9: - 524288 Y[N9] + Z[N9] <= 0
+ weight-constr3-t3-vN9: Y[N9] - Z[N9] <= 0
+ weight-constr2-t3-vN10: - 524288 Y[N10] + Z[N10] <= 0
+ weight-constr3-t3-vN10: Y[N10] - Z[N10] <= 0
+ weight-constr2-t3-vN13: - 524288 Y[N13] + Z[N13] <= 0
+ weight-constr3-t3-vN13: Y[N13] - Z[N13] <= 0
+ weight-constr2-t3-vN1: - 524288 Y[N1] + Z[N1] <= 0
+ weight-constr3-t3-vN1: Y[N1] - Z[N1] <= 0
+ weight-constr2-t3-vN16: - 524288 Y[N16] + Z[N16] <= 0
+ weight-constr3-t3-vN16: Y[N16] - Z[N16] <= 0
+ weight-constr2-t4-vN11: - 524288 Y[N11] + Z[N11] <= 0
+ weight-constr3-t4-vN11: Y[N11] - Z[N11] <= 0
+ weight-constr2-t4-vN7: - 524288 Y[N7] + Z[N7] <= 0
+ weight-constr3-t4-vN7: Y[N7] - Z[N7] <= 0
+ weight-constr2-t4-vN8: - 524288 Y[N8] + Z[N8] <= 0
+ weight-constr3-t4-vN8: Y[N8] - Z[N8] <= 0
+ weight-constr2-t4-vN4: - 524288 Y[N4] + Z[N4] <= 0
+ weight-constr3-t4-vN4: Y[N4] - Z[N4] <= 0
+ weight-constr2-t4-vN2: - 524288 Y[N2] + Z[N2] <= 0
+ weight-constr3-t4-vN2: Y[N2] - Z[N2] <= 0
+ weight-constr2-t4-vN15: - 524288 Y[N15] + Z[N15] <= 0
+ weight-constr3-t4-vN15: Y[N15] - Z[N15] <= 0
+ weight-constr2-t4-vN5: - 524288 Y[N5] + Z[N5] <= 0
+ weight-constr3-t4-vN5: Y[N5] - Z[N5] <= 0
+ weight-constr2-t4-vN6: - 524288 Y[N6] + Z[N6] <= 0
+ weight-constr3-t4-vN6: Y[N6] - Z[N6] <= 0
+ weight-constr2-t4-vN3: - 524288 Y[N3] + Z[N3] <= 0
+ weight-constr3-t4-vN3: Y[N3] - Z[N3] <= 0
+ weight-constr2-t4-vN12: - 524288 Y[N12] + Z[N12] <= 0
+ weight-constr3-t4-vN12: Y[N12] - Z[N12] <= 0
+ weight-constr2-t4-vN14: - 524288 Y[N14] + Z[N14] <= 0
+ weight-constr3-t4-vN14: Y[N14] - Z[N14] <= 0
+ weight-constr2-t4-vN9: - 524288 Y[N9] + Z[N9] <= 0
+ weight-constr3-t4-vN9: Y[N9] - Z[N9] <= 0
+ weight-constr2-t4-vN10: - 524288 Y[N10] + Z[N10] <= 0
+ weight-constr3-t4-vN10: Y[N10] - Z[N10] <= 0
+ weight-constr2-t4-vN13: - 524288 Y[N13] + Z[N13] <= 0
+ weight-constr3-t4-vN13: Y[N13] - Z[N13] <= 0
+ weight-constr2-t4-vN1: - 524288 Y[N1] + Z[N1] <= 0
+ weight-constr3-t4-vN1: Y[N1] - Z[N1] <= 0
+ weight-constr2-t4-vN16: - 524288 Y[N16] + Z[N16] <= 0
+ weight-constr3-t4-vN16: Y[N16] - Z[N16] <= 0
+ weight-constr2-t5-vN11: - 524288 Y[N11] + Z[N11] <= 0
+ weight-constr3-t5-vN11: Y[N11] - Z[N11] <= 0
+ weight-constr2-t5-vN7: - 524288 Y[N7] + Z[N7] <= 0
+ weight-constr3-t5-vN7: Y[N7] - Z[N7] <= 0
+ weight-constr2-t5-vN8: - 524288 Y[N8] + Z[N8] <= 0
+ weight-constr3-t5-vN8: Y[N8] - Z[N8] <= 0
+ weight-constr2-t5-vN4: - 524288 Y[N4] + Z[N4] <= 0
+ weight-constr3-t5-vN4: Y[N4] - Z[N4] <= 0
+ weight-constr2-t5-vN2: - 524288 Y[N2] + Z[N2] <= 0
+ weight-constr3-t5-vN2: Y[N2] - Z[N2] <= 0
+ weight-constr2-t5-vN15: - 524288 Y[N15] + Z[N15] <= 0
+ weight-constr3-t5-vN15: Y[N15] - Z[N15] <= 0
+ weight-constr2-t5-vN5: - 524288 Y[N5] + Z[N5] <= 0
+ weight-constr3-t5-vN5: Y[N5] - Z[N5] <= 0
+ weight-constr2-t5-vN6: - 524288 Y[N6] + Z[N6] <= 0
+ weight-constr3-t5-vN6: Y[N6] - Z[N6] <= 0
+ weight-constr2-t5-vN3: - 524288 Y[N3] + Z[N3] <= 0
+ weight-constr3-t5-vN3: Y[N3] - Z[N3] <= 0
+ weight-constr2-t5-vN12: - 524288 Y[N12] + Z[N12] <= 0
+ weight-constr3-t5-vN12: Y[N12] - Z[N12] <= 0
+ weight-constr2-t5-vN14: - 524288 Y[N14] + Z[N14] <= 0
+ weight-constr3-t5-vN14: Y[N14] - Z[N14] <= 0
+ weight-constr2-t5-vN9: - 524288 Y[N9] + Z[N9] <= 0
+ weight-constr3-t5-vN9: Y[N9] - Z[N9] <= 0
+ weight-constr2-t5-vN10: - 524288 Y[N10] + Z[N10] <= 0
+ weight-constr3-t5-vN10: Y[N10] - Z[N10] <= 0
+ weight-constr2-t5-vN13: - 524288 Y[N13] + Z[N13] <= 0
+ weight-constr3-t5-vN13: Y[N13] - Z[N13] <= 0
+ weight-constr2-t5-vN1: - 524288 Y[N1] + Z[N1] <= 0
+ weight-constr3-t5-vN1: Y[N1] - Z[N1] <= 0
+ weight-constr2-t5-vN16: - 524288 Y[N16] + Z[N16] <= 0
+ weight-constr3-t5-vN16: Y[N16] - Z[N16] <= 0
+Bounds
+ Z[N11] <= 524288
+ Z[N7] <= 524288
+ Z[N8] <= 524288
+ Z[N4] <= 524288
+ Z[N2] <= 524288
+ Z[N15] <= 524288
+ Z[N5] <= 524288
+ Z[N6] <= 524288
+ Z[N3] <= 524288
+ Z[N12] <= 524288
+ Z[N14] <= 524288
+ Z[N9] <= 524288
+ Z[N10] <= 524288
+ Z[N13] <= 524288
+ Z[N1] <= 524288
+ Z[N16] <= 524288
+ Z[N11] <= 524288
+ Z[N7] <= 524288
+ Z[N8] <= 524288
+ Z[N4] <= 524288
+ Z[N2] <= 524288
+ Z[N15] <= 524288
+ Z[N5] <= 524288
+ Z[N6] <= 524288
+ Z[N3] <= 524288
+ Z[N12] <= 524288
+ Z[N14] <= 524288
+ Z[N9] <= 524288
+ Z[N10] <= 524288
+ Z[N13] <= 524288
+ Z[N1] <= 524288
+ Z[N16] <= 524288
+ Z[N11] <= 524288
+ Z[N7] <= 524288
+ Z[N8] <= 524288
+ Z[N4] <= 524288
+ Z[N2] <= 524288
+ Z[N15] <= 524288
+ Z[N5] <= 524288
+ Z[N6] <= 524288
+ Z[N3] <= 524288
+ Z[N12] <= 524288
+ Z[N14] <= 524288
+ Z[N9] <= 524288
+ Z[N10] <= 524288
+ Z[N13] <= 524288
+ Z[N1] <= 524288
+ Z[N16] <= 524288
+ Z[N11] <= 524288
+ Z[N7] <= 524288
+ Z[N8] <= 524288
+ Z[N4] <= 524288
+ Z[N2] <= 524288
+ Z[N15] <= 524288
+ Z[N5] <= 524288
+ Z[N6] <= 524288
+ Z[N3] <= 524288
+ Z[N12] <= 524288
+ Z[N14] <= 524288
+ Z[N9] <= 524288
+ Z[N10] <= 524288
+ Z[N13] <= 524288
+ Z[N1] <= 524288
+ Z[N16] <= 524288
+ Z[N11] <= 524288
+ Z[N7] <= 524288
+ Z[N8] <= 524288
+ Z[N4] <= 524288
+ Z[N2] <= 524288
+ Z[N15] <= 524288
+ Z[N5] <= 524288
+ Z[N6] <= 524288
+ Z[N3] <= 524288
+ Z[N12] <= 524288
+ Z[N14] <= 524288
+ Z[N9] <= 524288
+ Z[N10] <= 524288
+ Z[N13] <= 524288
+ Z[N1] <= 524288
+ Z[N16] <= 524288
+ Z[N11] <= 524288
+ Z[N7] <= 524288
+ Z[N8] <= 524288
+ Z[N4] <= 524288
+ Z[N2] <= 524288
+ Z[N15] <= 524288
+ Z[N5] <= 524288
+ Z[N6] <= 524288
+ Z[N3] <= 524288
+ Z[N12] <= 524288
+ Z[N14] <= 524288
+ Z[N9] <= 524288
+ Z[N10] <= 524288
+ Z[N13] <= 524288
+ Z[N1] <= 524288
+ Z[N16] <= 524288
+Binaries
+ X[N2,N1] X[N1,N2] X[N5,N1] X[N1,N5] X[N6,N1] X[N1,N6] X[N7,N1] X[N1,N7]
+ X[N8,N1] X[N1,N8] X[N12,N1] X[N1,N12] X[N13,N1] X[N1,N13] X[N15,N1]
+ X[N1,N15] X[N5,N2] X[N2,N5] X[N6,N2] X[N2,N6] X[N12,N2] X[N2,N12]
+ X[N13,N2] X[N2,N13] X[N15,N2] X[N2,N15] X[N4,N3] X[N3,N4] X[N6,N3]
+ X[N3,N6] X[N7,N3] X[N3,N7] X[N8,N3] X[N3,N8] X[N11,N3] X[N3,N11] X[N7,N4]
+ X[N4,N7] X[N8,N4] X[N4,N8] X[N9,N4] X[N4,N9] X[N10,N4] X[N4,N10] X[N11,N4]
+ X[N4,N11] X[N12,N5] X[N5,N12] X[N13,N5] X[N5,N13] X[N15,N5] X[N5,N15]
+ X[N7,N6] X[N6,N7] X[N8,N6] X[N6,N8] X[N8,N7] X[N7,N8] X[N9,N7] X[N7,N9]
+ X[N10,N7] X[N7,N10] X[N12,N7] X[N7,N12] X[N13,N7] X[N7,N13] X[N14,N7]
+ X[N7,N14] X[N15,N7] X[N7,N15] X[N10,N9] X[N9,N10] X[N11,N9] X[N9,N11]
+ X[N14,N9] X[N9,N14] X[N15,N9] X[N9,N15] X[N16,N9] X[N9,N16] X[N11,N10]
+ X[N10,N11] X[N14,N10] X[N10,N14] X[N15,N10] X[N10,N15] X[N13,N12]
+ X[N12,N13] X[N15,N12] X[N12,N15] X[N14,N13] X[N13,N14] X[N15,N13]
+ X[N13,N15] X[N15,N14] X[N14,N15] X[N16,N14] X[N14,N16] Y[N11] Y[N7] Y[N8]
+ Y[N4] Y[N2] Y[N15] Y[N5] Y[N6] Y[N3] Y[N12] Y[N14] Y[N9] Y[N10] Y[N13]
+ Y[N1] Y[N16] X[N2,N1] X[N1,N2] X[N5,N1] X[N1,N5] X[N6,N1] X[N1,N6]
+ X[N7,N1] X[N1,N7] X[N8,N1] X[N1,N8] X[N12,N1] X[N1,N12] X[N13,N1]
+ X[N1,N13] X[N15,N1] X[N1,N15] X[N5,N2] X[N2,N5] X[N6,N2] X[N2,N6]
+ X[N12,N2] X[N2,N12] X[N13,N2] X[N2,N13] X[N15,N2] X[N2,N15] X[N4,N3]
+ X[N3,N4] X[N6,N3] X[N3,N6] X[N7,N3] X[N3,N7] X[N8,N3] X[N3,N8] X[N11,N3]
+ X[N3,N11] X[N7,N4] X[N4,N7] X[N8,N4] X[N4,N8] X[N9,N4] X[N4,N9] X[N10,N4]
+ X[N4,N10] X[N11,N4] X[N4,N11] X[N12,N5] X[N5,N12] X[N13,N5] X[N5,N13]
+ X[N15,N5] X[N5,N15] X[N7,N6] X[N6,N7] X[N8,N6] X[N6,N8] X[N8,N7] X[N7,N8]
+ X[N9,N7] X[N7,N9] X[N10,N7] X[N7,N10] X[N12,N7] X[N7,N12] X[N13,N7]
+ X[N7,N13] X[N14,N7] X[N7,N14] X[N15,N7] X[N7,N15] X[N10,N9] X[N9,N10]
+ X[N11,N9] X[N9,N11] X[N14,N9] X[N9,N14] X[N15,N9] X[N9,N15] X[N16,N9]
+ X[N9,N16] X[N11,N10] X[N10,N11] X[N14,N10] X[N10,N14] X[N15,N10]
+ X[N10,N15] X[N13,N12] X[N12,N13] X[N15,N12] X[N12,N15] X[N14,N13]
+ X[N13,N14] X[N15,N13] X[N13,N15] X[N15,N14] X[N14,N15] X[N16,N14]
+ X[N14,N16] Y[N11] Y[N7] Y[N8] Y[N4] Y[N2] Y[N15] Y[N5] Y[N6] Y[N3] Y[N12]
+ Y[N14] Y[N9] Y[N10] Y[N13] Y[N1] Y[N16] X[N2,N1] X[N1,N2] X[N5,N1]
+ X[N1,N5] X[N6,N1] X[N1,N6] X[N7,N1] X[N1,N7] X[N8,N1] X[N1,N8] X[N12,N1]
+ X[N1,N12] X[N13,N1] X[N1,N13] X[N15,N1] X[N1,N15] X[N5,N2] X[N2,N5]
+ X[N6,N2] X[N2,N6] X[N12,N2] X[N2,N12] X[N13,N2] X[N2,N13] X[N15,N2]
+ X[N2,N15] X[N4,N3] X[N3,N4] X[N6,N3] X[N3,N6] X[N7,N3] X[N3,N7] X[N8,N3]
+ X[N3,N8] X[N11,N3] X[N3,N11] X[N7,N4] X[N4,N7] X[N8,N4] X[N4,N8] X[N9,N4]
+ X[N4,N9] X[N10,N4] X[N4,N10] X[N11,N4] X[N4,N11] X[N12,N5] X[N5,N12]
+ X[N13,N5] X[N5,N13] X[N15,N5] X[N5,N15] X[N7,N6] X[N6,N7] X[N8,N6]
+ X[N6,N8] X[N8,N7] X[N7,N8] X[N9,N7] X[N7,N9] X[N10,N7] X[N7,N10] X[N12,N7]
+ X[N7,N12] X[N13,N7] X[N7,N13] X[N14,N7] X[N7,N14] X[N15,N7] X[N7,N15]
+ X[N10,N9] X[N9,N10] X[N11,N9] X[N9,N11] X[N14,N9] X[N9,N14] X[N15,N9]
+ X[N9,N15] X[N16,N9] X[N9,N16] X[N11,N10] X[N10,N11] X[N14,N10] X[N10,N14]
+ X[N15,N10] X[N10,N15] X[N13,N12] X[N12,N13] X[N15,N12] X[N12,N15]
+ X[N14,N13] X[N13,N14] X[N15,N13] X[N13,N15] X[N15,N14] X[N14,N15]
+ X[N16,N14] X[N14,N16] Y[N11] Y[N7] Y[N8] Y[N4] Y[N2] Y[N15] Y[N5] Y[N6]
+ Y[N3] Y[N12] Y[N14] Y[N9] Y[N10] Y[N13] Y[N1] Y[N16] X[N2,N1] X[N1,N2]
+ X[N5,N1] X[N1,N5] X[N6,N1] X[N1,N6] X[N7,N1] X[N1,N7] X[N8,N1] X[N1,N8]
+ X[N12,N1] X[N1,N12] X[N13,N1] X[N1,N13] X[N15,N1] X[N1,N15] X[N5,N2]
+ X[N2,N5] X[N6,N2] X[N2,N6] X[N12,N2] X[N2,N12] X[N13,N2] X[N2,N13]
+ X[N15,N2] X[N2,N15] X[N4,N3] X[N3,N4] X[N6,N3] X[N3,N6] X[N7,N3] X[N3,N7]
+ X[N8,N3] X[N3,N8] X[N11,N3] X[N3,N11] X[N7,N4] X[N4,N7] X[N8,N4] X[N4,N8]
+ X[N9,N4] X[N4,N9] X[N10,N4] X[N4,N10] X[N11,N4] X[N4,N11] X[N12,N5]
+ X[N5,N12] X[N13,N5] X[N5,N13] X[N15,N5] X[N5,N15] X[N7,N6] X[N6,N7]
+ X[N8,N6] X[N6,N8] X[N8,N7] X[N7,N8] X[N9,N7] X[N7,N9] X[N10,N7] X[N7,N10]
+ X[N12,N7] X[N7,N12] X[N13,N7] X[N7,N13] X[N14,N7] X[N7,N14] X[N15,N7]
+ X[N7,N15] X[N10,N9] X[N9,N10] X[N11,N9] X[N9,N11] X[N14,N9] X[N9,N14]
+ X[N15,N9] X[N9,N15] X[N16,N9] X[N9,N16] X[N11,N10] X[N10,N11] X[N14,N10]
+ X[N10,N14] X[N15,N10] X[N10,N15] X[N13,N12] X[N12,N13] X[N15,N12]
+ X[N12,N15] X[N14,N13] X[N13,N14] X[N15,N13] X[N13,N15] X[N15,N14]
+ X[N14,N15] X[N16,N14] X[N14,N16] Y[N11] Y[N7] Y[N8] Y[N4] Y[N2] Y[N15]
+ Y[N5] Y[N6] Y[N3] Y[N12] Y[N14] Y[N9] Y[N10] Y[N13] Y[N1] Y[N16] X[N2,N1]
+ X[N1,N2] X[N5,N1] X[N1,N5] X[N6,N1] X[N1,N6] X[N7,N1] X[N1,N7] X[N8,N1]
+ X[N1,N8] X[N12,N1] X[N1,N12] X[N13,N1] X[N1,N13] X[N15,N1] X[N1,N15]
+ X[N5,N2] X[N2,N5] X[N6,N2] X[N2,N6] X[N12,N2] X[N2,N12] X[N13,N2]
+ X[N2,N13] X[N15,N2] X[N2,N15] X[N4,N3] X[N3,N4] X[N6,N3] X[N3,N6] X[N7,N3]
+ X[N3,N7] X[N8,N3] X[N3,N8] X[N11,N3] X[N3,N11] X[N7,N4] X[N4,N7] X[N8,N4]
+ X[N4,N8] X[N9,N4] X[N4,N9] X[N10,N4] X[N4,N10] X[N11,N4] X[N4,N11]
+ X[N12,N5] X[N5,N12] X[N13,N5] X[N5,N13] X[N15,N5] X[N5,N15] X[N7,N6]
+ X[N6,N7] X[N8,N6] X[N6,N8] X[N8,N7] X[N7,N8] X[N9,N7] X[N7,N9] X[N10,N7]
+ X[N7,N10] X[N12,N7] X[N7,N12] X[N13,N7] X[N7,N13] X[N14,N7] X[N7,N14]
+ X[N15,N7] X[N7,N15] X[N10,N9] X[N9,N10] X[N11,N9] X[N9,N11] X[N14,N9]
+ X[N9,N14] X[N15,N9] X[N9,N15] X[N16,N9] X[N9,N16] X[N11,N10] X[N10,N11]
+ X[N14,N10] X[N10,N14] X[N15,N10] X[N10,N15] X[N13,N12] X[N12,N13]
+ X[N15,N12] X[N12,N15] X[N14,N13] X[N13,N14] X[N15,N13] X[N13,N15]
+ X[N15,N14] X[N14,N15] X[N16,N14] X[N14,N16] Y[N11] Y[N7] Y[N8] Y[N4] Y[N2]
+ Y[N15] Y[N5] Y[N6] Y[N3] Y[N12] Y[N14] Y[N9] Y[N10] Y[N13] Y[N1] Y[N16]
+ X[N2,N1] X[N1,N2] X[N5,N1] X[N1,N5] X[N6,N1] X[N1,N6] X[N7,N1] X[N1,N7]
+ X[N8,N1] X[N1,N8] X[N12,N1] X[N1,N12] X[N13,N1] X[N1,N13] X[N15,N1]
+ X[N1,N15] X[N5,N2] X[N2,N5] X[N6,N2] X[N2,N6] X[N12,N2] X[N2,N12]
+ X[N13,N2] X[N2,N13] X[N15,N2] X[N2,N15] X[N4,N3] X[N3,N4] X[N6,N3]
+ X[N3,N6] X[N7,N3] X[N3,N7] X[N8,N3] X[N3,N8] X[N11,N3] X[N3,N11] X[N7,N4]
+ X[N4,N7] X[N8,N4] X[N4,N8] X[N9,N4] X[N4,N9] X[N10,N4] X[N4,N10] X[N11,N4]
+ X[N4,N11] X[N12,N5] X[N5,N12] X[N13,N5] X[N5,N13] X[N15,N5] X[N5,N15]
+ X[N7,N6] X[N6,N7] X[N8,N6] X[N6,N8] X[N8,N7] X[N7,N8] X[N9,N7] X[N7,N9]
+ X[N10,N7] X[N7,N10] X[N12,N7] X[N7,N12] X[N13,N7] X[N7,N13] X[N14,N7]
+ X[N7,N14] X[N15,N7] X[N7,N15] X[N10,N9] X[N9,N10] X[N11,N9] X[N9,N11]
+ X[N14,N9] X[N9,N14] X[N15,N9] X[N9,N15] X[N16,N9] X[N9,N16] X[N11,N10]
+ X[N10,N11] X[N14,N10] X[N10,N14] X[N15,N10] X[N10,N15] X[N13,N12]
+ X[N12,N13] X[N15,N12] X[N12,N15] X[N14,N13] X[N13,N14] X[N15,N13]
+ X[N13,N15] X[N15,N14] X[N14,N15] X[N16,N14] X[N14,N16] Y[N11] Y[N7] Y[N8]
+ Y[N4] Y[N2] Y[N15] Y[N5] Y[N6] Y[N3] Y[N12] Y[N14] Y[N9] Y[N10] Y[N13]
+ Y[N1] Y[N16]
+End

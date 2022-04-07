@@ -1,0 +1,156 @@
+
+Gurobi 9.1.2 (linux64) logging started Tue Mar 29 22:13:08 2022
+
+Changed value of parameter LogFile to abilene_v-DNVRng.log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 600.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variables 0 and 54 have the same name "X[ATLAM5,ATLAng]"
+Warning: linear constraint 78 and linear constraint 79 have the same name "weight-constr-t5"
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 377 rows, 324 columns and 1056 nonzeros
+Model fingerprint: 0xe8e0f9fb
+Variable types: 72 continuous, 252 integer (252 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 5e+05]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 78 rows and 90 columns
+Presolve time: 0.00s
+Presolved: 299 rows, 234 columns, 1224 nonzeros
+Variable types: 60 continuous, 174 integer (168 binary)
+
+Root relaxation: objective 1.200000e+01, 54 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   12.00000    0   10          -   12.00000      -     -    0s
+H    0     0                      68.8333333   12.00000  82.6%     -    0s
+H    0     0                      26.8333333   12.00000  55.3%     -    0s
+     0     0   12.00000    0    8   26.83333   12.00000  55.3%     -    0s
+H    0     0                      24.8333333   12.00000  51.7%     -    0s
+     0     0   12.00000    0    8   24.83333   12.00000  51.7%     -    0s
+     0     0   12.00000    0   10   24.83333   12.00000  51.7%     -    0s
+H    0     0                      24.0000000   12.00000  50.0%     -    0s
+     0     0   12.00000    0    8   24.00000   12.00000  50.0%     -    0s
+     0     0   12.00000    0    7   24.00000   12.00000  50.0%     -    0s
+H    0     0                      23.8333333   12.00000  49.7%     -    0s
+     0     0   12.00000    0    5   23.83333   12.00000  49.7%     -    0s
+H    0     0                      23.6666667   12.00000  49.3%     -    0s
+     0     0   12.00000    0    7   23.66667   12.00000  49.3%     -    0s
+     0     2   12.00000    0    7   23.66667   12.00000  49.3%     -    0s
+H   54    70                      23.5000000   12.00000  48.9%  10.4    0s
+H   71    70                      23.3333333   12.00000  48.6%  10.1    0s
+H   82   100                      23.0000000   12.00000  47.8%  10.7    0s
+* 1627   750              24      22.6666686   12.00000  47.1%   8.0    1s
+* 2377  1135              22      22.3333352   12.00000  46.3%   7.8    1s
+* 3130  1305              22      21.3333346   12.00000  43.8%   7.5    1s
+* 7766  2678              21      20.5000041   12.33333  39.8%   7.4    1s
+
+Cutting planes:
+  Learned: 21
+  Cover: 42
+  Implied bound: 25
+  Clique: 18
+  MIR: 40
+  Flow cover: 119
+  GUB cover: 1
+  RLT: 36
+  Relax-and-lift: 39
+
+Explored 10371 nodes (86047 simplex iterations) in 1.94 seconds
+Thread count was 32 (of 64 available processors)
+
+Solution count 10: 20.5 21.3333 22.3333 ... 24
+No other solutions better than 20.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.050000000012e+01, best bound 2.050000000012e+01, gap 0.0000%
+
+Gurobi 9.1.2 (linux64) logging started Tue Mar 29 22:14:36 2022
+
+Changed value of parameter LogFile to abilene_v-DNVRng.log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 600.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variables 0 and 54 have the same name "X[ATLAM5,ATLAng]"
+Warning: linear constraint 78 and linear constraint 79 have the same name "weight-constr-t5"
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 377 rows, 324 columns and 1056 nonzeros
+Model fingerprint: 0xb625cccf
+Variable types: 72 continuous, 252 integer (252 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 5e+05]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 78 rows and 90 columns
+Presolve time: 0.00s
+Presolved: 299 rows, 234 columns, 1224 nonzeros
+Variable types: 60 continuous, 174 integer (168 binary)
+
+Root relaxation: objective 1.200000e+01, 54 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   12.00000    0    8          -   12.00000      -     -    0s
+H    0     0                      68.0000000   12.00000  82.4%     -    0s
+     0     0   12.00000    0    8   68.00000   12.00000  82.4%     -    0s
+H    0     0                      49.5000000   12.00000  75.8%     -    0s
+H    0     0                      24.0000000   12.00000  50.0%     -    0s
+     0     2   12.00000    0    8   24.00000   12.00000  50.0%     -    0s
+H   38    62                      23.0000000   12.00000  47.8%   8.9    0s
+* 1372   756              28      23.0000000   12.00000  47.8%   6.6    0s
+* 1897   877              22      22.7083333   12.00000  47.2%   6.5    0s
+ 23974  4272   18.27173   38   21   22.70833   15.66667  31.0%  17.6    5s
+ 64068 13639     cutoff   43        22.70833   16.95833  25.3%  17.6   10s
+ 121677 23642   20.85772   39   28   22.70833   17.69697  22.1%  16.5   15s
+ 180537 31211     cutoff   42        22.70833   18.19215  19.9%  15.8   20s
+ 232292 37765 infeasible   40        22.70833   18.52095  18.4%  15.3   25s
+ 301123 44919     cutoff   38        22.70833   18.85802  17.0%  14.8   30s
+ 367674 50059   20.03944   45   14   22.70833   19.16667  15.6%  14.5   35s
+ 434055 54766     cutoff   40        22.70833   19.39257  14.6%  14.2   40s
+ 495751 57614 infeasible   43        22.70833   19.61421  13.6%  14.0   45s
+ 559175 59919     cutoff   41        22.70833   19.80613  12.8%  13.8   50s
+ 631972 60998   20.83333   42   16   22.70833   20.00000  11.9%  13.6   55s
+ 702571 61439     cutoff   46        22.70833   20.16667  11.2%  13.5   60s
+ 766111 60446   21.37500   42   28   22.70833   20.35702  10.4%  13.3   65s
+ 832373 58732   21.73708   43   22   22.70833   20.55666  9.48%  13.2   70s
+ 897598 55857   21.08333   44   19   22.70833   20.76423  8.56%  13.1   75s
+ 972829 50597     cutoff   45        22.70833   21.00000  7.52%  12.9   80s
+ 1041619 43845   22.33333   53    4   22.70833   21.22916  6.51%  12.7   85s
+ 1121488 33352     cutoff   46        22.70833   21.58333  4.95%  12.5   90s
+ 1207843 19608     cutoff   47        22.70833   22.00000  3.12%  12.3   95s
+
+Cutting planes:
+  Learned: 45
+  Gomory: 1
+  Cover: 37
+  Implied bound: 27
+  Clique: 6
+  MIR: 128
+  StrongCG: 1
+  Flow cover: 266
+  GUB cover: 2
+  Inf proof: 3
+  RLT: 71
+  Relax-and-lift: 32
+
+Explored 1284841 nodes (15501081 simplex iterations) in 99.55 seconds
+Thread count was 32 (of 64 available processors)
+
+Solution count 6: 22.7083 23 23 ... 68
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.270833332717e+01, best bound 2.270833332717e+01, gap 0.0000%

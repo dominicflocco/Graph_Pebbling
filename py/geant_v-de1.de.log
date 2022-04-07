@@ -1,0 +1,87 @@
+
+Gurobi 9.1.2 (linux64) logging started Wed Mar 30 18:23:26 2022
+
+Changed value of parameter LogFile to geant_v-de1.de.log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 600.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variables 0 and 116 have the same name "X[ch1.ch,at1.at]"
+Warning: linear constraint 138 and linear constraint 139 have the same name "weight-constr-t5"
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 759 rows, 696 columns and 2274 nonzeros
+Model fingerprint: 0xc95469aa
+Variable types: 132 continuous, 564 integer (564 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [2e-01, 2e-01]
+  Bounds range     [1e+00, 5e+05]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective 39.1666667
+Presolve removed 198 rows and 240 columns
+Presolve time: 0.00s
+Presolved: 561 rows, 456 columns, 2400 nonzeros
+Variable types: 120 continuous, 336 integer (330 binary)
+
+Root relaxation: objective 2.100000e+01, 79 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   21.00000    0   21   39.16667   21.00000  46.4%     -    0s
+H    0     0                      32.1666667   21.00000  34.7%     -    0s
+H    0     0                      31.3333333   21.00000  33.0%     -    0s
+     0     0   21.00000    0   21   31.33333   21.00000  33.0%     -    0s
+     0     0   21.00000    0   22   31.33333   21.00000  33.0%     -    0s
+H    0     0                      31.1666667   21.00000  32.6%     -    0s
+H    0     0                      30.9166667   21.00000  32.1%     -    0s
+     0     0   21.00000    0   12   30.91667   21.00000  32.1%     -    0s
+H    0     0                      29.9166667   21.00000  29.8%     -    0s
+     0     0   21.00000    0   12   29.91667   21.00000  29.8%     -    0s
+H    0     0                      29.3333333   21.00000  28.4%     -    0s
+     0     0   21.00000    0   12   29.33333   21.00000  28.4%     -    0s
+     0     0   21.00000    0   12   29.33333   21.00000  28.4%     -    0s
+     0     0   21.00000    0   14   29.33333   21.00000  28.4%     -    0s
+     0     0   21.00000    0   13   29.33333   21.00000  28.4%     -    0s
+H    0     0                      26.8333333   21.00000  21.7%     -    0s
+H    0     0                      26.3333333   21.00000  20.3%     -    0s
+     0     2   21.00000    0   12   26.33333   21.00000  20.3%     -    0s
+H   32    56                      26.1666667   21.00000  19.7%  13.4    0s
+H   90   112                      25.7500000   21.00000  18.4%  11.4    0s
+H   91   112                      25.1666667   21.00000  16.6%  11.5    0s
+H  103   112                      25.0000000   21.00000  16.0%  11.3    0s
+H  110   112                      24.8333333   21.00000  15.4%  11.0    0s
+H  154   164                      24.5000000   21.00000  14.3%  10.7    1s
+H  163   164                      24.3333333   21.00000  13.7%  10.7    1s
+H  256   249                      24.1666667   21.00000  13.1%  10.5    1s
+* 1714  1335              30      23.6666667   21.00000  11.3%   8.3    2s
+* 1772  1335              36      22.6666668   21.00000  7.35%   8.3    2s
+* 2593  1636              27      22.0000000   21.00000  4.55%   8.2    2s
+* 3359  1987              31      21.6666686   21.00000  3.08%   8.0    3s
+* 4220  2896              56      21.6666679   21.00000  3.08%   8.0    3s
+* 4221  2896              56      21.3333346   21.00000  1.56%   8.0    3s
+* 6699  2896              40      21.3333340   21.00000  1.56%   8.2    3s
+
+Cutting planes:
+  Learned: 14
+  Gomory: 3
+  Cover: 10
+  Implied bound: 14
+  Clique: 21
+  MIR: 4
+  Flow cover: 14
+  GUB cover: 1
+  RLT: 11
+  Relax-and-lift: 10
+
+Explored 7067 nodes (60701 simplex iterations) in 3.66 seconds
+Thread count was 32 (of 64 available processors)
+
+Solution count 10: 21.3333 21.3333 21.6667 ... 24.5
+No other solutions better than 21.3333
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.133333333333e+01, best bound 2.133333333333e+01, gap 0.0000%
