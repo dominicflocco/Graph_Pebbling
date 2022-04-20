@@ -20,8 +20,8 @@ The following graphs are preloaded as Pebbling Graph Objects into the code base:
 - Lemke
 - n-cube 
 - 4th order Bruhat 
-- Lemke square
-We also include a number of netowrks compiled from [SNDlib](http://sndlib.zib.de/home.action): 
+- Lemke square <br/>
+- We also include a number of netowrks compiled from [SNDlib](http://sndlib.zib.de/home.action): 
 - Abilene 
 - Atlanta
 - Cost226 
