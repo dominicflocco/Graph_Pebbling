@@ -258,67 +258,60 @@ def confirmResults(graph, size, length, numNodes, name):
     for t in strategies.keys():
         strategies[t].visualizeStrategy(name + "strategy" + str(t) + "-s" + str(size) + ".png")
     #graph.vizualize(strategies, name + "strategy" + str(t) + "-s" + str(size) + ".png", False)
-def readNetwork(name):
-    
-    # print("SNDlib Network Library: ")
-    # print("abilene, atlanta, brain, cost226, eu, france, geant, germany, india, ny, ta2, us-ca, zib54")
-    # name = input('Enter Network to Analyze: ')
-    
-    # if name == 'abilene': 
-    #     path = '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/abilene/abilene--D-B-M-N-C-A-N-N.gml'
-    # elif name == 'alt' or name == 'atlanta': 
-    #     path = "/home/DAVIDSON/doflocco/Graph_Pebbling/networks/atlanta/atlanta--D-B-M-N-C-A-N-N.gml"
-    # elif name == 'cost226':
-    #     path = "/home/DAVIDSON/doflocco/Graph_Pebbling/networks/cost226/cost266--D-B-E-N-C-A-N-N.gml"
-    # elif name == 'eu' or name == 'europe':
-    #     path = '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/eruope/nobel-eu--D-B-E-N-C-A-N-N.gml'
-    # elif name == 'france': 
-    #     path = '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/france/france--D-B-L-N-C-A-N-N.gml'
-    # elif name == 'geant': 
-    #     path = '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/geant/geant--D-B-M-N-C-A-N-N.gml'
-    # elif name == 'germany': 
-    #     path = '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/germany/germany50--D-B-L-N-C-A-N-N.gml'
-    # elif name == 'india': 
-    #     path = '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/india/india35--D-B-M-N-C-A-N-N.gml'
-    # elif name == 'ny':
-    #     path = '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/new york /newyork--D-B-E-N-C-A-N-N.gml'
-    # elif name == 'ta2':
-    #     path = '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/ta2/ta2--D-B-E-N-C-A-N-N.gml'
-    # elif name == 'us-ca':
-    #     path = '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/us-ca/janos-us-ca--D-D-L-N-C-A-N-N.gml'
-    # elif name == 'zib54':
-    #     path = '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/zib54/zib54--U-U-E-N-I-A-N-N.gml'
-    # else: 
-    #     print("Invalid Network Name.")
-    #     exit(1)
 
-    if name == 'abilene': 
-        return '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/abilene/abilene--D-B-M-N-C-A-N-N.gml'
-    elif name == 'alt' or name == 'atlanta': 
-        return "/home/DAVIDSON/doflocco/Graph_Pebbling/networks/atlanta/atlanta--D-B-M-N-C-A-N-N.gml"
-    elif name == 'cost226':
-        return "/home/DAVIDSON/doflocco/Graph_Pebbling/networks/cost226/cost266--D-B-E-N-C-A-N-N.gml"
-    elif name == 'eu' or name == 'europe':
-        return '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/eruope/nobel-eu--D-B-E-N-C-A-N-N.gml'
-    elif name == 'france': 
-        return '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/france/france--D-B-L-N-C-A-N-N.gml'
-    elif name == 'geant': 
-        return '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/geant/geant--D-B-M-N-C-A-N-N.gml'
-    elif name == 'germany': 
-        return '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/germany/germany50--D-B-L-N-C-A-N-N.gml'
-    elif name == 'india': 
-        return '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/india/india35--D-B-M-N-C-A-N-N.gml'
-    elif name == 'ny':
-        return '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/new york /newyork--D-B-E-N-C-A-N-N.gml'
-    elif name == 'ta2':
-        return '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/ta2/ta2--D-B-E-N-C-A-N-N.gml'
-    elif name == 'us-ca':
-        return '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/us-ca/janos-us-ca--D-D-L-N-C-A-N-N.gml'
-    elif name == 'zib54':
-        return '/home/DAVIDSON/doflocco/Graph_Pebbling/networks/zib54/zib54--U-U-E-N-I-A-N-N.gml'
-    else: 
-        print("Invalid Network Name.")
-        exit(1)
+def readNetwork():
+    
+    dir = os.getcwd()
+    ready = False
+
+    while not ready: 
+        print("SNDlib Network Library: ")
+        print("[abilene, atlanta, cost226, eu, france, geant, germany, india, ny, ta2, us-ca, zib54]")
+        name = input('Enter Network to Analyze: ')
+   
+        if name == 'abilene': 
+            path = dir + '/networks/abilene/abilene--D-B-M-N-C-A-N-N.gml'
+            ready = True
+        elif name == 'alt' or name == 'atlanta': 
+            path = dir + "/networks/atlanta/atlanta--D-B-M-N-C-A-N-N.gml"
+            ready = True
+        elif name == 'cost226':
+            path = dir + "/networks/cost226/cost266--D-B-E-N-C-A-N-N.gml"
+            ready = True
+        elif name == 'eu' or name == 'europe':
+            path = dir + '/networks/eruope/nobel-eu--D-B-E-N-C-A-N-N.gml'
+            ready = True
+        elif name == 'france': 
+            path = dir + '/networks/france/france--D-B-L-N-C-A-N-N.gml'
+            ready = True
+        elif name == 'geant': 
+            path = dir + '/networks/geant/geant--D-B-M-N-C-A-N-N.gml'
+            ready = True
+        elif name == 'germany': 
+            path = dir + '/networks/germany/germany50--D-B-L-N-C-A-N-N.gml'
+            ready = True
+        elif name == 'india': 
+            path = dir + '/networks/india/india35--D-B-M-N-C-A-N-N.gml'
+            ready = True
+        elif name == 'ny':
+            path = dir + '/networks/new york /newyork--D-B-E-N-C-A-N-N.gml'
+            ready = True
+        elif name == 'ta2':
+            path = dir + '/networks/ta2/ta2--D-B-E-N-C-A-N-N.gml'
+            ready = True
+        elif name == 'us-ca':
+            path = dir + '/networks/us-ca/janos-us-ca--D-D-L-N-C-A-N-N.gml'
+            ready = True
+        elif name == 'zib54':
+            path = dir + '/networks/zib54/zib54--U-U-E-N-I-A-N-N.gml'
+            ready = True
+        elif name == 'quit':
+            exit(1)
+        else: 
+            print("Invalid Network Name, try again. Enter 'quit' to exit.")
+    name = name + "_network"
+    return loadNetwork(path), name
+    
 
 def loadNetwork(path):
     G = nx.read_gml(path)
@@ -400,43 +393,92 @@ def applyPebbling():
             allResults.to_csv("network_pebbling_results.csv")
         # pebblingBound = max(bounds)
 
+
 def loadGraph(name): 
+    ready = False
+    while not ready: 
+        if name == "bruhat" or name == "Bruhat": 
+            bruhat = [(0,1), (0,2), (0,4), (1,2), (1,7), (2,3), (2,20), (3,23), (4, 5), (4, 8), (5,6), (5,9), (6,7), (6,10), (7,11),
+                (8,9), (8,16), (9,12), (10,11), (10,13), (11, 19), (12, 13), (12,14), (13,15), (14, 15), (14,17), (15, 18),
+                (16, 17), (16,20), (17, 21), (18,19), (18,22), (19,23), (20, 21), (21,22), (22,23)]
+            r = 0
+            pebblingGraph = PebblingGraph(bruhat, r)
+            ready = True
+        elif name == "lemke" or name == "Lemke": 
+            lemke_edges = [(0, 1), (0, 2), (1, 3), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6), (3, 7), (4, 7), (5, 7), (6, 7)]
+            r = 0
+            pebblingGraph = PebblingGraph(lemke_edges, r)
+            ready = True
+        elif name == "Petersen" or name == "petersen": 
+            petersen = [(0,1), (1,2), (2,3), (3,4), (4,0), (0,6), (1,7), (2,8), (3,9), (4,5), (5,7), (5,8), (6,9), (6,8), (7,9)]
+            r = 0
+            pebblingGraph = PebblingGraph(petersen, r)
+            ready = True
+        elif name == "n-cube": 
+            n = input("Enter value for n: ")
+            nCube = nx.hypercube_graph(int(n))
+            nCubeEdges = [e for e in nCube.edges]
+            pebblingGraph = PebblingGraph(nCubeEdges, 0)
+            ready = True
+        elif name == "lemke square" or name == "Lemke Square" or name == "Lemke square": 
+            lemke_edges = [(0, 1), (0, 2), (1, 3), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6), (3, 7), (4, 7), (5, 7), (6, 7)]
+            r = 0
+            lemke = PebblingGraph(lemke_edges, r)
+            lemkeSquare = nx.cartesian_product(lemke.graph, lemke.graph)
+            lemkeSquare = list(lemkeSquare.edges())
+            pebblingGraph = PebblingGraph(lemkeSquare, r)
+            ready = True
 
-    if name == "bruhat" or name == "Bruhat": 
-        bruhat = [(0,1), (0,2), (0,4), (1,2), (1,7), (2,3), (2,20), (3,23), (4, 5), (4, 8), (5,6), (5,9), (6,7), (6,10), (7,11),
-              (8,9), (8,16), (9,12), (10,11), (10,13), (11, 19), (12, 13), (12,14), (13,15), (14, 15), (14,17), (15, 18),
-              (16, 17), (16,20), (17, 21), (18,19), (18,22), (19,23), (20, 21), (21,22), (22,23)]
-        r = 0
-        pebblingGraph = PebblingGraph(bruhat, r)
-    elif name == "lemke" or name == "Lemke": 
-        lemke_edges = [(0, 1), (0, 2), (1, 3), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6), (3, 7), (4, 7), (5, 7), (6, 7)]
-        r = 0
-        pebblingGraph = PebblingGraph(lemke_edges, r)
-    elif name == "Petersen" or name == "petersen": 
-        petersen = [(0,1), (1,2), (2,3), (3,4), (4,0), (0,6), (1,7), (2,8), (3,9), (4,5), (5,7), (5,8), (6,9), (6,8), (7,9)]
-        r = 0
-        pebblingGraph = PebblingGraph(petersen, r)
-    elif name == "n-cube": 
-        n = input("Enter value for n: ")
-        nCube = nx.hypercube(n)
-        nCubeEdges = [e for e in nCube.edges]
-        pebblingGraph = PebblingGraph(nCubeEdges, 0)
-    elif name == "lemke square" or name == "Lemke Square" or name == "Lemke square": 
-        lemke_edges = [(0, 1), (0, 2), (1, 3), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6), (3, 7), (4, 7), (5, 7), (6, 7)]
-        r = 0
-        lemke = PebblingGraph(lemke_edges, r)
-        lemkeSquare = nx.cartesian_product(lemke.graph, lemke.graph)
-        lemkeSquare = list(lemkeSquare.edges())
-        pebblingGraph = PebblingGraph(lemkeSquare, r)
+        elif name == "apply" or name == "Apply": 
+            ready = True
+            return readNetwork()
+        elif name == 'quit':
+            quit()
+        else: 
+            name = input("Invalid graph selection, please try again. Options are: \n [lemke, petersen, n-cube, bruhat, lemke square, network]\n>>> ")
+            # need to make this loop back to initial prompt
+    
+    return pebblingGraph, name
 
-    elif name == "apply" or name == "Apply": 
-        return networkPrompt()
+def initializeOptimizer(fileRoot): 
+
+    print("Default optimizer parameters: \n",
+        "Solver : Gurobi \n", 
+        "Threads : full \n", 
+        "Root Filename :" + fileRoot +"\n", 
+        "Objective Gap : None \n", 
+        "Time Limit : None \n", 
+        "Save Certificates? : True")
+    change = input("Would you like to change optimizer paramters? y or n: " )
+    if change == "n" or change == 'N':
+        
+        optimizer = Optimizer(solver="Gurobi", 
+                              threads=False, 
+                              logFile=fileRoot, 
+                              lpFile=fileRoot,
+                              paramFile=f"{fileRoot}_params",
+                              timeLimit=False, 
+                              objGap=False,
+                              cert=True)
     else: 
-        print("Invalid graph selection, please try again. Options are: \n [lemke, petersen, n-cube, bruhat, lemke square, network]")
-        # need to make this loop back to initial prompt
-    return pebblingGraph 
 
+        solver = input('Enter solver (Gurobi or CPLEX): ')
+        threads = input('Enter number of threads (int): ')
+        fileRoot = input("Enter root filename (str): ")
+        timeLimit = input("Enter time limit (ms): ")
+        objGap = input("Enter objective gap (float btwn 0 and 1): ")
+        cert = input("Would you like to save certificate? (True or False): ")
 
+        optimizer = Optimizer(solver=solver, 
+                              threads=int(threads), 
+                              logFile=fileRoot, 
+                              lpFile=fileRoot,
+                              paramFile=f"{fileRoot}_params",
+                              timeLimit=int(timeLimit), 
+                              objGap=float(objGap),
+                              cert=cert)
+
+    return optimizer
 
 def main(): 
     # Lemke 
@@ -539,29 +581,89 @@ def main():
     #                             cert=True)
     
     # res = optimizer.generateTreeStrategiesSym(lemkeSquare, 20, 10)
+def setRoot(pebblingGraph): 
+    ready = False
+    while not ready: 
+        print("Specify root from the node list:")
+        print(pebblingGraph.nodes)
+        print("To compute bound for all roots enter \"all\".")
+        r = input(">>>> ")
 
-def main2():
+        if r in pebblingGraph.nodes: 
+            pebblingGraph.root = str(r)
+            ready = True
+        elif r == 'quit':
+            quit()
+        else: 
+            print("Specified root vertex not in graph. Please enter a valid root from node list:")
+            print(pebblingGraph.nodes)
+            print("Or enter \"quit\" to exit program.")
+    
+    return pebblingGraph
+def interface():
 
-    print("Welcome to the Graph Pebbling Interactive MILP Software!")
-    print("To begin select your pebbling graph from the following preloaded library: ")
-    graphName = input("Lemke (|V| = 8, |E| = ), \n"
-         "Bruhat (|V| = 24, |E| = ), \n"
-         "n-cube (|V| = 2^n, |E| = ), \n" 
-         "Petersen (|V| = 10, |E| = ), \n"
-         "Lemke Square (|V| = 64, |E| = 208), \n"
-         "(SNDlib) network, \n" 
+    print("Welcome to the Graph Pebbling Interactive MILP Platform!\n ")
+    print("To begin, select your pebbling graph from the following preloaded library: ")
+    graphName = input("[Lemke, Bruhat, n-cube, Petersen, Lemke square, apply (SNDlib network)] \n "
          ">>>> ")
-    try: 
-        pebblingGraph = loadGraph(graphName)
-        print("Successfully Loaded %s graph with |V| = %d nodes and |E| = %d edges." \
-            (graphName, len(pebblingGraph.nodes), len(pebblingGraph.edges)))
-    except:  
-        print("Oops.")
-    print("Specify root from: \n " + pebblingGraph.nodes + "\n To compute bound for all roots enter \"all\"")
-    r = input(">>>>")
-    pebblingGraph.root = str(r)
-    print("Specified root vertex for %s set to v = %s" % (graphName, pebblingGraph.root))
-    print("")
+    
+    graphRes = loadGraph(graphName)
+    pebblingGraph = graphRes[0]
+    graphName = graphRes[1]
+    print()
+    print("Successfully Loaded %s graph." % graphName)
+    print("---------------------------")
+    print("Pebbling Graph Statistics: ")
+    pebblingGraph.printStats() 
+    print("---------------------------")
+    print()
+
+    pebblingGraph = setRoot(pebblingGraph)
+    print("Specified root vertex for %s graph set to r = %s" % (graphName, pebblingGraph.root))
+    print()
+    
+    print("Pebbling Graph ready for tree strategy generation.")
+    print()
+
+   
+    fileRoot = f"{graphName}_r={pebblingGraph.root}"
+    opt = initializeOptimizer(fileRoot)
+    print()
+    print("Optimization object successfully initialized with paramters: ")
+    print("---------------------------")
+    print(f"Solver : {opt.solver}\n",
+          f"Threads : {opt.threads}\n", 
+          f"Root Filename : {opt.logFile}\n",
+          f"Time Limit : {opt.timeLimit}\n", 
+          f"Objective Gap : {opt.objGap}\n", 
+          f"Save Certificates? : {opt.cert}") 
+    print("---------------------------")
+    print()
+
+    sym = input("Tree strategy generation (TS) or Symmetric Tree Strategy Generation (STS)? ")
+
+    if sym == "ts" or sym == "TS": 
+        size = input("Enter number of tree strategies to generate: ")
+        length = input("Enter maximum tree length: ")
+        print(f"Ready to generate {size} tree strategies with maximum tree length {length}")
+        
+    else: 
+        size = input("Enter number of tree strategies to generate: ")
+        length = input("Enter maximum tree length: ")
+        print(f"Ready to generate {int(size)//2} symmetric tree strategies ({size} total) with maximum tree length {length}")
+    input("Press Enter to run solver...")   
+    print("------------------------------------------------------------------") 
+    res = opt.generateTreeStrategies(pebblingGraph, int(size), int(length), None)
+    
+    strategies = res[0]
+    if opt.cert: 
+        for t in strategies.keys():
+            # strategies[t].saveCertificate(f"{fileRoot}_cert{t}.csv")
+            strategies[t].saveEdges(f"{fileRoot}_edges{t}.csv")
+
+        #visualize strategy 
+        for t in strategies.keys():
+            strategies[t].visualizeStrategy(f"{fileRoot}_strategy{t}.png")
 
 if __name__ == "__main__":
-    main()
+    interface()

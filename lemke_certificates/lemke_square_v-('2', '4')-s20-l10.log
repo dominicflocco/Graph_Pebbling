@@ -1,7 +1,0 @@
-
-Gurobi 9.1.2 (linux64) logging started Wed Dec  1 09:08:16 2021
-
-Changed value of parameter LogFile to lemke_square_v-('2', '4')-s20-l10.log
-   Prev:   Default: 
-Changed value of parameter Threads to 32
-   Prev: 0  Min: 0  Max: 1024  Default: 0
