@@ -51,9 +51,17 @@ class TreeStrategy:
         self.weights[vertex] = weight
 
     def addEdge(self, src, dst): 
+        """ 
+        Helper function that adds edges to tree strategy. Used in outputing optimization
+        results in Optimization.py.
+
+        Parameters: 
+            src - source node of edge 
+            dst - destinaation node of edge
+        """
         self.edges.append((str(src), str(dst)))
-        self.nodes.add(src)
-        self.nodes.add(dst)
+        self.nodes.add(str(src))
+        self.nodes.add(str(dst))
 
     def getWeight(self, vertex):
         """
@@ -70,6 +78,14 @@ class TreeStrategy:
         return len(self.edges)
 
     def saveCertificate(self, filename): 
+        """
+        For graph products only. Saves certificate ot tree strategy to .csv file 
+        in matrix form. Where entry (i, j) represents the weight on vertex (i, j)
+        in the tree strategy 
+
+        Parameters: 
+            filename - name of .csv file to be written 
+        """
 
         n = int(math.sqrt(len(self.graph.nodes)))
         cert = np.zeros((n,n))
@@ -80,18 +96,34 @@ class TreeStrategy:
         pd.DataFrame(cert).to_csv(filename)
     
     def saveEdges(self, filename):
+        """
+        Saves edges in tree strategy in .csv format for reproducibility. 
+
+        Patameters: 
+            filename - name of .csv file to be written 
+        """
 
         pd.DataFrame(self.edges).to_csv(filename)
     
     def visualizeStrategy(self, filename=False):
+        """
+        Transforms tree stratgy into networkx object and saves a visualization 
+        of the strategy to a .png file. 
+        
+        Parameters: 
+            filename - name of .png file to be written. If not specified, 
+                        visualization is presented to console but not saved.
+
+        """
         
         self.tree.add_edges_from(self.edges)
         labels ={}
-        
-        for v in list(self.nodes):
+        print(self.tree.edges)
+        print(self.tree.nodes)
+        for v in list(self.tree.nodes):
             w = self.getWeight(v)
             label = v + "\n" + str(round(w, 2))
-            labels[str(v)] = label
+            labels[v] = label
         labels[self.root] = 'r'
         # print(list(self.nodes))
         # Networkx parameters
@@ -114,6 +146,12 @@ class TreeStrategy:
         plt.close()
 
     def verify(self): 
+        """ 
+        Verifies that the tree strategy outputting by the optimization solver 
+        is a valid tree strategy with a valid associated weight function. Does so 
+        by checking if the tree is connected and acyclic, and by verifying the weight
+        funcion properties are met. 
+        """
         self.tree.add_edges_from(self.edges)
         directedEdges = []
         visited = set()

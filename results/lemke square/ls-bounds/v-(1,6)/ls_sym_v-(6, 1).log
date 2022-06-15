@@ -1,0 +1,176 @@
+
+Gurobi 9.1.2 (linux64) logging started Thu Apr  7 16:44:11 2022
+
+Changed value of parameter LogFile to /home/DAVIDSON/doflocco/Graph_Pebbling/results/lemke square/ls-bounds/v-(1,6)/ls_sym_v-(6, 1).log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 10800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variable name "X[(3, 3),(3, 7)]" has a space
+Warning: constraint name "flow-constr-t0-v(6, 1)" has a space
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 4855 rows, 4352 columns and 16616 nonzeros
+Model fingerprint: 0x18f2507c
+Variable types: 512 continuous, 3840 integer (3840 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+04]
+  Objective range  [1e-01, 1e-01]
+  Bounds range     [1e+00, 3e+04]
+  RHS range        [1e+00, 7e+04]
+Presolve removed 291 rows and 296 columns
+Presolve time: 0.09s
+Presolved: 4564 rows, 4056 columns, 22311 nonzeros
+Variable types: 512 continuous, 3544 integer (3544 binary)
+
+Root relaxation: objective 6.400000e+01, 152 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   64.00000    0   44          -   64.00000      -     -    0s
+     0     0   64.00000    0   79          -   64.00000      -     -    0s
+     0     0   64.00000    0   90          -   64.00000      -     -    0s
+     0     0   64.00000    0   64          -   64.00000      -     -    0s
+     0     0   64.00000    0   60          -   64.00000      -     -    0s
+     0     0   64.00000    0   50          -   64.00000      -     -    0s
+     0     0   64.00000    0   61          -   64.00000      -     -    0s
+     0     0   64.00000    0   50          -   64.00000      -     -    0s
+H    0     0                     778.8750000   64.00000  91.8%     -    0s
+H    0     0                     778.3750000   64.00000  91.8%     -    0s
+     0     0   64.00000    0   70  778.37500   64.00000  91.8%     -    0s
+     0     0   64.00000    0   38  778.37500   64.00000  91.8%     -    0s
+H    0     0                     152.7500000   64.00000  58.1%     -    0s
+H    0     0                     134.7500000   64.00000  52.5%     -    1s
+     0     2   64.00000    0   30  134.75000   64.00000  52.5%     -    1s
+H    1     4                     125.1750000   64.00000  48.9%  1096    1s
+H   31    64                     119.8125000   64.00000  46.6%  51.4    2s
+H   31    64                     109.6875000   64.00000  41.7%  51.4    2s
+H   45    64                     105.6875000   64.00000  39.4%  35.9    2s
+H   57    64                     102.3074324   64.00000  37.4%  34.6    2s
+
+Cutting planes:
+  Cover: 32
+  Implied bound: 36
+  Clique: 5
+  MIR: 2
+  Flow cover: 26
+  Relax-and-lift: 7
+
+Explored 63 nodes (11652 simplex iterations) in 2.11 seconds
+Thread count was 32 (of 64 available processors)
+
+Solution count 9: 102.307 105.687 109.687 ... 778.875
+
+Solve interrupted
+Best objective 1.023074324323e+02, best bound 6.400000000000e+01, gap 37.4435%
+
+Gurobi 9.1.2 (linux64) logging started Thu Apr  7 23:49:41 2022
+
+Changed value of parameter LogFile to /home/DAVIDSON/doflocco/Graph_Pebbling/results/lemke square/ls-bounds/v-(1,6)/ls_sym_v-(6, 1).log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 10800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variable name "X[(5, 0),(5, 2)]" has a space
+Warning: constraint name "flow-constr-t0-v(6, 6)" has a space
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 4855 rows, 4352 columns and 16616 nonzeros
+Model fingerprint: 0xb03d817e
+Variable types: 512 continuous, 3840 integer (3840 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+04]
+  Objective range  [1e-01, 1e-01]
+  Bounds range     [1e+00, 3e+04]
+  RHS range        [1e+00, 7e+04]
+Presolve removed 291 rows and 296 columns
+Presolve time: 0.09s
+Presolved: 4564 rows, 4056 columns, 22278 nonzeros
+Variable types: 512 continuous, 3544 integer (3544 binary)
+Found heuristic solution: objective 3231.8749998
+
+Root relaxation: objective 6.400000e+01, 154 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   64.00000    0   26 3231.87500   64.00000  98.0%     -    0s
+H    0     0                    1142.6249999   64.00000  94.4%     -    0s
+H    0     0                    1140.9999999   64.00000  94.4%     -    0s
+H    0     0                    1131.6249999   64.00000  94.3%     -    0s
+     0     0   64.00000    0   57 1131.62500   64.00000  94.3%     -    0s
+H    0     0                     214.1250000   64.00000  70.1%     -    0s
+     0     0   64.00000    0   66  214.12500   64.00000  70.1%     -    0s
+     0     0   64.00000    0   28  214.12500   64.00000  70.1%     -    0s
+H    0     0                     206.3750000   64.00000  69.0%     -    0s
+H    0     0                     205.8333333   64.00000  68.9%     -    0s
+H    0     0                     143.0846774   64.00000  55.3%     -    0s
+H    0     0                     120.5000000   64.00000  46.9%     -    0s
+     0     0   64.00000    0   28  120.50000   64.00000  46.9%     -    0s
+H    0     0                     100.5000000   64.00000  36.3%     -    1s
+     0     0   64.00000    0   28  100.50000   64.00000  36.3%     -    1s
+     0     0   64.00000    0   86  100.50000   64.00000  36.3%     -    1s
+     0     0   64.00000    0   34  100.50000   64.00000  36.3%     -    1s
+H    0     0                      97.1875000   64.00000  34.1%     -    2s
+H    0     0                      94.0625000   64.00000  32.0%     -    2s
+     0     2   64.00000    0   34   94.06250   64.00000  32.0%     -    2s
+H    1     4                      93.9375000   64.00000  31.9%   536    2s
+H    2     4                      89.6500000   64.00000  28.6%   276    2s
+H   31    64                      85.1000000   64.00000  24.8%  41.8    4s
+H   38    64                      83.6250000   64.00000  23.5%  35.5    4s
+H   39    64                      81.7750000   64.00000  21.7%  34.7    4s
+H   41    64                      76.7812500   64.00000  16.6%  33.2    4s
+H  159   192                      73.2812500   64.00000  12.7%  15.4    5s
+H  161   192                      72.5500000   64.00000  11.8%  15.3    5s
+H  165   192                      71.2500000   64.00000  10.2%  15.1    5s
+H  176   192                      70.1354167   64.00000  8.75%  14.4    5s
+H  191   223                      70.0104167   64.00000  8.59%  13.5    6s
+H  224   255                      68.6696429   64.00000  6.80%   103    7s
+H  225   255                      68.0000000   64.00000  5.88%   102    7s
+H  226   255                      67.7916667   64.00000  5.59%   102    7s
+H  256   287                      66.7916667   64.00000  4.18%  90.8    9s
+H  262   287                      66.1250000   64.00000  3.21%  88.8    9s
+   288   697   64.00000   13   53   66.12500   64.00000  3.21%  85.5   11s
+H  950  3208                      66.0000000   64.00000  3.03%  54.1   13s
+H 2672  3208                      65.8173077   64.00000  2.76%  40.2   13s
+H 3104  3208                      65.7656250   64.00000  2.68%  46.5   13s
+H 3268 11179                      65.7500000   64.00000  2.66%  45.5   15s
+H 4155 11179                      65.6250000   64.00000  2.48%  43.9   15s
+H 5099 11170                      65.1228070   64.00000  1.72%  41.8   15s
+H 5299 11170                      65.0625000   64.00000  1.63%  41.6   15s
+H11321 11124                      65.0476190   64.00000  1.61%  38.8   18s
+H11322 11124                      65.0000000   64.00000  1.54%  38.8   18s
+H11350 11113                      64.7073171   64.00000  1.09%  38.7   18s
+ 11353 11948   64.00000  367   62   64.70732   64.00000  1.09%  38.7   20s
+H11378 11948                      64.6666667   64.00000  1.03%  38.7   20s
+H11456 11942                      64.5666667   64.00000  0.88%  38.5   20s
+H11482 11942                      64.5595238   64.00000  0.87%  38.6   20s
+H11616 11804                      64.3750000   64.00000  0.58%  38.7   20s
+H12200 12753                      64.3333333   64.00000  0.52%  38.5   21s
+H12373 12753                      64.3333332   64.00000  0.52%  38.3   21s
+H12396 12753                      64.2857143   64.00000  0.44%  38.4   21s
+H13078 12691                      64.2499999   64.00000  0.39%  39.1   21s
+H13186 16296                      64.2499998   64.00000  0.39%  39.1   23s
+H13442  5448                      64.0000000   64.00000  0.00%  38.9   23s
+
+Cutting planes:
+  Cover: 22
+  Implied bound: 28
+  Clique: 6
+  MIR: 7
+  Flow cover: 41
+  RLT: 39
+  Relax-and-lift: 10
+
+Explored 17020 nodes (665658 simplex iterations) in 23.13 seconds
+Thread count was 32 (of 64 available processors)
+
+Solution count 10: 64 64.25 64.2857 ... 64.7073
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.399999999995e+01, best bound 6.399999999995e+01, gap 0.0000%

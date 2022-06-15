@@ -413,6 +413,13 @@ class PebblingGraph:
         return None
 
     def calculateBound(self, strategies):
+        """ 
+        Calculates the pebbling bound from a given set of strategies manually by 
+        finding the average vertex weight across strategies (Covering Lemma). 
+
+        Parameters: 
+            strategies - set of TreeStrategy Objects
+        """
 
         sumWeights = 0
         for t in range(len(strategies)):

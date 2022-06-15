@@ -115,7 +115,7 @@ def boundLemkeSquare(lemkeSquare):
 
     nodes = lemkeSquare.nodes
     bounds = {}
-    visited = set()
+    visited = set(["(0, 0)", "(7, 7)", "(4, 4)"])
     # for r in nodes: 
     #     r_rev = "("+ r[4]+ ", " + r[1] +")"
     #     if r_rev not in allNodes and r not in allNodes:
@@ -128,36 +128,38 @@ def boundLemkeSquare(lemkeSquare):
     # print(rootNodes)
     params = ["Tree Type", 'Threads', 'Solver', "|V|", '|E|', '|T|', 'Num Nodes', 'Max Len', 'runtime', "root", 'Bound']
     allResults = pd.DataFrame(columns=params)
-    #lemkeSquareEdges = list(lemkeSquare.edges())
-    size = 12
+    rootdir = '/home/DAVIDSON/doflocco/Graph_Pebbling/results/lemke square/ls-bounds'
+    size = 16
     length = 16
     for r in nodes:
         if r not in visited: 
-            rootdir = "/home/DAVIDSON/doflocco/Graph_Pebbling/results/symmetry/bound-01"
-            dir = "/v-" + str(r) 
+            strr = str(r).replace(" ", "")
+            dir = "/v-" + strr
             dest = rootdir+dir
-            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            # if not os.path.isfile(dest):
+            #     r_rev = "("+ r[4]+ "," + r[1] +")"
+            #     dest = rootdir + "/v-" + r_rev
+
             r1, r2 = int(r[1]), int(r[4])
-            #lemkeSquare.root = str((r1, r2))
-            # print(lemkeSquare.root)
+            
             ls = PebblingGraph(lemkeSquare.edges, (r1, r2))
             optimizer = Optimizer(solver = "Gurobi", 
-                                threads = 4, 
+                                threads = None, 
                                 logFile = "ls_sym_v-" + str(r),
                                 lpFile = "ls_sym_v-" + str(r),
                                 paramFile = "ls_sym_params" + "-v" + str(r),
                                 objGap=False,
-                                timeLimit=1800, 
+                                timeLimit=10800, 
                                 cert=True)
             
             res = optimizer.generateTreeStrategiesSym(ls, size, length, None)
             #bounds[r] = res[1]
             strategies = res[0]
             results = res[2] 
-            certDest = dest + "/certificates-v" + str(r) 
-            os.makedirs(os.path.dirname(certDest), exist_ok=True)
-            edgeDest = dest + "/edges-v" + str(r)
-            os.makedirs(os.path.dirname(edgeDest), exist_ok=True)
+            certDest = dest + "/certificates"
+            #os.makedirs(os.path.dirname(certDest), exist_ok=True)
+            edgeDest = dest + "/edges"
+            #os.makedirs(os.path.dirname(edgeDest), exist_ok=True)
 
             for t in strategies.keys():
                 # strategies[t].saveCertificate(certDest + "/ls_sym_cert"+ str(t)+ "-v" + str(r) +".csv")
@@ -165,19 +167,19 @@ def boundLemkeSquare(lemkeSquare):
                 strategies[t].saveCertificate("ls_sym_cert"+ str(t)+ "-v" + str(r) +".csv")
                 strategies[t].saveEdges("ls_sym_edges" + str(t)+ "-v" + str(r) + ".csv")
                 #strategies[t].visualizeStrategy("ls_sym_strategy" + str(t) + "-v" + str(r) + ".png")
-            # stratDest = dest + "/strategies-v" + str(r)
+            stratDest = dest 
             # os.makedirs(os.path.dirname(stratDest), exist_ok=True)
             # visualize strategy 
-            # for t in strategies.keys():
-            #     #strategies[t].visualizeStrategy(stratDest + "/ls_sym_strategy" + str(t) + "-v" + str(r) + ".png")
-            #     strategies[t].visualizeStrategy("ls_sym_strategy" + str(t) + "-v" + str(r) + ".png")
+            #for t in strategies.keys():
+            #     strategies[t].visualizeStrategy(stratDest + "/ls_sym_strategy" + str(t) + "-v" + str(r) + ".png")
+            #    strategies[t].visualizeStrategy("ls_sym_strategy" + str(t) + "-v" + str(r) + ".png")
             allResults = allResults.append(results, ignore_index=True)
-            allResults.to_csv(rootdir + "/results.csv")
+            allResults.to_csv("results.csv")
         visited.add(r)
         r_rev = "("+ r[4]+ ", " + r[1] +")"
         visited.add(r_rev)
     
-    # pd.DataFrame.from_dict(bounds, orient="index").to_csv("lemke_square_bounds.csv")
+    pd.DataFrame.from_dict(bounds, orient="index").to_csv("lemke_square_bounds2.csv")
 
 
 def runNontreeOpt(graph): 
@@ -469,7 +471,7 @@ def main():
     
     # applyPebbling()
     #treeStrategyOptCrank(lemkeSquare, 6, 12, None)
-    # boundLemkeSquare(lemkeSquare)
+    boundLemkeSquare(lemkeSquare)
     #treeStrategyOptSymCrank(lemkeSquare, 20, 16, None)
     # # Bruhat 
     bruhat = [(0,1), (0,2), (0,4), (1,2), (1,7), (2,3), (2,20), (3,23), (4, 5), (4, 8), (5,6), (5,9), (6,7), (6,10), (7,11),
@@ -493,20 +495,20 @@ def main():
     # # print(len(hypercube.edges))
     # # print(len(hypercube.nodes))
     # runNontreeOpt(hypercube)
-    networkLib = ["abilene", "atlanta", "cost226", "eu", "france", "geant", "germany", "india", "ny"]
-    results = pd.DataFrame()
-    for network in networkLib:
-        print(network) 
-        path = readNetwork(network)
-        pebblingNetwork = loadNetwork(path)
-        for r in pebblingNetwork.nodes: 
-            file = network + "_v-" + r + ".csv"
-            df = pd.read_csv(file)
-            df['Network'] = [network]
-            results = results.append(df, ignore_index=True)
+    # networkLib = ["abilene", "atlanta", "cost226", "eu", "france", "geant", "germany", "india", "ny"]
+    # results = pd.DataFrame()
+    # for network in networkLib:
+    #     print(network) 
+    #     path = readNetwork(network)
+    #     pebblingNetwork = loadNetwork(path)
+    #     for r in pebblingNetwork.nodes: 
+    #         file = network + "_v-" + r + ".csv"
+    #         df = pd.read_csv(file)
+    #         df['Network'] = [network]
+    #         results = results.append(df, ignore_index=True)
 
         
-    results.to_csv("network_results.csv")
+    # results.to_csv("network_results.csv")
 
     # Petersen 
     petersen = [(0,1), (1,2), (2,3), (3,4), (4,0), (0,6), (1,7), (2,8), (3,9), (4,5), (5,7), (5,8), (6,9), (6,8), (7,9)]

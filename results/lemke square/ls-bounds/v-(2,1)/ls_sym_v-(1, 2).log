@@ -1,0 +1,53 @@
+
+Gurobi 9.1.2 (linux64) logging started Thu Apr  7 17:47:27 2022
+
+Changed value of parameter LogFile to /home/DAVIDSON/doflocco/Graph_Pebbling/results/lemke square/ls-bounds/v-(2,1)/ls_sym_v-(1, 2).log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 10800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variable name "X[(1, 3),(1, 1)]" has a space
+Warning: constraint name "flow-constr-t0-v(6, 0)" has a space
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 4839 rows, 4352 columns and 16576 nonzeros
+Model fingerprint: 0x2a4ddf7f
+Variable types: 512 continuous, 3840 integer (3840 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+04]
+  Objective range  [1e-01, 1e-01]
+  Bounds range     [1e+00, 3e+04]
+  RHS range        [1e+00, 7e+04]
+Presolve removed 307 rows and 320 columns
+Presolve time: 0.09s
+Presolved: 4532 rows, 4032 columns, 22285 nonzeros
+Variable types: 512 continuous, 3520 integer (3520 binary)
+
+Root relaxation: objective 6.400000e+01, 147 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   64.00000    0   40          -   64.00000      -     -    0s
+     0     0   64.00000    0   76          -   64.00000      -     -    0s
+     0     0   64.00000    0   81          -   64.00000      -     -    0s
+     0     0   64.00000    0   42          -   64.00000      -     -    0s
+     0     0   64.00000    0   54          -   64.00000      -     -    0s
+
+Cutting planes:
+  Cover: 27
+  Implied bound: 31
+  Clique: 2
+  MIR: 1
+  Flow cover: 40
+  Relax-and-lift: 5
+
+Explored 1 nodes (3399 simplex iterations) in 0.37 seconds
+Thread count was 32 (of 64 available processors)
+
+Solution count 0
+
+Solve interrupted
+Best objective -, best bound 6.400000000000e+01, gap -

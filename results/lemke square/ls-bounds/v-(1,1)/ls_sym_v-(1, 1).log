@@ -576,3 +576,75 @@ Solution count 10: 74.5 74.5 74.5 ... 74.5833
 
 Time limit reached
 Best objective 7.449999846162e+01, best bound 6.300000000000e+01, gap 15.4362%
+
+Gurobi 9.1.2 (linux64) logging started Thu Apr  7 16:47:16 2022
+
+Changed value of parameter LogFile to /home/DAVIDSON/doflocco/Graph_Pebbling/results/lemke square/ls-bounds/v-(1,1)/ls_sym_v-(1, 1).log
+   Prev:   Default: 
+Changed value of parameter MIPFocus to 1
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Changed value of parameter TimeLimit to 10800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Warning: variable name "X[(6, 1),(2, 1)]" has a space
+Warning: constraint name "flow-constr-t0-v(1, 1)" has a space
+Warning: to let Gurobi read it back, use rlp format
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+Optimize a model with 4871 rows, 4352 columns and 16664 nonzeros
+Model fingerprint: 0xb2929d49
+Variable types: 512 continuous, 3840 integer (3840 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+04]
+  Objective range  [1e-01, 1e-01]
+  Bounds range     [1e+00, 3e+04]
+  RHS range        [1e+00, 7e+04]
+Presolve removed 228 rows and 224 columns
+Presolve time: 0.08s
+Presolved: 4643 rows, 4128 columns, 21700 nonzeros
+Variable types: 504 continuous, 3624 integer (3624 binary)
+
+Root relaxation: objective 6.300000e+01, 164 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   63.00000    0   57          -   63.00000      -     -    0s
+     0     0   63.00000    0   92          -   63.00000      -     -    0s
+H    0     0                    16431.749999   63.00000   100%     -    0s
+H    0     0                    7226.1249997   63.00000  99.1%     -    0s
+     0     0   63.00000    0  106 7226.12500   63.00000  99.1%     -    0s
+H    0     0                    1226.1249999   63.00000  94.9%     -    0s
+     0     0   63.00000    0   43 1226.12500   63.00000  94.9%     -    0s
+H    0     0                    1225.6249999   63.00000  94.9%     -    0s
+     0     0   63.00000    0   50 1225.62500   63.00000  94.9%     -    0s
+H    0     0                     734.6041667   63.00000  91.4%     -    0s
+     0     0   63.00000    0   68  734.60417   63.00000  91.4%     -    0s
+H    0     0                     683.5250000   63.00000  90.8%     -    0s
+H    0     0                     330.8750000   63.00000  81.0%     -    0s
+H    0     0                     321.8750000   63.00000  80.4%     -    0s
+     0     0   63.00000    0   69  321.87500   63.00000  80.4%     -    0s
+H    0     0                     234.7395833   63.00000  73.2%     -    1s
+     0     0   63.00000    0   53  234.73958   63.00000  73.2%     -    1s
+H    0     0                     147.3216374   63.00000  57.2%     -    1s
+     0     0   63.00000    0   61  147.32164   63.00000  57.2%     -    1s
+     0     0   63.00000    0   61  147.32164   63.00000  57.2%     -    1s
+H    0     0                     131.7919834   63.00000  52.2%     -    1s
+H    0     0                     130.2500000   63.00000  51.6%     -    2s
+     0     2   63.00000    0   59  130.25000   63.00000  51.6%     -    2s
+H    1     4                     127.6250000   63.00000  50.6%   492    2s
+
+Cutting planes:
+  Cover: 37
+  Implied bound: 44
+  Clique: 8
+  MIR: 10
+  Flow cover: 38
+  Relax-and-lift: 5
+
+Explored 3 nodes (12446 simplex iterations) in 2.47 seconds
+Thread count was 32 (of 64 available processors)
+
+Solution count 10: 127.625 130.25 131.792 ... 1225.62
+
+Solve interrupted
+Best objective 1.276249999998e+02, best bound 6.300000000000e+01, gap 50.6366%
