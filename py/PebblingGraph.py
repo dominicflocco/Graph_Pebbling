@@ -36,8 +36,9 @@ class PebblingGraph:
         """
 
         self.root = str(root)
-        #self.edges = [(str(u), str(v)) for u, v in edges]
-        self.edges = list(set(edges))
+        self.edges = [(str(u), str(v)) for u, v in edges]
+
+        # self.edges = list(set(edges))
 
         self.graph = nx.Graph()
         self.graph.add_edges_from(self.edges)
@@ -54,6 +55,7 @@ class PebblingGraph:
 
         self.directed = nx.DiGraph()
         self.directed.add_edges_from(self.arcs)
+        self.stats = self.calcNetworkStats()
 
     def cartesianProduct(self, edges2):
         """
@@ -424,3 +426,30 @@ class PebblingGraph:
         bound = math.floor(avg) + 1
 
         return bound
+    
+    def calcNetworkStats(self):
+        numNodes = len(self.nodes)
+        numEdges = len(self.edges)
+
+        nodeDegrees = [self.graph.degree[v] for v in self.nodes] 
+        maxDeg = max(nodeDegrees)
+        minDeg = min(nodeDegrees)
+        avgDeg = sum(nodeDegrees)/numNodes
+        density = nx.density(self.graph)
+        diameter = nx.diameter(self.graph)
+
+        stats = {"|V|": numNodes, 
+                "|E|": numEdges, 
+                "Max degree": maxDeg,
+                "Min degree": minDeg, 
+                "Avg degree": avgDeg, 
+                "Density": density, 
+                "Diam": diameter}
+        
+        return stats
+    def printStats(self):
+
+        for k, v in self.stats.items(): 
+            print("%s: %d" % (k, v))
+        
+        
