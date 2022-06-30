@@ -36,9 +36,9 @@ class PebblingGraph:
         """
 
         self.root = str(root)
-        self.edges = [(str(u), str(v)) for u, v in edges]
+        # self.edges = [(str(u), str(v)) for u, v in edges]
 
-        # self.edges = list(set(edges))
+        self.edges = list(set(edges))
 
         self.graph = nx.Graph()
         self.graph.add_edges_from(self.edges)
@@ -55,7 +55,7 @@ class PebblingGraph:
 
         self.directed = nx.DiGraph()
         self.directed.add_edges_from(self.arcs)
-        self.stats = self.calcNetworkStats()
+        # self.stats = self.calcNetworkStats()
 
     def cartesianProduct(self, edges2):
         """
