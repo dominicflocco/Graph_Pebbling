@@ -11,6 +11,7 @@ from TreeStrategy import TreeStrategy
 from TreeStrategy import NonTreeStrategy
 from PebblingGraph import PebblingGraph 
 
+INTERFACE = True
 def countElementaryCirtuits(n):
    
     count = 0 
@@ -553,12 +554,12 @@ def initializeOptimizer(fileRoot):
 
 def main(): 
     # Lemke 
-    lemke_edges = [(0, 1), (0, 2), (1, 3), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6), (3, 7), (4, 7), (5, 7), (6, 7)]
+    # lemke_edges = [(0, 1), (0, 2), (1, 3), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6), (3, 7), (4, 7), (5, 7), (6, 7)]
     # lemke2_edges = [(0, 1), (0, 2), (1, 2), (1, 3), (2, 5), (2, 4), (3, 4), (2, 6), (3, 7), (4, 7), (5, 7), (6, 7)]
     # lemke3_edges = [(0, 1), (0, 2), (1, 3), (2, 5), (2, 4), (3, 4), (3, 6), (4, 5), (5, 6), (2, 6), (3, 7), (4, 7), (5, 7), (6, 7)]
-    # lemke4_edges = [(0, 1), (0, 2), (1, 3), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6), (3, 7), (4, 7), (5, 7), (6, 7), (1, 2), (4, 5), (5, 6), (4, 6)]
+    lemke4_edges = [(0, 1), (0, 2), (1, 3), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6), (3, 7), (4, 7), (5, 7), (6, 7), (1, 2), (4, 5), (5, 6), (4, 6)]
     r = 0
-    lemke = PebblingGraph(lemke_edges, r)
+    lemke = PebblingGraph(lemke4_edges, r)
     lemkeSquare = nx.cartesian_product(lemke.graph, lemke.graph)
     lemkeSquare = list(lemkeSquare.edges())
     initPebblingGraph = PebblingGraph(lemkeSquare, 0)
@@ -775,4 +776,7 @@ def interface():
             strategies[t].visualizeStrategy(f"{fileRoot}_strategy{t}.png")
 
 if __name__ == "__main__":
-    interface()
+    if INTERFACE: 
+        interface()
+    else: 
+        main()
