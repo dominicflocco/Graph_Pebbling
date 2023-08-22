@@ -11,7 +11,6 @@ from TreeStrategy import TreeStrategy
 from TreeStrategy import NonTreeStrategy
 from PebblingGraph import PebblingGraph 
 
-INTERFACE = False
 def countElementaryCirtuits(n):
    
     count = 0 
@@ -776,7 +775,4 @@ def interface():
             strategies[t].visualizeStrategy(f"{fileRoot}_strategy{t}.png")
 
 if __name__ == "__main__":
-    if INTERFACE: 
-        interface()
-    else: 
-        main()
+    interface()
