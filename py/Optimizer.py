@@ -337,6 +337,8 @@ class Optimizer:
             Z[i] = model.addVars(graph.nodes, lb=0, ub=ubz, vtype=GRB.CONTINUOUS, name='Z')
 
         # Add Constraints
+        for t in range(size):
+            model.addConstr(Y[t][r] == 0)
         # Flow Constraint
         for t in range(size): # for all t in T
             for i in graph.nodes: # for all i in V
@@ -484,6 +486,7 @@ class Optimizer:
 
         arcs = list(graph.arcs)
         nodes = graph.nodes
+ 
         # print(arcs)
         # print()
         # print(set(arcs))
@@ -492,6 +495,8 @@ class Optimizer:
             Y[i] = model.addVars(nodes, vtype=GRB.BINARY, name='Y')
             Z[i] = model.addVars(nodes, lb=0, ub=ubz, vtype=GRB.CONTINUOUS, name='Z')
         
+        for t in range(size):
+            model.addConstr(Y[t][r] == 0)
         # Add Constraints
         # Flow Constraint
         for t in range(size): # for all t in T
@@ -512,9 +517,10 @@ class Optimizer:
             if i != r:
                 expr = gp.LinExpr()
                 for t in range(size): # sum over all t in T
-                    i_prime = "("+ i[4]+ ", " + i[1] +")"
+                    #i_prime = "("+ i[7]+ ", " + i[2] +")"
+                    i_prime = (i[7], i[2])
                     expr.addTerms(1.0, Z[t][i])
-                    expr.addTerms(1.0, Z[t][i_prime])
+                    expr.addTerms(1.0, Z[t][str(i_prime)])
                 model.addConstr(expr - size*2 >= 0, name='weight-constr-t'+ str(t))
 
         # Strategy Constraint
@@ -534,9 +540,9 @@ class Optimizer:
         obj = gp.LinExpr()
         for t in range(size):
             for i in graph.nodes:
-                i_prime = "("+ i[4]+ ", " + i[1] +")"
+                i_prime = (i[7], i[2])
                 obj.addTerms(1.0/(size*2), Z[t][i]) 
-                obj.addTerms(1.0/(size*2), Z[t][i_prime]) 
+                obj.addTerms(1.0/(size*2), Z[t][str(i_prime)]) 
         
         model.setObjective(obj, GRB.MINIMIZE)
         lpFilename = self.lpFile +'.lp'
@@ -576,12 +582,12 @@ class Optimizer:
                 strategies[t] = TreeStrategy(graph, graph.root, length)
                 strategies[t+size] = TreeStrategy(graph, graph.root, length)
                 for i in graph.nodes:
-                    i_prime = "("+ i[4]+ ", " + i[1] +")"
+                    i_prime = str((i[7], i[2]))
                     strategies[t].addWeight(i, Z[t][i].x)
                     strategies[t+size].addWeight(i_prime, Z[t][i].x)
                 for i, j in graph.arcs:
-                    i_prime = "("+ i[4]+ ", " + i[1] +")"
-                    j_prime = "("+ j[4]+ ", " + j[1] +")"
+                    i_prime = str((i[7], i[2]))
+                    j_prime = str((j[7], j[2]))
                     if X[t][(i, j)].x:
                         strategies[t].addEdge(i, j)
                         strategies[t+size].addEdge(i_prime, j_prime)

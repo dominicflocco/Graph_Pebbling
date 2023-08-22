@@ -4,13 +4,14 @@ import math
 import pandas as pd
 import scipy.special
 import collections
-import os 
+import os, csv
 
 from Optimizer import Optimizer 
 from TreeStrategy import TreeStrategy 
 from TreeStrategy import NonTreeStrategy
 from PebblingGraph import PebblingGraph 
 
+INTERFACE = False
 def countElementaryCirtuits(n):
    
     count = 0 
@@ -554,108 +555,142 @@ def initializeOptimizer(fileRoot):
 def main(): 
     # Lemke 
     lemke_edges = [(0, 1), (0, 2), (1, 3), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6), (3, 7), (4, 7), (5, 7), (6, 7)]
-    lemke2_edges = [(0, 1), (0, 2), (1, 2), (1, 3), (2, 5), (2, 4), (3, 4), (2, 6), (3, 7), (4, 7), (5, 7), (6, 7)]
-    lemke3_edges = [(0, 1), (0, 2), (1, 3), (2, 5), (2, 4), (3, 4), (3, 6), (4, 5), (5, 6), (2, 6), (3, 7), (4, 7), (5, 7), (6, 7)]
-    r = 2
-    lemke = PebblingGraph(lemke3_edges, r)
-    
-    #runMaxUnsolvable(lemke)
-    lemke_nodes = lemke.nodes
-    for r in lemke_nodes:
-        lemke = PebblingGraph(lemke3_edges, r)
-        #runMaxUnsolvable(lemke)
-    #strategies = lemke.generateLollipops()
-    # lemke 2
-    
-       
-    # # Lemke Square 
+    # lemke2_edges = [(0, 1), (0, 2), (1, 2), (1, 3), (2, 5), (2, 4), (3, 4), (2, 6), (3, 7), (4, 7), (5, 7), (6, 7)]
+    # lemke3_edges = [(0, 1), (0, 2), (1, 3), (2, 5), (2, 4), (3, 4), (3, 6), (4, 5), (5, 6), (2, 6), (3, 7), (4, 7), (5, 7), (6, 7)]
+    # lemke4_edges = [(0, 1), (0, 2), (1, 3), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6), (3, 7), (4, 7), (5, 7), (6, 7), (1, 2), (4, 5), (5, 6), (4, 6)]
+    r = 0
+    lemke = PebblingGraph(lemke_edges, r)
     lemkeSquare = nx.cartesian_product(lemke.graph, lemke.graph)
     lemkeSquare = list(lemkeSquare.edges())
-    r = (3,3)
-    #print(countElementaryCirtuits(64))
-    lemkeSquare = PebblingGraph(lemkeSquare, r)
-    # treeStrategyOpt(lemkeSquare, 6, 15)
-    # trimStrategiesSym(lemkeSquare)
-    #print(lemkeSquare.nodes)
-    #print(lemkeSquare.edges)
-    # G = nx.read_gml('/home/DAVIDSON/doflocco/Graph_Pebbling/networks/us-ca/janos-us-ca--D-D-L-N-C-A-N-N.gml')
-    # edges = [e for e in G.edges]
-    # nodes = [v for v in G.nodes]
-    # r = nodes[0]
-    # pebblingNetwork = PebblingGraph(edges, r)
-    # print(len(pebblingNetwork.nodes))
-    # print(len(set(pebblingNetwork.nodes)))
+    initPebblingGraph = PebblingGraph(lemkeSquare, 0)
     
-    # applyPebbling()
-    #treeStrategyOptCrank(lemkeSquare, 6, 12, None)
-    boundLemkeSquareTemp(lemkeSquare)
-    #treeStrategyOptSymCrank(lemkeSquare, 20, 16, None)
-    # # Bruhat 
-    bruhat = [(0,1), (0,2), (0,4), (1,2), (1,7), (2,3), (2,20), (3,23), (4, 5), (4, 8), (5,6), (5,9), (6,7), (6,10), (7,11),
-              (8,9), (8,16), (9,12), (10,11), (10,13), (11, 19), (12, 13), (12,14), (13,15), (14, 15), (14,17), (15, 18),
-              (16, 17), (16,20), (17, 21), (18,19), (18,22), (19,23), (20, 21), (21,22), (22,23)]
-    r = 1
-    # bruhat = PebblingGraph(bruhat, r)
-    #treeStrategyOptCrank(bruhat, 8, 8, None)
-    # # n-cube
-    n = 3
-    # hypercube = [(0,1), (0,2), (0,4), (1,3), (1,5), (2,3), (2,6), (3,7), (4,5), (4,6), (5,7), (6,7)]
-    # hypercube = [(0,1), (0,2), (0,4), (1,3), (1,5), (2,3), (2,6), (3,7), (4,5), (4,6), (5,7), (6,7)]
-    # hypercube = [(str(i), str(j)) for i,j in hypercube]
-    # r = 1
-    # hypercube = PebblingGraph(hypercube, r)
+    size = 8
+    length = 16
+    bounds = {}
+    r_test = [('0', '0'), ('7','7')]
+    for r in initPebblingGraph.nodes:
+        pebblingGraph = PebblingGraph(lemkeSquare, r)
 
-    # strategies = hypercube.generateLollipops(cycleLen=4)
-    # for s in strategies:
-    #     print(s.weights)
-    # runMaxUnsolvable(hypercube)
-    # # print(len(hypercube.edges))
-    # # print(len(hypercube.nodes))
-    # runNontreeOpt(hypercube)
-    # networkLib = ["abilene", "atlanta", "cost226", "eu", "france", "geant", "germany", "india", "ny"]
-    # results = pd.DataFrame()
-    # for network in networkLib:
-    #     print(network) 
-    #     path = readNetwork(network)
-    #     pebblingNetwork = loadNetwork(path)
-    #     for r in pebblingNetwork.nodes: 
-    #         file = network + "_v-" + r + ".csv"
-    #         df = pd.read_csv(file)
-    #         df['Network'] = [network]
-    #         results = results.append(df, ignore_index=True)
+        fileRoot = f"max-ls_r={pebblingGraph.root}"
+        optimizer = Optimizer(solver="Gurobi", 
+                                threads=32, 
+                                logFile=fileRoot, 
+                                lpFile=fileRoot,
+                                paramFile=f"{fileRoot}_params",
+                                timeLimit=7200, 
+                                objGap=0,
+                                cert=True)
+        res = optimizer.generateTreeStrategiesSym(pebblingGraph,size,length, None)
+        strategies = res[0]
+        bounds[r] = res[1]
+        if optimizer.cert: 
+            for t in strategies.keys():
+                strategies[t].saveCertificate(f"{fileRoot}_cert{t}.csv")
+                strategies[t].saveEdges(f"{fileRoot}_edges{t}.csv")
+                
+    with open('max_ls_bounds2.csv', 'w') as csv_file:  
+        writer = csv.writer(csv_file)
+        for key, value in bounds.items():
+            writer.writerow([key, value])
+
+    
+    # #runMaxUnsolvable(lemke)
+    # lemke_nodes = lemke.nodes
+    # for r in lemke_nodes:
+    #     lemke = PebblingGraph(lemke3_edges, r)
+    #     #runMaxUnsolvable(lemke)
+    # #strategies = lemke.generateLollipops()
+    # # lemke 2
+    
+       
+    # # # Lemke Square 
+    # lemkeSquare = nx.cartesian_product(lemke.graph, lemke.graph)
+    # lemkeSquare = list(lemkeSquare.edges())
+    # r = (3,3)
+    # #print(countElementaryCirtuits(64))
+    # lemkeSquare = PebblingGraph(lemkeSquare, r)
+    # # treeStrategyOpt(lemkeSquare, 6, 15)
+    # # trimStrategiesSym(lemkeSquare)
+    # #print(lemkeSquare.nodes)
+    # #print(lemkeSquare.edges)
+    # # G = nx.read_gml('/home/DAVIDSON/doflocco/Graph_Pebbling/networks/us-ca/janos-us-ca--D-D-L-N-C-A-N-N.gml')
+    # # edges = [e for e in G.edges]
+    # # nodes = [v for v in G.nodes]
+    # # r = nodes[0]
+    # # pebblingNetwork = PebblingGraph(edges, r)
+    # # print(len(pebblingNetwork.nodes))
+    # # print(len(set(pebblingNetwork.nodes)))
+    
+    # # applyPebbling()
+    # #treeStrategyOptCrank(lemkeSquare, 6, 12, None)
+    # boundLemkeSquareTemp(lemkeSquare)
+    # #treeStrategyOptSymCrank(lemkeSquare, 20, 16, None)
+    # # # Bruhat 
+    # bruhat = [(0,1), (0,2), (0,4), (1,2), (1,7), (2,3), (2,20), (3,23), (4, 5), (4, 8), (5,6), (5,9), (6,7), (6,10), (7,11),
+    #           (8,9), (8,16), (9,12), (10,11), (10,13), (11, 19), (12, 13), (12,14), (13,15), (14, 15), (14,17), (15, 18),
+    #           (16, 17), (16,20), (17, 21), (18,19), (18,22), (19,23), (20, 21), (21,22), (22,23)]
+    # r = 1
+    # # bruhat = PebblingGraph(bruhat, r)
+    # #treeStrategyOptCrank(bruhat, 8, 8, None)
+    # # # n-cube
+    # n = 3
+    # # hypercube = [(0,1), (0,2), (0,4), (1,3), (1,5), (2,3), (2,6), (3,7), (4,5), (4,6), (5,7), (6,7)]
+    # # hypercube = [(0,1), (0,2), (0,4), (1,3), (1,5), (2,3), (2,6), (3,7), (4,5), (4,6), (5,7), (6,7)]
+    # # hypercube = [(str(i), str(j)) for i,j in hypercube]
+    # # r = 1
+    # # hypercube = PebblingGraph(hypercube, r)
+
+    # # strategies = hypercube.generateLollipops(cycleLen=4)
+    # # for s in strategies:
+    # #     print(s.weights)
+    # # runMaxUnsolvable(hypercube)
+    # # # print(len(hypercube.edges))
+    # # # print(len(hypercube.nodes))
+    # # runNontreeOpt(hypercube)
+    # # networkLib = ["abilene", "atlanta", "cost226", "eu", "france", "geant", "germany", "india", "ny"]
+    # # results = pd.DataFrame()
+    # # for network in networkLib:
+    # #     print(network) 
+    # #     path = readNetwork(network)
+    # #     pebblingNetwork = loadNetwork(path)
+    # #     for r in pebblingNetwork.nodes: 
+    # #         file = network + "_v-" + r + ".csv"
+    # #         df = pd.read_csv(file)
+    # #         df['Network'] = [network]
+    # #         results = results.append(df, ignore_index=True)
 
         
-    # results.to_csv("network_results.csv")
+    # # results.to_csv("network_results.csv")
 
-    # Petersen 
-    petersen = [(0,1), (1,2), (2,3), (3,4), (4,0), (0,6), (1,7), (2,8), (3,9), (4,5), (5,7), (5,8), (6,9), (6,8), (7,9)]
-    r = 5
-    # petersen = PebblingGraph(petersen, r)
-    # confirmResults(bruhat, 6, 8, None, "bruhat")
-    # Lolipop 
-    # lolipop = [(0,1), (1,2), (2,3), (3,4), (4,1)]
-    # lolipop = PebblingGraph(lolipop, r)
+    # # Petersen 
+    # petersen = [(0,1), (1,2), (2,3), (3,4), (4,0), (0,6), (1,7), (2,8), (3,9), (4,5), (5,7), (5,8), (6,9), (6,8), (7,9)]
+    # r = 5
+    # # petersen = PebblingGraph(petersen, r)
+    # # confirmResults(bruhat, 6, 8, None, "bruhat")
+    # # Lolipop 
+    # # lolipop = [(0,1), (1,2), (2,3), (3,4), (4,1)]
+    # # lolipop = PebblingGraph(lolipop, r)
 
-    #lolipops = lemke.generateLolipops(cycleLen=4) 
-    # strategies = {}
-    # i = 0
+    # #lolipops = lemke.generateLolipops(cycleLen=4) 
+    # # strategies = {}
+    # # i = 0
 
-    # for pop in lolipops:
-    #     #print(pop)
-    #     strategies[i] = NonTreeStrategy(lemke, pop.edges)
-    #     print(strategies[i].weights)
-    #     i+=1
-    #boundLemkeSquare(lemkeSquare)
+    # # for pop in lolipops:
+    # #     #print(pop)
+    # #     strategies[i] = NonTreeStrategy(lemke, pop.edges)
+    # #     print(strategies[i].weights)
+    # #     i+=1
+    # #boundLemkeSquare(lemkeSquare)
 
-    # optimizer = Optimizer(solver = "Gurobi", 
-    #                             threads = 32, 
-    #                             logFile = "lemke_square_v-" + str(r),
-    #                             lpFile = "lemke_square_v-" + str(r),
-    #                             objGap=False,
-    #                             timeLimit=False, 
-    #                             cert=True)
+    # # optimizer = Optimizer(solver = "Gurobi", 
+    # #                             threads = 32, 
+    # #                             logFile = "lemke_square_v-" + str(r),
+    # #                             lpFile = "lemke_square_v-" + str(r),
+    # #                             objGap=False,
+    # #                             timeLimit=False, 
+    # #                             cert=True)
     
-    # res = optimizer.generateTreeStrategiesSym(lemkeSquare, 20, 10)
+    # # res = optimizer.generateTreeStrategiesSym(lemkeSquare, 20, 10)
 def setRoot(pebblingGraph): 
     ready = False
     while not ready: 
@@ -741,4 +776,7 @@ def interface():
             strategies[t].visualizeStrategy(f"{fileRoot}_strategy{t}.png")
 
 if __name__ == "__main__":
-    interface()
+    if INTERFACE: 
+        interface()
+    else: 
+        main()

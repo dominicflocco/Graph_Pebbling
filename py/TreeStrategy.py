@@ -59,10 +59,14 @@ class TreeStrategy:
             src - source node of edge 
             dst - destinaation node of edge
         """
-        self.edges.append((str(src), str(dst)))
-        self.nodes.add(str(src))
-        self.nodes.add(str(dst))
-
+        # self.edges.append((str(src), str(dst)))
+        # self.nodes.add(str(src))
+        # self.nodes.add(str(dst))
+         
+        self.edges.append((src, dst))
+        self.nodes.add(src)
+        self.nodes.add(dst)
+        # print(src)
     def getWeight(self, vertex):
         """
         Gets the weight of a specified vetex in TreeStrategy 
@@ -90,9 +94,9 @@ class TreeStrategy:
         n = int(math.sqrt(len(self.graph.nodes)))
         cert = np.zeros((n,n))
         for v in list(self.nodes):
-            i = int(v[1])
-            j = int(v[4])
-            cert[i][j] = round(self.getWeight(v), 2)   
+            i = int(v[2])
+            j = int(v[7])
+            cert[i][j] = round(self.getWeight(v), 4)   
         pd.DataFrame(cert).to_csv(filename)
     
     def saveEdges(self, filename):
@@ -117,13 +121,15 @@ class TreeStrategy:
         """
         
         self.tree.add_edges_from(self.edges)
-        labels ={}
-        print(self.tree.edges)
-        print(self.tree.nodes)
+        labels = {}
+        #print(self.tree.edges)
+        # print(self.tree.nodes)
+        
         for v in list(self.tree.nodes):
             w = self.getWeight(v)
             label = v + "\n" + str(round(w, 2))
             labels[v] = label
+            print(v)
         labels[self.root] = 'r'
         # print(list(self.nodes))
         # Networkx parameters
@@ -133,14 +139,14 @@ class TreeStrategy:
         pos = nx.kamada_kawai_layout(self.tree)
 
         nx.draw(self.tree, 
-            pos=pos, 
-            node_size=node_size, 
-            font_size=font_size, 
-            labels=labels, 
-            with_labels=True, 
-            node_color=color)
+                pos=pos, 
+                node_size=node_size, 
+                font_size=font_size, 
+                labels=labels, 
+                with_labels=True, 
+                node_color=color)
             
-        plt.show()
+        # plt.show()
         if filename: 
             plt.savefig(filename)
         plt.close()
@@ -152,17 +158,24 @@ class TreeStrategy:
         by checking if the tree is connected and acyclic, and by verifying the weight
         funcion properties are met. 
         """
+        valid = True
         self.tree.add_edges_from(self.edges)
-        directedEdges = []
-        visited = set()
-        v = self.root
-        while len(visited) != len(self.nodes):
-            neighbors = set(self.tree[v])
-            notvisited = list(neighbors.symmetric_difference(visited))
+        cycles = list(nx.simple_cycles(self.tree))
+        if len(cycles) != 0:
+            print("Cycle exists in tree. Strategy is invalid.")
+            print(self.edges)
+            valid = False
+        # directedEdges = []
+        # visited = set()
+        # v = self.root
+        # while len(visited) != len(self.nodes):
+        #     neighbors = set(self.tree[v])
+        #     notvisited = list(neighbors.symmetric_difference(visited))
 
-            for u in notvisited:
-                directedEdges.append((v, u))
-                visited.add(u)
+        #     for u in notvisited:
+        #         directedEdges.append((v, u))
+        #         visited.add(u)
+        return valid
                 
     
 class NonTreeStrategy: 
