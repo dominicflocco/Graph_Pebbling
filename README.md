@@ -1,7 +1,9 @@
 # Automating Weight Function Generation in Graph Pebbling
 Mixed-Integer Linear Programming Approaches to Weight Function Generation in Graph Pebbling
 
-This code base provides an inquiry into Mixed-Integer Linear Programming (MILP) approaches for Weight Function generation in Graph Pebbling. The work is a culimation of an Applied Mathematics Honors Thesis at Davidson College under the supervision of Dr. Carl Yerger and Dr. Jonad Pulaj, and supplements the formal written report. 
+This code base provides an inquiry into Mixed-Integer Linear Programming (MILP) approaches for Weight Function generation in Graph Pebbling. The work is a culimation of an Applied Mathematics Honors Thesis at Davidson College under the supervision of Dr. Carl Yerger and Dr. Jonad Pulaj, and supplements the formal written report. This repository is supplemental material to the following manuscrtipt: 
+
+> Dominic Flocco, Jonad Pulaj, and Carl Yerger. "Automating weight function generation in graph pebbling". _Discrete Applied Mathematics_ 347 (2024): 155-174.
 
 In addition to including the certificates that prove pebbling bounds on the Bruhat and Lemke square graph, this code base in constructed for further experiementation by future researchers. The novel result of the thesis was a verifiable proof that the pebbling number of the Lemke square is upper bounded by 96. However, the computational framework provided is capable of computing pebbling upper bounds on general graphs, including real-world networks, some of which are preloaded into the codebase. 
 
